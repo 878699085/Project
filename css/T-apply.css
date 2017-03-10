@@ -526,3 +526,170 @@ display:inline-block;
 .hide{
 display:none;
 }
+h3,i{
+	font-weight: normal;
+	font-style: inherit;
+}
+/* 新增发明人弹窗  */
+.lay-out {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  filter: alpha(opacity=60);
+  -moz-opacity: .6;
+  -khtml-opacity: .6;
+  opacity: .6;
+  background: #000;
+  top: 0;
+  left: 0;
+}
+.addInventor{
+  width: 720px;
+  min-height: 640px;
+  position: fixed;
+  top:50%;
+  left: 50%;  
+  margin-top: -320px;
+  margin-left: -360px;
+  background: #fff;
+  z-index: 9999;
+}
+.addInventor h3{
+	position: relative;
+	height: 61px;
+	line-height: 61px;
+	font-size: 16px;
+	padding-left: 20px;
+	font-weight: normal;
+}
+.addInventor h3 span{
+	display: inline-block;
+    border-bottom: 1px solid #666;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+}
+.addInventor h3 i{
+	display: inline-block;
+	width: 720px;
+	border-top:1px solid #ccc;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+.addInventor h3 b{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	float: right;
+	background: url(../imgs/close_1.png) no-repeat center;
+	margin:25px 30px 0 0;
+	cursor: pointer;
+}
+.addInventor ul{
+	margin-left: 45px;
+}
+.addInventor ul li{
+	line-height: 60px;
+}
+.addInventor ul li span{
+	display: inline-block;
+	width:105px;
+	text-align: right;
+	float: left;
+}
+.addInventor ul li input.name{
+	border: 1px dashed #ccc;
+	width: 200px;
+	height: 28px;
+}
+.addInventor ul li input.name1{
+	border: 1px dashed #ccc;
+	width: 400px;
+	height: 28px;
+	text-indent: 15px;
+	color: #666;
+	background: url(../imgs/jian_1.png) no-repeat 95%;
+	cursor: pointer;
+}
+.addInventor ul li input.name2{
+	background: none;
+	cursor: text;
+}
+.addInventor ul li i{
+	margin-left: 40px;
+}
+.addInventor ul li b{
+	    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #b8b8b8;
+    border-radius: 2px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+.addInventor ul li b.hover{
+	background: url(../imgs/info_1.png) no-repeat center;
+	border: 1px solid #ff3b30;
+}
+.addInventor ul li.countrys,
+.addInventor ul li.certificates{
+	position: relative;
+}
+.addInventor ul li.countrys div,
+.addInventor ul li.certificates div{
+	    position: absolute;
+    z-index: 1;
+    background: #fff;
+    width: 410px;
+    left: 109px;
+    border: 1px solid #ccc;
+    display: none;
+    top: 45px;
+    max-height: 200px;
+    overflow: auto;
+}
+.addInventor ul li.countrys div p,
+.addInventor ul li.certificates div p{
+	line-height: 25px;
+	cursor: pointer;
+	text-indent: 15px;
+}
+.addInventor ul li.countrys div p.hover,
+.addInventor ul li.countrys div p:hover,
+.addInventor ul li.certificates div p.hover,
+.addInventor ul li.certificates div p:hover{
+	background: #ccc;
+}
+.upload-wrap{
+	float: left;
+	position: relative;
+}
+.upload-wrap div{
+	width: 100px;
+	height: 100px;
+	border: 1px dashed #ccc;
+}
+.upload-wrap p{
+	line-height: 0;
+	margin-top: 15px;
+	text-align: center;
+}
+.submit{
+	width: 248px;
+	margin: auto;
+	margin-top: 50px;
+}
+.submit input{
+	width:100px;
+	height: 34px;
+	background: #ee4618;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	float: left;
+	margin-right: 20px;
+}
