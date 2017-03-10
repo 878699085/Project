@@ -77,36 +77,41 @@ width:1148px;
 margin-top:40px;
 color:#666;
 }
+.apl-content .left>div{
+    width: 1048px;
+    padding: 35px 50px;
+}
 .pat-name{
-height:121px;
+height:105px;
 border:1px solid #ccc;
 background-color:#fff;
 }
 .pat-name .p1{
 font-size:16px;
+/*
 margin-top:24px;
-margin-left:23px;
+margin-left:23px;*/
 }
 .pat-name .p2{
 font-size:14px;
-margin-top:21px;
-margin-left:74px;
+margin-top:40px;
+/*margin-left:74px;*/
 }
 .pat-name .p2 input{
 height:30px;
-width:914px;
+width:965px;
 border:1px dashed #ccc;
 }
 .inventor{
 margin-top:21px;
-height:220px;
+height:160px;
 border:1px solid #ccc;
 background-color:#fff;
 }
-.inventor .p1{
-margin-top:24px;
-padding-left:23px;
-}
+/*.inventor .p1{*/
+/*/!*margin-top:24px;*!/*/
+/*padding-left:23px;*/
+/*}*/
 .inventor .p1 .left1{
 font-size:16px;
 }
@@ -123,7 +128,7 @@ position:relative;
 .inventor table{
 height:88px;
 margin-top:40px;
-margin-left:80px;
+/*margin-left:80px;*/
 }
 .inventor table th{
 /*border:1px #ccc dashed;*/
@@ -147,21 +152,18 @@ color:#ff3300;
 cursor:pointer;
 text-decoration: underline;
 }
-.connector .p1{
+/*.connector .p1{
 margin-top:24px;
 padding-left:23px;
-}
+}*/
 .connector{
 margin-top:21px;
-height:220px;
+height:160px;
 border:1px solid #ccc;
 background-color:#fff;
 }
 .connector .p1 .left2{
-
  font-size:16px;
- 
-
 }
 .connector .p1 .right2{
 margin-left:843px;
@@ -173,24 +175,29 @@ cursor:pointer;
 position:relative;
 top:2px;
 }
-.connector .p2{
+/*.connector .p2{
 margin-top:35px;
 margin-left:90px;
+}*/
+.apl-content .connector .p2{
+    padding:40px 0 30px 0;
 }
 .connector .p2 span{
 color:#386173;
-margin-left:10px;
+/*margin-left:10px;*/
 /*display:inline-block;*/
 cursor:pointer;
+margin-right: 49px;
 }
 .connector .p2 input{
-width:130px;
+width: 153px;
 height:30px;
 border:1px dashed #ccc;
 }
-.connector .p3{
-margin-top:25px;
-margin-left:96px;
+.apl-content .connector .p3{
+/*margin-top:25px;
+margin-left:96px;*/
+padding: 0;
 color:#386173;
 }
 .connector .p3 select{
@@ -203,14 +210,14 @@ border:1px dashed #ccc;
 }
 .connector .p3 input{
 height:30px;
-width:292px;
+width:504px;
 padding-left:10px;
 border:1px dashed #ccc;
 margin-left:10px;
 }
 .publish .p1{
-margin-top:24px;
-padding-left:23px;
+/*margin-top:24px;*/
+/*padding-left:23px;*/
 font-size:16px;
 }
 .publish{
@@ -220,7 +227,7 @@ border:1px solid #ccc;
 margin-top:24px;
 }
 .publish .p2{
-margin-left:79px;
+/*margin-left:79px;*/
 margin-top:20px;
 color:#386173;
 }
@@ -236,7 +243,7 @@ background-color:#fff;
 }
 .publish .p3{
 margin-top:12px;
-margin-left:123px;
+margin-left:50px;
 color:#ff3300;
 font-size:12px;
 }
@@ -247,8 +254,8 @@ border:1px solid #ccc;
 margin-top:17px;
 }
 .request .p1{
-margin-top:24px;
-padding-left:23px;
+/*margin-top:24px;*/
+/*padding-left:23px;*/
 font-size:16px;
 }
 .request a{
@@ -265,7 +272,7 @@ position:relative;
 top:5px;
 }
 .request .p2, .request .p3{
-margin-left:75px;
+/*margin-left:75px;*/
 color:#386173;
 }
 .request .p2{
@@ -512,11 +519,11 @@ height:200px;
 background-color:#fff;
 }
 .apl-content .left .p1{
-margin-left:50px;
+/*margin-left:50px;*/
 width:1048px;
 border-bottom:1px solid #ccc;
 height:30px;
-padding-left:0px;
+/*padding-left:0px;*/
 }
 .apl-content .left .p1 .und{
 height:30px;
