@@ -27,7 +27,7 @@ background-color:#fff;
 }
 .tr-top .p1{
 margin-top:31px;
-margin-left:40px;
+margin-left:18px;
 }
 .tr-top .p1 input{
 height:30px;
@@ -36,7 +36,7 @@ border:1px dashed #ccc;
 margin-right:8px;
 }
 .tr-top .p2{
-margin-left:24px;
+margin-left:2px;
 margin-top:22px;
 }
 .tr-top .p2 input[type=checkbox]{
@@ -55,7 +55,7 @@ border:1px dashed #ccc;
 }
 .tr-top .p3 {
 margin-top:16px;
-margin-left:547px;
+margin-left:525px;
 }
 .tr-top .p3 span{
 display:inline-block;
@@ -104,11 +104,6 @@ top:3px;
 margin-right:4px;
 }
 .tr-mid .p1 .und{
-height:24px;
-display:inline-block;
-border-bottom:1px solid #666;
-}
-.tr-mid .p1 .und1{
 height:20px;
 display:inline-block;
 border-bottom:1px solid #666;
@@ -231,7 +226,7 @@ top:3px;
 height:138px;
 }
 .his-tr-top .his-p3{
-margin-left:670px;
+margin-left:648px;
 }
 
 .his-un-p2 .li0{
