@@ -2,6 +2,10 @@
  * Created by Administrator on 2017/3/8.
  */
 $(function(){
+    $(".input").click(function(){
+      
+        $(this).find("img").toggleClass("hide");
+    })
     $(".more .p1").click(function(){
         $(".Tog").toggleClass("hide");
         if($(".Tog").hasClass("hide")){
