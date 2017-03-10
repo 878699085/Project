@@ -55,9 +55,9 @@
             <table>
                 <thead>
                     <tr>
-                        <th width="100">序号</th>
+                        <th width="150">序号</th>
                         <th width="100">姓名</th>
-                        <th width="140">国籍或地区</th>
+                        <th width="160">国籍或地区</th>
                         <th width="260">居民身份证号</th>
                         <th width="120">是否公布</th>
                         <th width="260">操作</th>
@@ -90,9 +90,9 @@
             <table>
                 <thead>
                     <tr>
-                        <th width="100">序号</th>
+                        <th width="150">序号</th>
                         <th width="100">姓名</th>
-                        <th width="140">国籍或地区</th>
+                        <th width="160">国籍或地区</th>
                         <th width="260">居民身份证号</th>
                         <th width="120">是否公布</th>
                         <th width="260">操作</th>
@@ -121,18 +121,16 @@
         <!--联系人-->
         <div class="connector">
             <p class="p1">
-                <span class="left2 und">联系人</span>
+                <span class="left2 und">联系人 </span>
                 <span class="right2"><img src="../imgs/T/T-leading-in.png" width="14" alt="">&nbsp;从申请人/发明人导入</span>
             </p>
             <div class="p2">
                 <span class="l-name">姓名：<input type="text"/></span>
                 <span class="l-phone">电话：<input type="text"/></span>
                 <span class="l-email">电子邮件：<input type="text"/></span>
-                <span class="l-post">邮政编码：<input type="text"/></span>
+                <span class="l-post" style="margin-right: 0">邮政编码：<input type="text"/></span>
             </div>
-            <div class="p3">
-            联系地址：
-                <select name="" class="country" >
+            <div class="p3"> 联系地址：<select name="" class="country" >
                     <option value="1">中国</option>
                     <option value="2"></option>
                     <option value="3"></option>
@@ -255,8 +253,67 @@
         </div>
     </div>
 </div>
+
+
+<!--新增发明人弹窗-->
+<div class="lay-out"></div>
+<div class="addInventor">
+	<h3>
+		<span>新增发明人</span>
+    	<i></i>
+    	<b></b>
+	</h3>
+	<form action="" method="post">
+		<ul>
+			<li>
+				<span>姓名：</span>
+				<input type="text" name="" id="" value="" class="name"/>
+				<i><b></b>不公布姓名</i>
+				<i><b></b>标记为第一发明人</i>
+			</li>
+			<li>
+				<span>姓名（英文）：</span>
+				<input type="text" name="" id="" value="" class="name"/>
+			</li>
+			<li class="countrys">
+				<span>国籍或者地区：</span>
+				<input name="techName" type="text" class="country name1" autocomplete="off" readonly  placeholder="中国大陆"/>
+				<div>
+					
+				</div>
+			</li>
+			<li class="certificates">
+				<span>证件类型：</span>
+				<input  name="techName" type="text" class="certificate name1" autocomplete="off" readonly  placeholder="中国大陆"/>
+				<div>
+					
+				</div>
+			</li>
+			<li>
+				<span>证件号码：</span>
+				<input type="text" name="" id="" value="" class="name1 name2"/>
+			</li>
+			<li class="clearfix">
+				<span>上传证件：</span>
+				<div class="upload-wrap">
+					<div>
+						
+					</div>
+					<p class="clearfix">身份证正面</p>
+				</div>
+			</li>
+			<li class="clearfix">
+				<p class="submit">
+					<input type="submit" value="添加"/>
+					 <input type="button" value="取消添加"/>
+				</p>
+			</li>
+		</ul>
+	</form>
+</div>
 <script src="../js/jquery-1.11.3.min.js"></script>
 <script src="../js/jquery.validate.min.js"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/T-apply.js"></script>
 </body>
 </html>
