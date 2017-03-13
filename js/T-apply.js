@@ -2,26 +2,33 @@
  * Created by Administrator on 2017/3/8.
  */
 $(function(){
-    $(".input").click(function(){
-      
-        $(this).find("img").toggleClass("hide");
-    })
-    $(".more .p1").click(function(){
-        $(".Tog").toggleClass("hide");
-        if($(".Tog").hasClass("hide")){
-            $(".more .p1 img").prop("src","../imgs/T/T-more.png")
-        }else{
-            $(".more .p1 img").prop("src","../imgs/T/T-less.png")
-        }
-
-    })
-    
     patent.init();
 })
 
 var patent = {
 	init :function(){
+		this._array();
 		this._validate();
+		commom.searchSuggest($(".countrys div"),$(".country"),"../js/test.json");
+		commom.searchSuggest($(".certificates div"),$(".certificate"),"../js/test.json"); 
+	},
+	_array : function(){
+		 $(".input").click(function(){
+	        $(this).find("img").toggleClass("hide");
+	    })
+	    $(".more .p1").click(function(){
+	        $(".Tog").toggleClass("hide");
+	        if($(".Tog").hasClass("hide")){
+	            $(".more .p1 img").prop("src","../imgs/T/T-more.png")
+	        }else{
+	            $(".more .p1 img").prop("src","../imgs/T/T-less.png")
+	        }
+	
+	    })
+	    
+	    $(".addInventor ul li b").click(function(){
+	    	$(this).toggleClass("hover");
+	    })
 	},
 	_validate : function(){
 		/*
@@ -39,7 +46,7 @@ var patent = {
 	        		required:true,
 	        		maxlength:40
 	        	},
-	        	secondary : {
+	        	inventNameEn : {
 	        		required:true
 	        	},
 	        	three : {
@@ -69,7 +76,7 @@ var patent = {
 	        		required:"不能为空",
 	        		maxlength:"最多40个汉字"
 	        	},
-	        	secondary : {
+	        	inventNameEn : {
 	        		required:"不能为空"
 	        	},
 	        	three : {
