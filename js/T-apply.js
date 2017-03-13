@@ -57,17 +57,52 @@ var patent = {
 		
 		$(".credNo").focus(function(){
 			if($(".citizenship").val()=="中国"&&$(".FirstInventor").hasClass("hover")){
-				if($(".credNos").find("label").length==0){
+				if($.isEmpty($(".credNo").val()) && $(".credNos").find("label").length==0){
 					$(".credNos").append("<label>不能为空</label>");
+				}
+			}
+		});
+		$(".credNo").blur(function(){
+			if(!$.isEmpty($(".credNo").val())){
+				$(".credNos").find("label").remove();
+			}
+		})
+		
+		
+		$(".submit input:nth-child(1)").click(function(event){
+			if($.isEmpty($(".inventNameCn").val())&&$(".inventNameCn").parents("li").find("label").length==0){
+				$(".inventNameCn").parents("li").append("<label>不能为空</label>");
+				event.preventDefault();
+				NameCn=0;
+			}else{
+				$(".inventNameCn").parents("li").find("label").remove();
+				NameCn=1;
+				$(this).submit();
+			}
+			
+			var ship,credNo,NameCn,NameEn;
+			var shipStr=$(".citizenship").val();
+			if($(".FirstInventor").hasClass("hover")){
+				if(shipStr=="请选择" || $.isEmpty(shipStr) ){
+					if($(".countrys").find("label").length==0){
+						$(".countrys").append("<label>不能为空</label>");
+						ship=0;
+					}
+				}else{
+					$(".countrys").find("label").remove();
+					ship=1;
+				}
+			}
+			
+			if($(".citizenship").val()=="中国"&&$(".FirstInventor").hasClass("hover")){
+				if($.isEmpty($(".credNo").val()) && $(".credNos").find("label").length==0){
+					$(".credNos").append("<label>不能为空</label>");
+					credNo=0;
 				}
 			}else{
 				$(".credNos").find("label").remove();
+				credNo=1;
 			}
-		});
-		
-		$(".submit input:nth-child(1)").click(function(){
-			
-			
 		})
 		
 	},
