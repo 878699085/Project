@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认服务信息</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/person-left.css">
+    <link rel="stylesheet" type="text/css" href="../../css/confirm1.css">
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/T-common.js"></script>
+    <script>
+        $(function(){
+            validate.phone("#tel1");
+        })
+    </script>
+
+</head>
+<body>
+<div class="contain">
+
+    <div class="path">
+        <a href="#" class="left">首页 ></a>
+        <a href="#" class="right">确认服务信息</a>
+    </div>
+    <!--状态栏-->
+    <div class="status">
+        <div class="s1">
+            <div class="st blue"></div>
+            <div class="sd blue">1</div>
+        </div>
+        <div class="s2">
+            <div class="st blue"></div>
+            <div class="sd blue">2</div>
+        </div>
+        <div class="s3">
+            <div class="st"></div>
+            <div class="sd">3</div>
+        </div>
+    </div>
+    <div class="stext ">
+        <div class="s1">
+            录入商标信息
+        </div>
+        <div class="s2">
+            申请人信息
+        </div>
+        <div class="s3">
+            提交申请并支付
+        </div>
+    </div>
+
+    <div class="main clearfix">
+
+        <div class="ml">
+
+            <div class="mlb">
+                <!--商标注册-->
+                <div class="zhece">
+        <span class="zl">
+            商标注册
+        </span>
+        <span class="zr">
+            全方位保护知识产权
+        </span>
+                </div>
+                <div class="apply1 apply">
+                    <span>申请人类型：</span> <input type="radio" value="radio" name="radio"/> 企事业单位、社会团体
+                    <input type="radio" value="radio" name=  "radio"/> 国内自然人/个体单位
+                </div>
+                <div class="apply2 apply">
+                   <span>
+                       申请人名称：<input type="text"/>
+                   </span>
+                </div>
+                <div class="apply3 apply">
+                    <span>申请人联系方式：</span> <input type="text" id="tel1"/>
+                </div>
+                <div class="apply4 apply"><span>申请人地址：</span><input type="text"/></div>
+                <div class="apply5 apply"><span>其他需求描述：</span> <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="apply6 apply">
+               <span>
+                     提交申请
+               </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="mr">
+            <div class="img">
+                <img src="../../imgs/T-confirm/img1.jpg" alt="">
+            </div>
+            <div class="p">
+                <p class="p1">
+                    我是你的顾问，申请过程
+                </p>
+                <p class="p2">中有疑问随时联系我</p>
+                <p class="p3">
+                    琪琪
+                </p>
+            </div>
+            <p class="p4">
+                400-183-0900
+            </p>
+            <div class="hujiao">
+                <a href="#">免费电话呼叫</a>
+            </div>
+            <div class="zixun">
+                <a href="#">在线咨询</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

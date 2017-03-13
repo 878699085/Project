@@ -267,13 +267,13 @@
 		<ul>
 			<li>
 				<span>姓名：</span>
-				<input type="text" name="inventNameCn"  value="" class="name" maxlength="40" autocomplete="off"/>
+				<input type="text" name="inventNameCn"  value="" class="empty name inventNameCn" maxlength="40" autocomplete="off" />
 				<i><b></b>不公布姓名</i>
-				<i><b></b>标记为第一发明人</i>
+				<i><b class="FirstInventor" > </b>标记为第一发明人</i>
 			</li>
 			<li>
 				<span>姓名（英文）：</span>
-				<input type="text" name="inventNameEn" id="" value="" class="name"/>
+				<input type="text" name="inventNameEn" id="" value="" autocomplete="off" class="name inventNameEn"/>
 			</li>
 			<li class="countrys">
 				<span>国籍或者地区：</span>
@@ -284,14 +284,14 @@
 			</li>
 			<li class="certificates">
 				<span>证件类型：</span>
-				<input  name="" type="text" class="certificate name1" autocomplete="off" readonly  placeholder="中国大陆"/>
+				<input  name="credType" type="text" class="certificate name1" maxlength="80" autocomplete="off" readonly  placeholder="中国大陆"/>
 				<div>
 					
 				</div>
 			</li>
-			<li>
+			<li class="credNos">
 				<span>证件号码：</span>
-				<input type="text" name="" id="" value="" class="name1 name2"/>
+				<input type="text" name="credNo" id="" value="" autocomplete="off" class="credNo name1 name2"/>
 			</li>
 			<li class="clearfix">
 				<span>上传证件：</span>
@@ -484,6 +484,7 @@
 </div>
 <script src="../js/jquery-1.11.3.min.js"></script>
 <script src="../js/jquery.validate.min.js"></script>
+<script src="../js/jspinyin.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/T-apply.js"></script>
 </body>

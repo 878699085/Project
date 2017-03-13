@@ -1,0 +1,50 @@
+b{
+	font-weight:normal;
+}
+i{
+	font-style: normal;
+}
+.choose_agent{
+	width:1075px;
+	height:248px;
+	border:1px solid #ccc;
+	padding:30px 0px 0px 25px;
+	font-size: 14px;
+	color:#666;
+}
+.choose_agent p{
+	height:35px;
+	line-height:35px;
+	margin-bottom:10px;
+}
+.choose_agent p span{
+	float:left;
+	margin-right:10px;
+}
+.choose_agent p span img{
+	margin-right:1px;
+	margin-top:5px;
+}
+.choose_agent p b{
+	float:left;
+	margin-right:16px;
+}
+.choose_agent i{
+	color:#ff3300;
+	margin-right:7px;
+}
+.choose_agent p a{
+	float:left;
+	width:120px;
+	height:35px;
+	background:#233645;
+	color:#fff;
+	text-align:center;
+	line-height: 35px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.test_agent{
+	height:198px;
+	margin-top:10px;
+}
