@@ -150,3 +150,18 @@ var commom = {
 		init();
 	}
 }
+/**
+ * @description 验证字符串v是否为空（null 或者 空字符串——""）
+ * @param {string}
+ *            v 需要被验证的字符串
+ * @return {boolean} true 为空，false 不为空
+ *         @example
+ *         $.isEmpty(v) //需要被验证的字符串
+ */
+jQuery.isEmpty = function(v) {
+	if (v == null || $.trim(v) == "") {
+		return true;
+	} else {
+		return false;
+	}
+};
