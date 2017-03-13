@@ -133,7 +133,7 @@ b{
 	font-size:14px;
 }
 
-/*ÌáÊ¾¸¶¿îÊ§°Üµ¯´°*/
+/*ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Üµï¿½ï¿½ï¿½*/
 .pay_fail{
 	display: none;
     position: fixed;
@@ -188,7 +188,7 @@ b{
 .pay_fail ul li.pay_R img{
 	margin: 35px 0 0 30px;
 }
-/*ÌáÊ¾¸¶¿î³É¹¦µ¯´°*/
+/*ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .pay_success ul li.pay_L img{
 	margin-top: 60px;
 }
