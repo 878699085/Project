@@ -1,0 +1,103 @@
+.pay_brand{
+    width: 938px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    text-align: center;
+}
+.pay_brand .pay_tittle{
+    font-size: 14px;
+    width: 938px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.pay_brand .pay_tittle span,.pay_brand .pay_tittle b,.pay_brand .pay_tittle em{
+    float: left;
+    font-style: normal;
+    color: #666666;
+}
+.pay_brand .pay_tittle span{
+    width: 620px;
+}
+.pay_brand .pay_tittle b{
+    width: 150px;
+    font-weight: normal;
+}
+.pay_brand .pay_tittle em{
+    width: 140px;
+}
+.pay_brand .pay_detail {
+    width: 938px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-top: 15px;
+}
+.pay_brand .pay_detail li{
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.pay_brand .pay_detail li img,.pay_brand .pay_detail li span,.pay_brand .pay_detail li b,.pay_brand .pay_detail li em,.pay_brand .pay_detail li a{
+    float: left;
+    font-size: 14px;
+    color: #444444;
+    font-style: normal;
+    font-weight: normal;
+}
+.pay_brand .pay_detail li img{
+    width: 48px;
+    margin: 12px 45px;
+}
+.pay_brand .pay_detail li span{
+    margin-right: 80px;
+}
+.pay_brand .pay_detail li b{
+    margin-right: 90px;
+}
+.pay_brand .pay_detail li em{
+    margin-right: 105px;
+}
+.pay_brand .pay_detail li a{
+    color: #ff3300;
+}
+.pay_brand .pay_money{
+    float: right;
+    margin-top: 30px;
+}
+.pay_brand .pay_money p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.pay_brand .pay_money p b{
+    font-size: 24px;
+    color: #ff3300;
+}
+.pay_brand .pay_money a{
+    float: right;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    background: #ff3300;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
