@@ -1,0 +1,60 @@
+.attach_files {
+  width: 1360px;
+  margin: 20px auto;
+}
+.attach_files .files {
+  width: 1160px;
+}
+.attach_files .files p {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.attach_files .files p span {
+  float: right;
+  width: 129px;
+  height: 39px;
+  line-height: 35px;
+  border: 1px dashed #ff3300;
+  border-radius: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+.attach_files .files p span img {
+  vertical-align: -5px;
+}
+.attach_files .files p span i {
+  font-size: 16px;
+  font-style: normal;
+  border-bottom: 1px solid #ff3300;
+  margin-left: 10px;
+  color: #ff3300;
+}
+.attach_files .files ul li {
+  float: left;
+  width: 278px;
+  height: 168px;
+  border: 1px dashed #ccc;
+  text-align: center;
+  margin-right: 13px;
+}
+.attach_files .files ul li img {
+  margin: 20px 0 15px;
+}
+.attach_files .files ul li p {
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #cccccc;
+  font-size: 14px;
+}
+.attach_files .files ul li a {
+  color: #ff3300;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.attach_files .files ul li span {
+  color: #ff3300;
+  font-size: 16px;
+}
+/*# sourceMappingURL=attached_files.css.map */
