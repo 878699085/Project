@@ -9,8 +9,22 @@ var patent = {
 	init :function(){
 		this._array();
 		this._validate();
-		commom.searchSuggest($(".countrys div"),$(".country"),"../js/test.json");
-		commom.searchSuggest($(".certificates div"),$(".certificate"),"../js/test.json"); 
+		this._layout();
+		/*新增发明人*/
+			/*国籍或者地区*/
+			commom.searchSuggest($(".countrys div"),$(".citizenship"),"../js/test.json");
+			/*证件类型*/
+			commom.searchSuggest($(".certificates div"),$(".certificate"),"../js/test.json");
+		/* 新增申请人 */
+			/* 从发明人导入*/
+			commom.searchSuggest($(".Importinventors div"),$(".Importinventor"),"../js/test.json"); 
+			/*申请人类型*/
+			commom.searchSuggest($(".add-types div"),$(".add-type"),"../js/test.json"); 
+			/*证件类型*/
+			commom.searchSuggest($(".card-types div"),$(".card-type"),"../js/test.json"); 
+			/*国籍或者注册国家（地区）*/
+			commom.searchSuggest($(".reg-nations div"),$(".reg-nation"),"../js/test.json"); 
+			
 	},
 	_array : function(){
 		 $(".input").click(function(){
@@ -25,17 +39,13 @@ var patent = {
 	        }
 	
 	    })
-	    
-	    $(".addInventor ul li b").click(function(){
-	    	$(this).toggleClass("hover");
-	    })
 	},
 	_validate : function(){
 		/*
 		 * form的ID
 		 * 主要验证新增发明人
 		 */
-		$("#capitalHolder").validate({
+		$("#addInventor").validate({
 			focusInvalid: true, //当为false时，验证无效时，没有焦点响应  
 	        onkeyup: false,   
 	        submitHandler: function(form){   //表单提交句柄,为一回调函数，带一个参数：form   
@@ -102,5 +112,32 @@ var patent = {
 	        	}
 	        }
 		})
+	},
+	_layout : function(){
+		/*发明人*/
+		$(".inventor-btn").click(function(){
+			$(".lay-out,.addInventor").show();
+		});
+		$(".addInventor h3 b,.addInventor .submit input:nth-child(2)").click(function(){
+			$(".lay-out,.addInventor").hide();
+			$(".addInventor input").not(".submit input").val("");
+		});
+		$(".addInventor ul li b").click(function(){
+	    	$(this).toggleClass("hover");
+	    });
+		$(".countrys").click(function(){
+			if($(".citizenship").val()=="中国"){
+				
+			}
+		})
+		
+		/*申请人*/
+		$(".proposer-btn").click(function(){
+			$(".lay-out,.addproposer").show();
+		});
+		$(".addproposer h3 b,.addproposer .submit input:nth-child(2)").click(function(){
+			$(".lay-out,.addproposer").hide();
+			$(".addproposer input").not(".submit input").val("");
+		});
 	}
 }

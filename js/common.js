@@ -55,11 +55,9 @@ var commom = {
 		var renderFn=function(){
 			var applyName=$(".applyName").val();
 			var investName=$(".investName").val();
-			var techName=input.val();
 			var param={
 				applyname:applyName,
 				investname:investName,
-				techNameparam:techName
 			};
 			$.ajax({
 				type:'get',
