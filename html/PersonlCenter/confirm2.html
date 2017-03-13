@@ -7,6 +7,12 @@
     <link rel="stylesheet" type="text/css" href="../../css/person-left.css">
     <link rel="stylesheet" type="text/css" href="../../css/confirm1.css">
     <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/T-common.js"></script>
+    <script>
+        $(function(){
+            validate.phone("#tel1");
+        })
+    </script>
 
 </head>
 <body>
@@ -67,7 +73,7 @@
                    </span>
                 </div>
                 <div class="apply3 apply">
-                    <span>申请人联系方式：</span> <input type="text"/>
+                    <span>申请人联系方式：</span> <input type="text" id="tel1"/>
                 </div>
                 <div class="apply4 apply"><span>申请人地址：</span><input type="text"/></div>
                 <div class="apply5 apply"><span>其他需求描述：</span> <textarea name="" id="" cols="30" rows="10"></textarea>

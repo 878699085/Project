@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/person-left.css">
     <link rel="stylesheet" type="text/css" href="../../css/confirm1.css">
     <script src="../../js/jquery-1.11.3.min.js"></script>
-
+    <script src="../../js/T-common.js"></script>
 </head>
 <body>
 <!--内容 -->
@@ -68,7 +68,7 @@
                 <span class="mct">
                     商品名称 :
                 </span>
-                    <input type="text" />
+                    <input type="text" class="mingCheng"/>
                 </div>
                 <div class="leibie">
                     <span class="lbt">上传图形商标  ：</span>
@@ -246,10 +246,13 @@
            $(".jxj img").prop("src","../../imgs/T/T-wl.png");
        }
     })
+
+        validate.notNull(".mingCheng","商标名称")
     /*$(".yuan").click(function(){
         $(this).html("•").siblings().html("");
     })*/
 })
+
 </script>
 </body>
 </html>
