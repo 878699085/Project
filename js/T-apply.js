@@ -11,6 +11,7 @@ var patent = {
 		this._array();
 		this._validate();
 		this._layout();
+		this._empty();
 		/*新增发明人*/
 			/*国籍或者地区*/
 			commom.searchSuggest($(".countrys div"),$(".citizenship"),"../js/test.json");
@@ -42,76 +43,81 @@ var patent = {
 	    })
 	},
 	_validate : function(){
-		/*
-		 * form的ID
-		 * 主要验证新增发明人
-		 */
-		$("#addInventor").validate({
-			focusInvalid: true, //当为false时，验证无效时，没有焦点响应  
-	        onkeyup: false,   
-	        submitHandler: function(form){   //表单提交句柄,为一回调函数，带一个参数：form   
-	        	form.Submit();
-	        },
-	        rules : {
-	        	inventNameCn : {
-	        		required:true,
-	        		maxlength:40
-	        	},
-	        	inventNameEn : {
-	        		required:true
-	        	},
-	        	three : {
-	        		required:true
-	        	},
-	        	orgLogo : {
-	        		required:true
-	        	},
-	        	orgLicenceUrl : {
-	        		required:true
-	        	},
-	        	orgBussLicenceUrl : {
-	        		required:true,
-	        	},
-	        	orgCodeLicenceUrl : {
-	        		required:true
-	        	},
-	        	orgTaxationLicenceUrl : {
-	        		required:true
-	        	},
-	        	serviceTypes : {
-	        		required:true
-	        	}
-	        },
-	        messages : {
-	        	inventNameCn : {
-	        		required:"不能为空",
-	        		maxlength:"最多40个汉字"
-	        	},
-	        	inventNameEn : {
-	        		required:"不能为空"
-	        	},
-	        	three : {
-	        		required:"不能为空"
-	        	},
-	        	orgLogo : {
-	        		required:"不能为空"
-	        	},
-	        	orgLicenceUrl : {
-	        		required:"不能为空"
-	        	},
-	        	orgBussLicenceUrl : {
-	        		required:"不能为空"
-	        	},
-	        	orgCodeLicenceUrl : {
-	        		required:"不能为空"
-	        	},
-	        	orgTaxationLicenceUrl : {
-	        		required:"不能为空"
-	        	},
-	        	serviceTypes : {
-	        		required:"请至少选择一项"
-	        	}
-	        }
+		$(".countrys").click(function(){
+			var shipStr=$(".citizenship").val();
+			if($(".FirstInventor").hasClass("hover")){
+				if(shipStr=="请选择" || $.isEmpty(shipStr) ){
+					if($(".countrys").find("label").length==0){
+						$(".countrys").append("<label>不能为空</label>");
+					}
+				}else{
+					$(".countrys").find("label").remove();
+				}
+			}
+		});
+		
+		$(".credNo").focus(function(){
+			if($(".citizenship").val()=="中国"&&$(".FirstInventor").hasClass("hover")){
+				if($.isEmpty($(".credNo").val()) && $(".credNos").find("label").length==0){
+					$(".credNos").append("<label>不能为空</label>");
+				}
+			}
+		});
+		$(".credNo").blur(function(){
+			if(!$.isEmpty($(".credNo").val())){
+				$(".credNos").find("label").remove();
+			}
+		})
+		
+		
+		$(".submit input:nth-child(1)").click(function(event){
+			if($.isEmpty($(".inventNameCn").val())&&$(".inventNameCn").parents("li").find("label").length==0){
+				$(".inventNameCn").parents("li").append("<label>不能为空</label>");
+				event.preventDefault();
+				NameCn=0;
+			}else{
+				$(".inventNameCn").parents("li").find("label").remove();
+				NameCn=1;
+				$(this).submit();
+			}
+			
+			var ship,credNo,NameCn,NameEn;
+			var shipStr=$(".citizenship").val();
+			if($(".FirstInventor").hasClass("hover")){
+				if(shipStr=="请选择" || $.isEmpty(shipStr) ){
+					if($(".countrys").find("label").length==0){
+						$(".countrys").append("<label>不能为空</label>");
+						ship=0;
+					}
+				}else{
+					$(".countrys").find("label").remove();
+					ship=1;
+				}
+			}
+			
+			if($(".citizenship").val()=="中国"&&$(".FirstInventor").hasClass("hover")){
+				if($.isEmpty($(".credNo").val()) && $(".credNos").find("label").length==0){
+					$(".credNos").append("<label>不能为空</label>");
+					credNo=0;
+				}
+			}else{
+				$(".credNos").find("label").remove();
+				credNo=1;
+			}
+		})
+		
+	},
+	/*
+	 * 验证必填项
+	 */
+	_empty : function(){
+		$(".empty").blur(function(){
+			console.log($(this).val());
+			if($.isEmpty($(this).val())&&$(this).parents("li").find("label").length==0){
+				$(this).parents("li").append("<label>不能为空</label>");
+			}else{
+				$(this).parents("li").find("label").remove();
+			}
 		})
 	},
 	_layout : function(){
@@ -126,11 +132,13 @@ var patent = {
 		$(".addInventor ul li b").click(function(){
 	    	$(this).toggleClass("hover");
 	    });
-		$(".countrys").click(function(){
-			if($(".citizenship").val()=="中国"){
-				
-			}
-		})
+		
+		
+		/*姓名转换为大写*/
+		$(".inventNameCn").blur(function(){
+			var str=pinyin.getFullChars(this.value).toLocaleUpperCase();
+			$(".inventNameEn").val(str);
+		});
 		
 		/*申请人*/
 		$(".proposer-btn").click(function(){

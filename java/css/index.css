@@ -1,0 +1,22 @@
+html,body{
+	background:#eff3f5;
+}
+.wrapper{
+	width:1360px;
+	min-width:1360px;
+	margin:0 auto;
+}
+.bread_nav{
+
+}
+.nav_Tops{
+	height:198px;
+	border:1px solid #ccc;
+	background:#fff;
+	margin-bottom:20px;
+}
+.main_contents{
+	height:678px;
+	border:1px solid #ccc;
+	background:#fff;
+}

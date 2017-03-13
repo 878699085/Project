@@ -3,6 +3,7 @@ b{
 }
 .obligation_wrap{
 	width:1200px;
+	min-width: 1200px;
 	margin:0 auto;
 }
 .obligation{
@@ -29,36 +30,52 @@ b{
 	font-size:14px;
 }
 .obligation_top{
-	height:180px;
+	/*height:180px;*/
 	border-bottom:1px dashed #ccc;
+	padding-bottom:10px;
 }
-.obligation_top dl{
+.obligation_top dl.pay_message{
 	width:390px;
-	height:172px;
+	height:70px;
 	float:left;
 	margin-left:10px;
 	margin-top:12px;
 }
-.obligation_top dl dt{
+.obligation_top dl.pay_message dt{
 	float:left;
 	margin-right:17px;
 }
-.obligation_top dl dd{
+.obligation_top dl.pay_message dd{
 	float:left;
 }
-.obligation_top dl dd>p{
+.obligation_top dl.pay_message dd>p{
 	line-height:40px;
 }
-.obligation_top dl dd>p img{
+.obligation_top dl.pay_message dd>p img{
 	margin-left:5px;
 }
-.obligation_top dl dd span{
+.obligation_top dl.pay_message dd span{
 	float:left;
 	height:60px;
 }
-.obligation_top dl dd div{
+.obligation_top dl.pay_details{
 	line-height:25px;
 	font-size:14px;
+	display:none;
+	margin-left:95px;
+	height:75px;
+}
+.hide{
+display:none;
+}
+.obligation_top dl.pay_details dt{
+	width:45px;
+	float: left;
+	position: relative;
+}
+.obligation_top dl.pay_details dd{
+	float:left;
+	position: relative;
 }
 .obligation_top .pay_money{
 	float:right;
