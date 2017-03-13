@@ -604,6 +604,9 @@ h3,i{
 	line-height: 60px;
 	position: relative;
 }
+.addInventor ul li.credNos{
+	margin-bottom: 20px;
+}
 .addInventor ul li span{
 	display: inline-block;
 	width:105px;
@@ -716,6 +719,7 @@ h3,i{
 	border-radius: 5px;
 	float: left;
 	margin-right: 20px;
+	padding:0;
 }
 
 /*新增申请人*/
