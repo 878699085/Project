@@ -19,6 +19,11 @@ b{
 	color:#333333;
 	font-weight: normal;
 }
+.obligation a{
+	float:left;
+	color:#333;
+	border:1px solid #ccc;
+}
 .obligation h4 b{
 	margin-left:10px;
 	font-size:14px;
@@ -27,14 +32,104 @@ b{
 	height:180px;
 	border-bottom:1px dashed #ccc;
 }
+.obligation_top dl{
+	width:390px;
+	height:172px;
+	float:left;
+	margin-left:10px;
+	margin-top:12px;
+}
+.obligation_top dl dt{
+	float:left;
+	margin-right:17px;
+}
+.obligation_top dl dd{
+	float:left;
+}
+.obligation_top dl dd>p{
+	line-height:40px;
+}
+.obligation_top dl dd>p img{
+	margin-left:5px;
+}
+.obligation_top dl dd span{
+	float:left;
+	height:60px;
+}
+.obligation_top dl dd div{
+	line-height:25px;
+	font-size:14px;
+}
+.obligation_top .pay_money{
+	float:right;
+	margin-right:18px;
+	font-size:24px;
+	margin-top:48px;
+	color:#ff3300;
+}
+.obligation_top .pay_money span{
+	font-size:14px;
+	color:#333;
+}
+.obligation_top b{
+	color:#ff3300;
+}
 .obligation_center{
-	height:132px;
+	height:102px;
 	border-bottom:1px dashed #ccc; 
+}
+.obligation_center a{
+	width:130px;
+	height:33px;
+	margin-top:13px;
+	margin-right:20px;
+	padding:5px 0px 0px 8px;
+}
+.obligation_center a img{
+	float:left;
+}
+.obligation_center a span{
+	font-size:14px;
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
 }
 .bank_card{
-	height:300px;
+	height:270px;
 	border-bottom:1px dashed #ccc; 
 }
-.obligation_bottom{
-	height:165px;
+.bank_card h4{
+	margin-bottom: 35px;
 }
+.bank_card a{
+	width:136px;
+	height:36px;
+	margin-right:10px;
+	margin-bottom: 20px;
+	text-align:center;
+}
+.obligation_bottom{
+	height:135px;
+}
+.obligation_bottom h4{
+	margin-bottom:20px;
+}
+.obligation_bottom a{
+	width:388px;
+	height:78px;
+	margin-right:13px;
+}
+
+.obligation_bottom dl dt{
+	float:left;
+	width:80px;
+	height:45px;
+	margin-top:20px;
+	margin-left:5px;
+	margin-right:10px;
+}
+.obligation_bottom dl dd>p{
+	line-height:24px;
+	font-size:14px;
+}
+
