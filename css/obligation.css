@@ -1,0 +1,255 @@
+b{
+	font-weight:normal;
+}
+.obligation_wrap{
+	width:1200px;
+	margin:0 auto;
+}
+.obligation{
+	width:922px;
+	height:782px;
+	border:1px solid #ccc;
+	float:left;
+	margin-right:20px;
+	padding:38px;
+}
+.obligation h4{
+	margin-top:30px;
+	font-size:18px;
+	color:#333333;
+	font-weight: normal;
+}
+.obligation a{
+	float:left;
+	color:#333;
+	border:1px solid #ccc;
+}
+.obligation h4 b{
+	margin-left:10px;
+	font-size:14px;
+}
+.obligation_top{
+	height:180px;
+	border-bottom:1px dashed #ccc;
+}
+.obligation_top dl{
+	width:390px;
+	height:172px;
+	float:left;
+	margin-left:10px;
+	margin-top:12px;
+}
+.obligation_top dl dt{
+	float:left;
+	margin-right:17px;
+}
+.obligation_top dl dd{
+	float:left;
+}
+.obligation_top dl dd>p{
+	line-height:40px;
+}
+.obligation_top dl dd>p img{
+	margin-left:5px;
+}
+.obligation_top dl dd span{
+	float:left;
+	height:60px;
+}
+.obligation_top dl dd div{
+	line-height:25px;
+	font-size:14px;
+}
+.obligation_top .pay_money{
+	float:right;
+	margin-right:18px;
+	font-size:24px;
+	margin-top:48px;
+	color:#ff3300;
+}
+.obligation_top .pay_money span{
+	font-size:14px;
+	color:#333;
+}
+.obligation_top b{
+	color:#ff3300;
+}
+.obligation_center{
+	height:102px;
+	border-bottom:1px dashed #ccc; 
+}
+.obligation_center a{
+	width:130px;
+	height:33px;
+	margin-top:13px;
+	margin-right:20px;
+	padding:5px 0 0 8px;
+}
+.obligation_center a img{
+	float:left;
+}
+.obligation_center a span{
+	font-size:14px;
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}
+.bank_card{
+	height:270px;
+	border-bottom:1px dashed #ccc; 
+}
+.bank_card h4{
+	margin-bottom: 35px;
+}
+.bank_card a{
+	width:136px;
+	height:36px;
+	margin-right:10px;
+	margin-bottom: 20px;
+	text-align:center;
+}
+.obligation_bottom{
+	height:135px;
+}
+.obligation_bottom h4{
+	margin-bottom:20px;
+}
+.obligation_bottom a{
+	width:388px;
+	height:78px;
+	margin-right:13px;
+}
+
+.obligation_bottom dl dt{
+	float:left;
+	width:80px;
+	height:45px;
+	margin-top:20px;
+	margin-left:5px;
+	margin-right:10px;
+}
+.obligation_bottom dl dd>p{
+	line-height:24px;
+	font-size:14px;
+}
+
+/*��ʾ����ʧ�ܵ���*/
+.pay_fail{
+	display: none;
+    position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 598px;
+	height: 298px;
+	margin-top: -150px;
+	margin-left: -300px;
+	border: 1px solid #ccc;
+	background: #ffffff;
+}
+.pay_fail .pay_tip{
+	width: 100%;
+	height: 47px;
+	line-height: 47px;
+	text-indent: 30px;
+	border-bottom: 1px solid #cccccc;
+}
+.pay_fail .pay_tip span{
+	font-size: 16px;
+	padding: 13px 5px;
+	border-bottom: 1px solid #666666;
+}
+.pay_fail .pay_tip i{
+	float: right;
+	width: 17px;
+	height: 17px;
+	margin: 18px 35px 0 0;
+	cursor: pointer;
+	background: url("../imgs/money_img3.png") 0 0 no-repeat;
+}
+.pay_fail ul li{
+	float: left;
+}
+.pay_fail ul li.pay_L img{
+	margin: 85px 30px 0 65px;
+}
+.pay_fail ul li.pay_con{
+	margin-top: 75px;
+}
+.pay_fail ul li.pay_con b{
+	font-size: 24px;
+	color: #ff3333;
+}
+.pay_fail ul li.pay_con p{
+	margin: 10px 0 5px;
+}
+.pay_fail ul li.pay_con a{
+	color: #0183e1;
+}
+.pay_fail ul li.pay_R img{
+	margin: 35px 0 0 30px;
+}
+/*��ʾ����ɹ�����*/
+.pay_success ul li.pay_L img{
+	margin-top: 60px;
+}
+.pay_success ul li.pay_con{
+	margin-top: 50px;
+	font-size: 14px;
+}
+.pay_success ul li.pay_con span{
+	color: #555555;
+}
+.pay_success ul li.pay_con p{
+	margin: 5px 0 0 0;
+}
+.pay_success ul li.pay_con p.pay_button{
+	margin: 18px 0;
+}
+.pay_success ul li.pay_con p input{
+	width: 120px;
+	height: 36px;
+	border: none;
+	background: #233645;
+	margin-right: 20px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.pay_success ul li.pay_con p input.pay_problem{
+	background: #ee4618;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -77,44 +77,49 @@ width:1148px;
 margin-top:40px;
 color:#666;
 }
+.apl-content .left>div{
+    width: 1048px;
+    padding: 35px 50px;
+}
 .pat-name{
-height:121px;
+height:105px;
 border:1px solid #ccc;
 background-color:#fff;
 }
 .pat-name .p1{
 font-size:16px;
+/*
 margin-top:24px;
-margin-left:23px;
+margin-left:23px;*/
 }
 .pat-name .p2{
 font-size:14px;
-margin-top:21px;
-margin-left:74px;
+margin-top:40px;
+/*margin-left:74px;*/
 }
 .pat-name .p2 input{
 height:30px;
-width:914px;
+width:965px;
 border:1px dashed #ccc;
 }
 .inventor{
 margin-top:21px;
-height:220px;
+height:160px;
 border:1px solid #ccc;
 background-color:#fff;
 }
-.inventor .p1{
-margin-top:24px;
-padding-left:23px;
-}
+/*.inventor .p1{*/
+/*/!*margin-top:24px;*!/*/
+/*padding-left:23px;*/
+/*}*/
 .inventor .p1 .left1{
 font-size:16px;
 }
 .inventor .p1 .right1{
-margin-left:947px;
 font-size:14px;
 color:#ff3300;
 cursor:pointer;
+float: right;
 }
 .inventor .p1 .right1 img{
 top:2px;
@@ -123,7 +128,7 @@ position:relative;
 .inventor table{
 height:88px;
 margin-top:40px;
-margin-left:80px;
+/*margin-left:80px;*/
 }
 .inventor table th{
 /*border:1px #ccc dashed;*/
@@ -147,21 +152,18 @@ color:#ff3300;
 cursor:pointer;
 text-decoration: underline;
 }
-.connector .p1{
+/*.connector .p1{
 margin-top:24px;
 padding-left:23px;
-}
+}*/
 .connector{
 margin-top:21px;
-height:220px;
+height:160px;
 border:1px solid #ccc;
 background-color:#fff;
 }
 .connector .p1 .left2{
-
  font-size:16px;
- 
-
 }
 .connector .p1 .right2{
 margin-left:843px;
@@ -173,24 +175,29 @@ cursor:pointer;
 position:relative;
 top:2px;
 }
-.connector .p2{
+/*.connector .p2{
 margin-top:35px;
 margin-left:90px;
+}*/
+.apl-content .connector .p2{
+    padding:40px 0 30px 0;
 }
 .connector .p2 span{
 color:#386173;
-margin-left:10px;
+/*margin-left:10px;*/
 /*display:inline-block;*/
 cursor:pointer;
+margin-right: 49px;
 }
 .connector .p2 input{
-width:130px;
+width: 153px;
 height:30px;
 border:1px dashed #ccc;
 }
-.connector .p3{
-margin-top:25px;
-margin-left:96px;
+.apl-content .connector .p3{
+/*margin-top:25px;
+margin-left:96px;*/
+padding: 0;
 color:#386173;
 }
 .connector .p3 select{
@@ -203,14 +210,14 @@ border:1px dashed #ccc;
 }
 .connector .p3 input{
 height:30px;
-width:292px;
+width:504px;
 padding-left:10px;
 border:1px dashed #ccc;
 margin-left:10px;
 }
 .publish .p1{
-margin-top:24px;
-padding-left:23px;
+/*margin-top:24px;*/
+/*padding-left:23px;*/
 font-size:16px;
 }
 .publish{
@@ -220,7 +227,7 @@ border:1px solid #ccc;
 margin-top:24px;
 }
 .publish .p2{
-margin-left:79px;
+/*margin-left:79px;*/
 margin-top:20px;
 color:#386173;
 }
@@ -236,7 +243,7 @@ background-color:#fff;
 }
 .publish .p3{
 margin-top:12px;
-margin-left:123px;
+margin-left:50px;
 color:#ff3300;
 font-size:12px;
 }
@@ -247,8 +254,8 @@ border:1px solid #ccc;
 margin-top:17px;
 }
 .request .p1{
-margin-top:24px;
-padding-left:23px;
+/*margin-top:24px;*/
+/*padding-left:23px;*/
 font-size:16px;
 }
 .request a{
@@ -265,7 +272,7 @@ position:relative;
 top:5px;
 }
 .request .p2, .request .p3{
-margin-left:75px;
+/*margin-left:75px;*/
 color:#386173;
 }
 .request .p2{
@@ -512,17 +519,496 @@ height:200px;
 background-color:#fff;
 }
 .apl-content .left .p1{
-margin-left:50px;
+/*margin-left:50px;*/
 width:1048px;
 border-bottom:1px solid #ccc;
 height:30px;
-padding-left:0px;
+/*padding-left:0px;*/
 }
 .apl-content .left .p1 .und{
 height:30px;
 border-bottom:1px solid #666;
 display:inline-block;
+float: left;
 }
 .hide{
 display:none;
+}
+h3,i{
+	font-weight: normal;
+	font-style: inherit;
+}
+/* 新增发明人弹窗  */
+.lay-out {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  filter: alpha(opacity=60);
+  -moz-opacity: .6;
+  -khtml-opacity: .6;
+  opacity: .6;
+  background: #000;
+  top: 0;
+  left: 0;
+   display: none;
+}
+.addInventor{
+  width: 720px;
+  min-height: 640px;
+  position: fixed;
+  top:50%;
+  left: 50%;  
+  margin-top: -320px;
+  margin-left: -360px;
+  background: #fff;
+  z-index: 9999;
+  display: none;
+}
+.addInventor h3{
+	position: relative;
+	height: 61px;
+	line-height: 61px;
+	font-size: 16px;
+	padding-left: 20px;
+	font-weight: normal;
+}
+.addInventor h3 span{
+	display: inline-block;
+    border-bottom: 1px solid #666;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+}
+.addInventor h3 i{
+	display: inline-block;
+	width: 720px;
+	border-top:1px solid #ccc;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+.addInventor h3 b{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	float: right;
+	background: url(../imgs/close_1.png) no-repeat center;
+	margin:25px 30px 0 0;
+	cursor: pointer;
+}
+.addInventor ul{
+	margin-left: 45px;
+}
+.addInventor ul li{
+	line-height: 60px;
+	position: relative;
+}
+.addInventor ul li span{
+	display: inline-block;
+	width:105px;
+	text-align: right;
+	float: left;
+}
+.addInventor ul li input.name{
+	border: 1px dashed #ccc;
+	width: 200px;
+	height: 28px;
+}
+.addInventor ul li input.name1{
+	border: 1px dashed #ccc;
+	width: 400px;
+	height: 28px;
+	text-indent: 15px;
+	color: #666;
+	background: url(../imgs/jian_1.png) no-repeat 95%;
+	cursor: pointer;
+}
+.addInventor ul li input.name2{
+	background: none;
+	cursor: text;
+}
+.addInventor ul li i{
+	margin-left: 40px;
+}
+.addInventor ul li b{
+	    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #b8b8b8;
+    border-radius: 2px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+.addInventor ul li b.hover{
+	background: url(../imgs/info_1.png) no-repeat center;
+	border: 1px solid #ff3b30;
+}
+.addInventor ul li.countrys,
+.addInventor ul li.certificates{
+	position: relative;
+}
+.addInventor ul li.countrys div,
+.addInventor ul li.certificates div{
+	    position: absolute;
+    z-index: 1;
+    background: #fff;
+    width: 410px;
+    left: 105px;
+    border: 1px solid #ccc;
+    display: none;
+    top: 45px;
+    max-height: 200px;
+    overflow: auto;
+}
+.addInventor ul li.countrys div p,
+.addInventor ul li.certificates div p{
+	line-height: 25px;
+	cursor: pointer;
+	text-indent: 15px;
+}
+.addInventor ul li.countrys div p.hover,
+.addInventor ul li.countrys div p:hover,
+.addInventor ul li.certificates div p.hover,
+.addInventor ul li.certificates div p:hover{
+	background: #ccc;
+}
+.addInventor .upload-wrap{
+	float: left;
+	position: relative;
+	margin-right: 13px;
+}
+.addInventor .upload-wrap div{
+	width: 100px;
+	height: 100px;
+	border: 1px dashed #ccc;
+	background: url(../imgs/add_1.png) no-repeat center;
+}
+.addInventor .upload-wrap p{
+	line-height: 0;
+	margin-top: 15px;
+	text-align: center;
+}
+.addInventor .upload-title{
+	font-weight: normal;
+	    position: relative;
+    top: 50px;
+}
+#addInventor label{
+	position: absolute;
+	    top: 30px;
+    left: 110px;
+    color: red;
+}
+.addInventor .submit{
+	width: 248px;
+	margin: auto;
+	margin-top: 50px;
+}
+.addInventor .submit input{
+	width:100px;
+	height: 34px;
+	background: #ee4618;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	float: left;
+	margin-right: 20px;
+}
+
+/*新增申请人*/
+.addproposer{
+  width: 720px;
+  min-height: 640px;
+  position: fixed;
+  top:50%;
+  left: 50%;  
+  margin-top: -320px;
+  margin-left: -360px;
+  background: #fff;
+  z-index: 9999;
+  overflow: auto;
+  display: none;
+}
+.addproposer h3{
+	position: relative;
+	height: 61px;
+	line-height: 61px;
+	font-size: 16px;
+	padding-left: 20px;
+	font-weight: normal;
+}
+.addproposer h3 span{
+	display: inline-block;
+    border-bottom: 1px solid #666;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+}
+.addproposer h3 i{
+	display: inline-block;
+	width: 720px;
+	border-top:1px solid #ccc;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+.addproposer h3 b{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	float: right;
+	background: url(../imgs/close_1.png) no-repeat center;
+	margin:25px 30px 0 0;
+	cursor: pointer;
+}
+.addproposer ul{
+	    margin-left: 20px;
+	height: 640px;
+	overflow: auto;
+}
+.addproposer ul li{
+	line-height: 60px;
+	position: relative;
+}
+.addproposer ul li span{
+	display: inline-block;
+	width:197px;
+	text-align: right;
+	float: left;
+}
+.addInventor ul li input.name{
+	border: 1px dashed #ccc;
+	width: 200px;
+	height: 28px;
+}
+.addproposer ul li input{
+	border: 1px dashed #ccc;
+	width: 350px;
+	height: 28px;
+	text-indent: 15px;
+	color: #666;
+	background: url(../imgs/jian_1.png) no-repeat 95%;
+	cursor: pointer;
+}
+.addproposer ul li input.name2{
+	background: none;
+	cursor: text;
+}
+.addproposer ul li i{
+	margin-left:20px;
+}
+.addproposer ul li b{
+	    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #b8b8b8;
+    border-radius: 2px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+.addproposer ul li b.hover{
+	background: url(../imgs/info_1.png) no-repeat center;
+	border: 1px solid #ff3b30;
+}
+.addproposer ul li.Importinventors,
+.addproposer ul li.add-types,
+.addproposer ul li.card-types,
+.addproposer ul li.reg-nations{
+	position: relative;
+}
+.addproposer ul li.Importinventors div,
+.addproposer ul li.add-types div,
+.addproposer ul li.card-types div,
+.addproposer ul li.reg-nations div{
+	    position: absolute;
+    z-index: 1;
+    background: #fff;
+       width: 360px;
+    left: 197px;
+    border: 1px solid #ccc;
+    display: none;
+    top: 45px;
+    max-height: 200px;
+    overflow: auto;
+}
+.addproposer ul li.Importinventors div p,
+.addproposer ul li.add-types div p,
+.addproposer ul li.card-types div p,
+.addproposer ul li.reg-nations div p{
+	line-height: 25px;
+	cursor: pointer;
+	text-indent: 15px;
+}
+.addproposer ul li.Importinventors div p.hover,
+.addproposer ul li.Importinventors div p:hover,
+.addproposer ul li.add-types div p.hover,
+.addproposer ul li.add-types div p:hover,
+.addproposer ul li.card-types div p.hover,
+.addproposer ul li.card-types div p:hover,
+.addproposer ul li.reg-nations div p.hover,
+.addproposer ul li.reg-nations div p:hover{
+	background: #ccc;
+}
+.addproposer .upload-wrap{
+	float: left;
+	position: relative;
+	margin-right: 13px;
+}
+.addproposer .upload-wrap div{
+	width: 100px;
+	height: 100px;
+	border: 1px dashed #ccc;
+	background: url(../imgs/add_1.png) no-repeat center;
+}
+.addproposer .upload-wrap p{
+	line-height: 0;
+	margin-top: 15px;
+	text-align: center;
+}
+.addproposer .upload-title{
+	    font-weight: normal;
+    position: relative;
+    top: 33px;
+    line-height: 22px;
+    width: 245px;
+    display: inline-block;
+}
+#addproposer li.abode-places input{
+	width: 98px;
+}
+#addproposer li.abode-places div{
+	float: left;
+	margin-right: 8px;
+}
+#addproposer label{
+	position: absolute;
+	    top: 30px;
+    left: 110px;
+    color: red;
+}
+.addproposer .submit{
+	width: 248px;
+	margin: auto;
+	margin-top: 50px;
+	padding-bottom:80px;
+	text-align: center;
+}
+.addproposer .submit input{
+	width:100px;
+	height: 34px;
+	background: #ee4618;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	float: left;
+	margin-right: 20px;
+	text-indent: 0;
+}
+#addproposer li.slow-down{
+	margin-left: 198px;
+    line-height: 20px;
+}
+#addproposer li.slow-down input{
+	width: 12px;
+	height: 12px;
+}
+/*完整性检测*/
+.detection{
+  width: 720px;
+  min-height: 410px;
+  position: fixed;
+  top:50%;
+  left: 50%;  
+  margin-top: -205px;
+  margin-left: -360px;
+  background: #fff;
+  z-index: 9999;
+  overflow: auto;
+  display: none;
+}
+.detection h3{
+	position: relative;
+	height: 61px;
+	line-height: 61px;
+	font-size: 16px;
+	padding-left: 20px;
+	font-weight: normal;
+}
+.detection h3 span{
+	display: inline-block;
+    border-bottom: 1px solid #666;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+}
+.detection h3 i{
+	display: inline-block;
+	width: 720px;
+	border-top:1px solid #ccc;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+.detection h3 b{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	float: right;
+	background: url(../imgs/close_1.png) no-repeat center;
+	margin:25px 30px 0 0;
+	cursor: pointer;
+}
+.detection ul{
+	width: 646px;
+	height: 185px;
+	margin: auto;
+}
+.detection ul li{
+	width: 20%;
+	float:left;
+	text-align: center;
+	margin-top:40px;
+	
+}
+.detection ul li div{
+	width:70px;
+	height: 70px;
+	background: url(../imgs/right_1.png) no-repeat center;
+	margin: auto;
+	margin-bottom: 25px;
+}
+.detection ul li div.hover{
+	background: url(../imgs/error_1.png) no-repeat center;
+}
+.sub-status{
+	width: 540px;
+	margin: auto;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.sub-status p{
+	color: #ff3300;
+}
+.detection .submit{
+	width:240px;
+	margin: auto;
+}
+.detection .submit input{
+	width:100px;
+	height: 34px;
+	background: #ee4618;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	float: left;
+	margin-right: 20px;
+	text-indent: 0;
+	text-align: center;
+	cursor: pointer;
+	padding:0;
 }

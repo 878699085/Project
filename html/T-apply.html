@@ -51,13 +51,13 @@
         <!--发明人-->
         <div class="inventor">
             <p class="p1"><span class="left1 und">发明人</span>
-                <span class="right1"><img src="../imgs/T/T-add.png" style="width: 14px" alt="">&nbsp;添加</span></p>
+                <span class="right1 inventor-btn"><img src="../imgs/T/T-add.png" style="width: 14px" alt="">&nbsp;添加</span></p>
             <table>
                 <thead>
                     <tr>
-                        <th width="100">序号</th>
+                        <th width="150">序号</th>
                         <th width="100">姓名</th>
-                        <th width="140">国籍或地区</th>
+                        <th width="160">国籍或地区</th>
                         <th width="260">居民身份证号</th>
                         <th width="120">是否公布</th>
                         <th width="260">操作</th>
@@ -86,13 +86,13 @@
         <!--申请人-->
         <div class="inventor proposer">
             <p class="p1"><span class="left1 und">申请人</span>
-                <span class="right1"><img src="../imgs/T/T-add.png" width="14" alt="">&nbsp;添加</span></p>
+                <span class="right1 proposer-btn"><img src="../imgs/T/T-add.png" width="14" alt="">&nbsp;添加</span></p>
             <table>
                 <thead>
                     <tr>
-                        <th width="100">序号</th>
+                        <th width="150">序号</th>
                         <th width="100">姓名</th>
-                        <th width="140">国籍或地区</th>
+                        <th width="160">国籍或地区</th>
                         <th width="260">居民身份证号</th>
                         <th width="120">是否公布</th>
                         <th width="260">操作</th>
@@ -121,18 +121,16 @@
         <!--联系人-->
         <div class="connector">
             <p class="p1">
-                <span class="left2 und">联系人</span>
+                <span class="left2 und">联系人 </span>
                 <span class="right2"><img src="../imgs/T/T-leading-in.png" width="14" alt="">&nbsp;从申请人/发明人导入</span>
             </p>
             <div class="p2">
                 <span class="l-name">姓名：<input type="text"/></span>
                 <span class="l-phone">电话：<input type="text"/></span>
                 <span class="l-email">电子邮件：<input type="text"/></span>
-                <span class="l-post">邮政编码：<input type="text"/></span>
+                <span class="l-post" style="margin-right: 0">邮政编码：<input type="text"/></span>
             </div>
-            <div class="p3">
-            联系地址：
-                <select name="" class="country" >
+            <div class="p3"> 联系地址：<select name="" class="country" >
                     <option value="1">中国</option>
                     <option value="2"></option>
                     <option value="3"></option>
@@ -255,8 +253,238 @@
         </div>
     </div>
 </div>
+
+
+<!--新增发明人弹窗-->
+<div class="lay-out"></div>
+<div class="addInventor">
+	<h3>
+		<span>新增发明人</span>
+    	<i></i>
+    	<b></b>
+	</h3>
+	<form action="" method="post" id="addInventor">
+		<ul>
+			<li>
+				<span>姓名：</span>
+				<input type="text" name="inventNameCn"  value="" class="name" maxlength="40" autocomplete="off"/>
+				<i><b></b>不公布姓名</i>
+				<i><b></b>标记为第一发明人</i>
+			</li>
+			<li>
+				<span>姓名（英文）：</span>
+				<input type="text" name="inventNameEn" id="" value="" class="name"/>
+			</li>
+			<li class="countrys">
+				<span>国籍或者地区：</span>
+				<input name="citizenship" type="text" class="citizenship name1" autocomplete="off" readonly  placeholder="中国大陆"/>
+				<div>
+					
+				</div>
+			</li>
+			<li class="certificates">
+				<span>证件类型：</span>
+				<input  name="" type="text" class="certificate name1" autocomplete="off" readonly  placeholder="中国大陆"/>
+				<div>
+					
+				</div>
+			</li>
+			<li>
+				<span>证件号码：</span>
+				<input type="text" name="" id="" value="" class="name1 name2"/>
+			</li>
+			<li class="clearfix">
+				<span>上传证件：</span>
+				<div class="upload-wrap">
+					<div>
+						
+					</div>
+					<p class="clearfix">身份证正面</p>
+				</div>
+				<div class="upload-wrap">
+					<div>
+						
+					</div>
+					<p class="clearfix">身份证反面</p>
+				</div>
+				<h4 class="clearfix upload-title">上传完成后，点击图片可更新</h4>
+			</li>
+			<li class="clearfix">
+				<p class="submit">
+					<input type="submit" value="添加"/>
+					 <input type="button" value="取消添加"/>
+				</p>
+			</li>
+		</ul>
+	</form>
+</div>
+<!--新增申请人-->
+<div class="addproposer">
+	<h3>
+		<span>新增申请人</span>
+    	<i></i>
+    	<b></b>
+	</h3>
+	<form action="" method="post" id="addproposer">
+		<ul>
+			<li class="Importinventors">
+				<span>从发明人导入：</span>
+				<input type="text" name="inventNameCn"  value=""  class="Importinventor"/>
+				<div>
+					
+				</div>
+			</li>
+			<li>
+				<span>姓名或名称：</span>
+				<input type="text" name="" id="" value="" class="name2"/>
+				<i><b></b>第一申请人</i>
+			</li>
+			<li>
+				<span>姓名（英文）：</span>
+				<input name="" type="text" class="name2"  autocomplete="off"  placeholder=""/>
+			</li>
+			<li class="add-types">
+				<span>申请人类型：</span>
+				<input  name="" type="text" class="add-type" autocomplete="off" readonly  placeholder="大专院校"/>
+				<div>
+					
+				</div>
+			</li>
+			<li class="card-types">
+				<span>证件类型：</span>
+				<input  name="" type="text" class="card-type" autocomplete="off" readonly  placeholder="组织机构代码／统一社会信用代码"/>
+				<div>
+					
+				</div>
+			</li>
+			<li>
+				<span>证件号码：</span>
+				<input  name="" type="text" autocomplete="off" class="name2"/>
+			</li>
+			<li>
+				<span>减缓申请：</span>
+				<i style="margin-left:0;"><b></b>请求费减且已完成费减资格备案</i>
+			</li>
+			<li class="slow-down">
+				<input type="radio" name="down" id="" value="" />个人减缓
+				<input type="radio" name="down" id="" value="" />单位减缓
+			</li>
+			<li>
+				<span>名称：</span>
+				<input  name="" type="text" autocomplete="off" class="name2"/>
+			</li>
+			<li class="clearfix">
+				<span>证明文件：</span>
+				<div class="upload-wrap">
+					<div>
+						
+					</div>
+				</div>
+			</li>
+			<li class="clearfix reg-nations">
+				<span>＊国籍或者注册国家（地区）：</span>
+				<input type="text" name="" class="reg-nation" value="" autocomplete="off" readonly placeholder="中国"/>
+				<div>
+					
+				</div>
+			</li>
+			<li class="abode-places">
+				<span>＊经常居住地或营业所所在地：</span>
+				<div>
+					<input type="text" name="" id="" value="" autocomplete="off" readonly placeholder="中国"/>
+					<div>
+						
+					</div>
+				</div>
+				<div>
+					<input type="text" name="" id="" value="" autocomplete="off" readonly placeholder="北京市"/>
+					<div>
+						
+					</div>
+				</div>
+				<div>
+					<input type="text" name="" id="" value="" autocomplete="off" readonly  placeholder="房山区"/>
+					<div>
+						
+					</div>
+				</div>
+			</li>
+			<li>
+				<span>＊城区（乡）、街道、门牌号：</span>
+				<input type="text" name="" id="" value="" class="name2"/>
+			</li>
+			<li>
+				<span>联系电话：</span>
+				<input type="text" name="" id="" value="" class="name2"/>
+			</li>
+			<li>
+				<span>邮箱：</span>
+				<input type="text" name="" id="" value="" class=" name2"/>
+			</li>
+			<li class="clearfix">
+				<span>上传证件：</span>
+				<div class="upload-wrap">
+					<div>
+						
+					</div>
+					<p class="clearfix">身份证正面</p>
+				</div>
+				<h4 class="clearfix upload-title">选填,根据所选择证件类型上传所需文件。
+				如身份证，则上传身份证正反面。
+				点击图片重新上传</h4>
+			</li>
+			<li class="clearfix">
+				<p class="submit">
+					<input type="submit" value="添加"/>
+					 <input type="button" value="取消添加"/>
+				</p>
+			</li>
+		</ul>
+	</form>
+</div>
+
+<!--完整性检测  -->
+<div class="detection">
+	<h3>
+		<span>完整性检测 </span>
+    	<i></i>
+    	<b></b>
+	</h3>
+	<ul>
+		<li>
+			<div></div>
+			<p>发明专利申请书</p>
+		</li>
+		<li>
+			<div></div>
+			<p>权利要求书</p>
+		</li>
+		<li>
+			<div class="hover"> </div>
+			<p>说明书</p>
+		</li>
+		<li>
+			<div></div>
+			<p>说明书附图</p>
+		</li>
+		<li>
+			<div></div>
+			<p>说明书摘要</p>
+		</li>
+	</ul>
+	<div class="sub-status">
+		<p>请检查［一种xxxxxx专利］的说明书，系统监测未编写，请编写说明书或导入</p>
+		<p>当前状态：不能正式提交</p>
+		<div>如果有任何疑问请联系右侧客服</div>
+	</div>
+	<p class="submit">
+		<input type="submit" value="正式提交"/>
+		 <input type="button" value="暂不提交"/>
+	</p>
+</div>
 <script src="../js/jquery-1.11.3.min.js"></script>
 <script src="../js/jquery.validate.min.js"></script>
+<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/T-apply.js"></script>
 </body>
 </html>
