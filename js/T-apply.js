@@ -3,6 +3,7 @@
  */
 $(function(){
     patent.init();
+	unWrite();
 })
 
 var patent = {
@@ -148,4 +149,15 @@ var patent = {
 			$(".addproposer input").not(".submit input").val("");
 		});
 	}
+}
+function unWrite(){
+	$("input").not("#pat1").attr("readonly","true");
+	$("#pat1").blur(function(){
+		if($("#pat1").val()==""){
+			$("input").not("#pat1").attr("readonly","true");
+		}else{
+			$("input").not("#pat1").removeAttr("readonly");
+
+		}
+	})
 }

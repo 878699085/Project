@@ -2,10 +2,10 @@
  * Created by Administrator on 2017/3/13.
  */
 // 引入jquery使用
-// 不能为空
+
 
 var validate={
-
+    // 不能为空
     notNull:function(a,b){
         $(a).blur(function(){
             $(".tip").remove();
@@ -20,6 +20,7 @@ var validate={
             }
         })
 },
+    // 手机号验证
     phone:function(a){
         $(a).blur(function(){
             $(".tip").remove();
@@ -35,5 +36,9 @@ var validate={
                 $(a).parent().append($tip);
             }
         })
+    },
+    // 姓名验证
+    nameLength:function(a){
+        
     }
 }
