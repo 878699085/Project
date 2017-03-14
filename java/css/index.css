@@ -16,7 +16,85 @@ html,body{
 	margin-bottom:20px;
 }
 .main_contents{
-	height:678px;
+	height:648px;
 	border:1px solid #ccc;
 	background:#fff;
+	padding-top: 30px;
 }
+.wrapper .main_contents .person_details,.wrapper .main_contents .person_info{
+	float: left;
+	height: 620px;
+}
+.wrapper .main_contents .person_info{
+	width: 527px;
+	height: 570px;
+	padding: 25px 10px;
+	margin-right: 20px;
+	margin-left: 10px;
+	border: 1px solid #cccccc;
+}
+.wrapper .main_contents .person_details{
+	width: 770px;
+	overflow: auto;
+}
+.wrapper .main_contents .person_details div{
+	width:720px;
+	height: 800px;
+	padding: 25px 10px;
+	border: 1px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
