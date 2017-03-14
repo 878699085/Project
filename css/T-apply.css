@@ -96,6 +96,7 @@ margin-left:23px;*/
 font-size:14px;
 margin-top:40px;
 /*margin-left:74px;*/
+position:relative;
 }
 .pat-name .p2 input{
 height:30px;
@@ -1016,4 +1017,50 @@ h3,i{
 	text-align: center;
 	cursor: pointer;
 	padding:0;
+}
+.pat_req{
+display:block;
+position:absolute;
+width: 458px;
+height: 58px;
+background-color:#fff;
+border:1px solid #ff3300;
+padding:10px;
+font-size:14px;
+left:69px;
+top:41px;
+}
+.pat_req span{
+display:block;
+}
+.input{
+border-radius:4px;
+}
+.pat_law35{
+z-index:9;
+position:absolute;
+background-color:#fff;
+width:800px;
+height: 60px;
+border:1px solid #ff3300;
+padding:15px;
+left:90px;
+top:-98px;
+}
+.pat_law35 span{
+display:block;
+}
+.pat_law51{
+z-index:9;
+position:absolute;
+background-color:#fff;
+width:800px;
+height: 114px;
+border:1px solid #ff3300;
+padding:15px;
+left:90px;
+top:33px;
+}
+.pat_law51 span{
+display:block;
 }

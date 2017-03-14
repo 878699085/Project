@@ -4,6 +4,7 @@
 $(function(){
     patent.init();
 	unWrite();
+	validate.nameLength("#l-name1");
 })
 
 var patent = {
@@ -12,6 +13,7 @@ var patent = {
 		this._validate();
 		this._layout();
 		this._empty();
+		this._phone();
 		/*新增发明人*/
 			/*国籍或者地区*/
 			commom.searchSuggest($(".countrys div"),$(".citizenship"),"../js/test.json");
@@ -148,11 +150,48 @@ var patent = {
 			$(".lay-out,.addproposer").hide();
 			$(".addproposer input").not(".submit input").val("");
 		});
+	},
+	// 电话不为空验证
+	_phone:function(){
+		validate.phone1(".l-phone input");
+		validate.email1(".l-email input");
+		validate.post1(".l-post input");
+		$(".l-phone input").blur(function(){
+			if($(".l-phone input").val()==""){
+				$(".tip").remove();
+			}
+		})
+		$(".l-email input").blur(function(){
+			if($(".l-email input").val()==""){
+				$(".tip").remove();
+			}
+		})
+		$(".l-post input").blur(function(){
+			if($(".l-post input").val()==""){
+				$(".tip").remove();
+			}
+		})
 	}
 }
 function unWrite(){
+	$("#pat35").hover(function(){
+     $(".pat_law35").show();
+	},function(){
+		$(".pat_law35").hide();
+	});
+	$("#pat51").hover(function(){
+		$(".pat_law51").show();
+	},function(){
+		$(".pat_law51").hide();
+	});
+	validate.notNull("#pat1","专利名称");
+	$("#pat1").focus(function(){
+		$(".pat_req").show();
+	})
 	$("input").not("#pat1").attr("readonly","true");
 	$("#pat1").blur(function(){
+		$(".pat_req").hide();
+
 		if($("#pat1").val()==""){
 			$("input").not("#pat1").attr("readonly","true");
 		}else{
