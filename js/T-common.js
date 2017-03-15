@@ -10,7 +10,7 @@ var validate={
         $(a).blur(function(){
             $(".tip").remove();
             var $tip=$("<span></span>");
-            $tip.css({"color":"red","position":"absolute","top":"29px","left":"46px"})
+            $tip.css({"color":"#ff3300","position":"absolute","top":"29px","left":"46px"})
             $(a).parent().css("position","relative");
             $tip.html(b+"不能为空");
             $tip.addClass("tip");
@@ -26,7 +26,7 @@ var validate={
         $(a).blur(function(){
             $(".tip").remove();
             var $tip=$("<span></span>");
-            $tip.css({"color":"red","marginLeft":"8px"})
+            $tip.css({"color":"#ff3300","marginLeft":"8px"})
             $tip.html(b+"不能为空");
             $tip.addClass("tip");
             if($(a).val()==""){
@@ -41,7 +41,7 @@ var validate={
         $(a).blur(function(){
             $(".tip").remove();
             var $tip=$("<span></span>");
-            $tip.css({"color":"red","marginLeft":"8px"})
+            $tip.css({"color":"#ff3300","marginLeft":"8px"})
             $tip.html("请输入正确手机号！");
             $tip.addClass("tip");
             var valp=$(a).val();
@@ -58,7 +58,7 @@ var validate={
         $(a).blur(function(){
             $(".tip").remove();
             var $tip=$("<span></span>");
-            $tip.css({"color":"red","position":"absolute","top":"29px","left":"18px"});
+            $tip.css({"color":"#ff3300","position":"absolute","top":"29px","left":"18px"});
             $(a).parent().css("position","relative");
             $tip.html("请输入正确手机号！");
             $tip.addClass("tip");
@@ -76,7 +76,7 @@ var validate={
         $(a).keyup(function(){
             $(".tip").remove();
             var $tip=$("<span></span>");
-            $tip.css({"color":"red","position":"absolute","top":"29px","left":"18px"});
+            $tip.css({"color":"#ff3300","position":"absolute","top":"29px","left":"18px"});
             $(a).parent().css("position","relative");
             $tip.html("姓名最多40个汉字！");
             $tip.addClass("tip");
@@ -92,7 +92,7 @@ var validate={
         $(a).blur(function(){
             $(".tip").remove();
             var $tip=$("<span></span>");
-            $tip.css({"color":"red","position":"absolute","top":"29px","left":"18px"});
+            $tip.css({"color":"#ff3300","position":"absolute","top":"29px","left":"18px"});
             $(a).parent().css("position","relative");
             $tip.html("请输入正确邮箱！");
             $tip.addClass("tip");
@@ -110,7 +110,7 @@ var validate={
         $(a).blur(function(){
             $(".tip").remove();
             var $tip=$("<span></span>");
-            $tip.css({"color":"red","position":"absolute","top":"29px","left":"18px"});
+            $tip.css({"color":"#ff3300","position":"absolute","top":"29px","left":"18px"});
             $(a).parent().css("position","relative");
             $tip.html("请输入正确邮编！");
             $tip.addClass("tip");
