@@ -9,14 +9,19 @@
 ###办理大厅
 
 >     办理业务——详情页 businessDetails.html
-      我的顾问 customer.html
-      个人信息 personal_info.html
-      办理中业务 transact.html
-      未提交的业务 uncommitted.html
-      办理历史 transact_history.html
+      我的顾问     customer.html
+      个人信息     personal_info.html
+      办理中业务   transact.html
+      办理文件     attached_files.html
+      未提交的业务   uncommitted.html
+      办理历史      transact_history.html
+      待付款页面     obligation.html
+      商标确认订单   pay_brand.html
+      商标自助申请   confirm1.html
+      商标自助申请提交申请并支付   confirm2.html
+      专利申请星级代理人弹窗   application_parent.html
 
 
-待付款页面     obligation.html
 
 
 
