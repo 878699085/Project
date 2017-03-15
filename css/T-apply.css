@@ -699,6 +699,9 @@ h3,i{
 	    position: relative;
     top: 50px;
 }
+.card-fan{
+    display: none;
+}
 #addInventor label{
 	position: absolute;
 	    top: 30px;
@@ -736,6 +739,7 @@ h3,i{
   z-index: 9999;
   overflow: auto;
   display: none;
+    padding-bottom: 20px;
 }
 .addproposer h3{
 	position: relative;
@@ -771,11 +775,11 @@ h3,i{
 }
 .addproposer ul{
 	    margin-left: 20px;
-	height: 640px;
+	height: 620px;
 	overflow: auto;
 }
 .addproposer ul li{
-	line-height: 60px;
+	line-height: 63px;
 	position: relative;
 }
 .addproposer ul li span{
@@ -791,7 +795,7 @@ h3,i{
 }
 .addproposer ul li input{
 	border: 1px dashed #ccc;
-	width: 350px;
+	width: 310px;
 	height: 28px;
 	text-indent: 15px;
 	color: #666;
@@ -823,17 +827,23 @@ h3,i{
 .addproposer ul li.Importinventors,
 .addproposer ul li.add-types,
 .addproposer ul li.card-types,
-.addproposer ul li.reg-nations{
+.addproposer ul li.reg-nations,
+.placeOne,
+.placeTwo,
+.placeThree{
 	position: relative;
 }
 .addproposer ul li.Importinventors div,
 .addproposer ul li.add-types div,
 .addproposer ul li.card-types div,
-.addproposer ul li.reg-nations div{
+.addproposer ul li.reg-nations div,
+.placeOne div,
+.placeTwo div,
+.placeThree div{
 	    position: absolute;
     z-index: 1;
     background: #fff;
-       width: 360px;
+       width: 320px;
     left: 197px;
     border: 1px solid #ccc;
     display: none;
@@ -841,10 +851,20 @@ h3,i{
     max-height: 200px;
     overflow: auto;
 }
+.placeOne div,
+.placeTwo div,
+.placeThree div{
+    width: 100px;
+    left: 0;
+    top: 47px;
+}
 .addproposer ul li.Importinventors div p,
 .addproposer ul li.add-types div p,
 .addproposer ul li.card-types div p,
-.addproposer ul li.reg-nations div p{
+.addproposer ul li.reg-nations div p,
+.placeOne div p,
+.placeTwo div p,
+.placeThree div p{
 	line-height: 25px;
 	cursor: pointer;
 	text-indent: 15px;
@@ -856,7 +876,14 @@ h3,i{
 .addproposer ul li.card-types div p.hover,
 .addproposer ul li.card-types div p:hover,
 .addproposer ul li.reg-nations div p.hover,
-.addproposer ul li.reg-nations div p:hover{
+.addproposer ul li.reg-nations div p:hover,
+.placeOne div p:hover,
+.placeOne div p.hover,
+.placeTwo div p:hover,
+.placeOne div p.hover,
+.placeThree div p:hover,
+.placeThree div p.hover
+{
 	background: #ccc;
 }
 .addproposer .upload-wrap{
@@ -884,7 +911,7 @@ h3,i{
     display: inline-block;
 }
 #addproposer li.abode-places input{
-	width: 98px;
+	width: 90px;
 }
 #addproposer li.abode-places div{
 	float: left;
@@ -892,9 +919,21 @@ h3,i{
 }
 #addproposer label{
 	position: absolute;
-	    top: 30px;
-    left: 110px;
+	top: 30px;
+    left: 200px;
     color: red;
+}
+.addressEn{
+    display: none;
+}
+.placeTwo,
+.placeThree{
+    display: none;
+}
+#addproposer  ul li div.placeOne label,
+#addproposer  ul li div.placeTwo label,
+#addproposer  ul li div.placeThree label{
+    left: 0;
 }
 .addproposer .submit{
 	width: 248px;
@@ -921,6 +960,10 @@ h3,i{
 #addproposer li.slow-down input{
 	width: 12px;
 	height: 12px;
+}
+.toggle-show{
+    display: none;
+    margin-bottom: 15px;
 }
 /*完整性检测*/
 .detection{
