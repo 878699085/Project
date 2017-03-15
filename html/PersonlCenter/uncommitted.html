@@ -9,10 +9,17 @@
     <link rel="stylesheet" type="text/css" href="../../css/transact.css">
     <link rel="stylesheet" type="text/css" href="../../css/page.css"/>
     <script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../js/T-common.js"></script>
     <script type="text/javascript" src="../../js/page.js"></script>
     <script type="text/javascript" src="../../js/uncommitted.js"></script>
 </head>
 <body>
+<div class="lay-out"></div>
+<div class="sure-del">
+    <p class="p1"><img src="../../imgs/close_1.png" alt=""></p>
+    <p class="p2">您是否确认删除？</p>
+    <p class="p3"><span class="yes">是</span><span class="no">否</span></p>
+</div>
 <div class="transact-content area12">
     <div class="tr-left">
 
@@ -33,7 +40,13 @@
         <div class="tr-mid un-tr-mid">
             <p class="p1">
                 <span class="s1">办理中的业务</span> <span class="s2 und1">未提交的业务</span> <span class="s2">业务办理历史</span>
-                <span class="un-add"><img src="../../imgs/T/T-unadd.png" alt="">添加新申请</span>
+                <span class="un-add"><img src="../../imgs/T/T-unadd.png" alt="">添加新申请
+                  <span class="sel-T">
+                    <span>发明专利</span>
+                    <span>实用新型</span>
+                    <span style="border-bottom:none">外观专利</span>
+                </span>
+                </span>
             </p>
             <div class="un-p2">
                 <div class="un1">
@@ -57,7 +70,7 @@
                 <li class="li5">
                     <span class="s1">正式提交</span>
                     <span>编辑</span>
-                    <span>删除</span>
+                    <span class="delete0">删除</span>
                 </li>
                     </ul>
                 </div>
@@ -72,7 +85,7 @@
                     <li class="li5">
                         <span class="s1">正式提交</span>
                         <span>编辑</span>
-                        <span>删除</span>
+                        <span class="delete0">删除</span>
                     </li>
                 </ul></div>
                 <div class="un4"> <ul>
@@ -86,7 +99,7 @@
                     <li class="li5">
                         <span class="s1">正式提交</span>
                         <span>编辑</span>
-                        <span>删除</span>
+                        <span class="delete0">删除</span>
                     </li>
                 </ul></div>
                 <div class="un5"> <ul>
@@ -100,7 +113,7 @@
                     <li class="li5">
                         <span class="s1">正式提交</span>
                         <span>编辑</span>
-                        <span>删除</span>
+                        <span class="delete0">删除</span>
                     </li>
                 </ul></div>
             </div>
@@ -115,6 +128,8 @@
 </div>
 <script type="text/javascript">
 	$(function(){
+        newApply();
+        sureDel1();
 		var pageCount = "${pageInfo.pages}";
 		if(Number(pageCount)>100){
 			pageCount=100;

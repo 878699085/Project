@@ -5,6 +5,8 @@ $(function(){
     patent.init();
     unWrite();
     validate.nameLength("#l-name1");
+    sureDel();
+    leading();
 })
 
 var patent = {
@@ -16,7 +18,6 @@ var patent = {
         this._layout();
         this._empty();
         this._phone();
-        this._sureDel();
         /*新增发明人*/
         /*国籍或者地区*/
         commom.searchSuggest($(".countrys div"),$(".citizenship"),"../js/test.json");
@@ -333,6 +334,8 @@ var patent = {
                 $(".sure-del .p1 img").click();
             })
         });
+
+
     },
     // 电话如果不为空验证
     _phone:function(){

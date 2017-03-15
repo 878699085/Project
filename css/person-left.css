@@ -78,4 +78,59 @@ body{
 	margin-left: 5px;
 	color: #ff3300;
 }
-
+/*模态窗*/
+.lay-out {
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 999;
+filter: alpha(opacity=60);
+-moz-opacity: .6;
+-khtml-opacity: .6;
+opacity: .6;
+background: #000;
+top: 0;
+left: 0;
+display: none;
+}
+/*确认删除*/
+.sure-del{
+position:fixed;
+height:204px;
+width:351px;
+background-color:#fff;
+z-index:999;
+top:50%;
+left:50%;
+margin-left:-175px;
+margin-top:-102px;
+display:none;
+}
+.sure-del .p1{
+height:56px;
+line-height:56px;
+padding-left:319px;
+}
+.sure-del .p2{
+text-align:center;
+font-size:18px;
+margin-top:10px;
+}
+.sure-del .p3{
+margin-top:40px;
+}
+.sure-del .p3 span{
+position:absolute;
+width:100px;
+height:35px;
+background-color:#ff3300;
+text-align:center;
+line-height:35px;
+color:#fff;
+}
+.sure-del .p3 .yes{
+left:65px;
+}
+.sure-del .p3 .no{
+right:65px;
+}

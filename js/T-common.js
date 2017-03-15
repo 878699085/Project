@@ -2,8 +2,66 @@
  * Created by Administrator on 2017/3/13.
  */
 // 引入jquery使用
-
-
+// 从申请人导入
+function leading(){
+    $(".connector .p1 .right2").click(function(){
+        $('.sel-T').show();
+    })
+    $(".sel-T span").click(function(e){
+        e.stopPropagation();
+        $(".sel-T").hide();
+        $("#l-name1").val($(this).html());
+    })
+}
+//添加新申请
+function newApply(){
+    $(".tr-mid .p1 .un-add").click(function(){
+        $('.sel-T').show();
+    })
+    $(".sel-T span").click(function(e){
+        e.stopPropagation();
+        $(".sel-T").hide();
+    })
+}
+//是否确认删除
+function sureDel(){
+    $(".sure-del .p1 img").click(function(){
+        $(".lay-out").hide();
+        $(".sure-del").hide();
+    })
+    $(".sure-del .p3 .no").click(function(){
+        $(".sure-del .p1 img").click();
+    })
+    $(".delete0").click(function(){
+        var $this=$(this);
+        $(".lay-out").show();
+        $(".sure-del").show();
+        $(".sure-del .p3 .yes").click(function(){
+            $this.parent().parent().remove();
+            $(".sure-del .p1 img").click();
+        })
+    });
+}
+//是否确认删除1
+function sureDel1(){
+    $(".sure-del .p1 img").click(function(){
+        $(".lay-out").hide();
+        $(".sure-del").hide();
+    })
+    $(".sure-del .p3 .no").click(function(){
+        $(".sure-del .p1 img").click();
+    })
+    $(".delete0").click(function(){
+        var $this=$(this);
+        $(".lay-out").show();
+        $(".sure-del").show();
+        $(".sure-del .p3 .yes").click(function(){
+            $this.parent().parent().parent().remove();
+            $(".sure-del .p1 img").click();
+        })
+    });
+}
+// 验证
 var validate={
     // 不能为空在下方
     notNull0:function(a,b){
