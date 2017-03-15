@@ -12,10 +12,397 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<p class="bread_nav"></p>
-			<div class="nav_Tops"></div>
+			<p class="bread_nav">当前位置 > <a href="#">客户管理</a> > <a href="#">业务信息</a></p>
+			<div class="nav_Tops">
+				<form action="">
+					<ul class="basic_search">
+						<li><label for="">所属人：</label><span class="person_blongs">已选择6位所属人，点击查看</span></li>
+						<li class="business_type">
+							<label for="">业务类型：</label>
+							<dl>
+								<dt>不限</dt>
+								<dd>
+									<p></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<label for="">所属分类：</label><span class="classify">23分类、24分类</span>
+							<a href="javascript:void(0)">重置</a>
+						</li>
+						<li class="default_time">
+							<label for="">预设回访时间：</label>
+							<input type="text" />
+							<b></b>
+						</li>
+						<li class="sell_status">
+							<label for="">销售状态：</label>
+							<dl>
+								<dt>不限</dt>
+								<dd>
+									<p></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<input type="text" class="search_box" placeholder="支持联系人、联系电话、QQ、注册号、业务ID、业务名称搜索"/>
+							<input type="button" class="search_btn" value="查询"/>
+							<a href="javascript:void(0)" class="experts">高级查询</a>
+						</li>
+					</ul>
+					<ul class="expert_search hide">
+						<li>
+							<label for="">客户名称：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">客户来源：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text"/>
+						</li>
+						<li>
+							<label for="">客户联系人：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text"/>
+						</li>
+						<li>
+							<label for="">所属人：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">客户等级：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">是否图形：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+								</dd>
+							</dl>
+						</li>
+						<li class="creat_time">
+							<label for="">创建时间：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" style="margin-right:5px;"/>至<input type="text" style="margin-left:5px;margin-right:38px;"/>
+						</li>
+						<li class="creat_time">
+							<label for="">最后跟进时间：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" style="margin-right:5px;"/>至<input type="text" style="margin-left:5px;margin-right:70px;"/>
+						</li>
+						<li>
+							<label for="">手机：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">电话：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">QQ：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">注册号：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">注册名称：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li class="sub_btns">
+							<input type="button" value="查询"/>
+						</li>
+					</ul>
+				</form>
+				<div class="sort_list">
+					<div class="aui-content aui-card">
+						<ul class="aui-list-view" style=" width: inherit;top: 17px;position: relative;">
+							<li class="aui-list-view-cell aui-switch-body">
+								<div class="aui-switch-title">自动刷新</div>
+								<input type="checkbox" class="aui-switch aui-switch-success aui-pull-right" >
+							</li>
+						</ul>
+					</div>
+					<dl>
+						<dt>默认排序</dt>
+						<dd>
+							<p>按照创建时间倒序</p>
+							<p>按照创建时间正序</p>
+							<p>按照客户等级升序</p>
+							<p>按照客户等级降序</p>
+							<p>按照未领取状态倒序</p>
+							<p>按照待回访时间倒序</p>
+						</dd>
+					</dl>
+					<div class="set">自定义显示字段</div>
+				</div>
+				<div class="less_more"><i>收起</i><img src="../imgs/less.png" alt="" /></div>
+			</div>
 			<div class="main_contents clear">
-				<div class="person_info"></div>
+				<div class="person_info">
+					<h4>客户信息<b></b></h4>
+					<div class="table">
+						<table border="" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<td>客户名称</td>
+									<td>业务名称</td>
+									<td>
+										<dl>
+											<dt>业务类型</dt>
+											<dd>
+												<p></p>
+											</dd>
+										</dl>
+									</td>
+									<td>
+										<dl>
+											<dt>信息等级</dt>
+											<dd>
+												<p></p>
+											</dd>
+										</dl>
+									</td>
+									<td>
+										<dl>
+											<dt>客户性质</dt>
+											<dd>
+												<p></p>
+											</dd>
+										</dl>
+									</td>
+									<td>操作时间</td>
+									<td>数据来源</td>
+									<td>下次回访时间</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+						</tbody>
+						</table>
+						<div class="pageNumber"></div>
+					</div>
+				</div>
 				<div class="person_details">
 					<div class="User_Info">
 						<p><span>客户信息</span></p>
@@ -45,5 +432,25 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			$(function(){
+				var pageCount = "${pageInfo.pages}";
+				if(Number(pageCount)>100){
+					pageCount=100;
+				}
+				var current = "${pageInfo.pageNum}";
+				$(".pageNumber").createPage({
+			        pageCount:Number(pageCount),//总页数
+			        current:Number(current),		//当前页
+			        backFn:function(p){
+			            //p是跳转后的页码  （回调函数）
+			            $("#pageNum").val(p);
+			            var frm = document.getElementById("query-from");
+			        	frm.action="${src}/tech/techInfoList.html";
+			        	frm.submit();
+			       }
+  				});
+			})
+		</script>
 	</body>
 </html>

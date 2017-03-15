@@ -1,19 +1,338 @@
 html,body{
 	background:#eff3f5;
 }
+i{
+	font-style: normal;
+}
 .wrapper{
 	width:1360px;
 	min-width:1360px;
 	margin:0 auto;
 }
 .bread_nav{
-
+	height:55px;
+	line-height: 55px;
+	font-size:14px;
+	color:#666;
+}
+.bread_nav a{
+	font-size:14px;
+	color:#666;
 }
 .nav_Tops{
-	height:198px;
+	/*height:198px;*/
 	border:1px solid #ccc;
 	background:#fff;
 	margin-bottom:20px;
+	padding:20px 20px 0px 20px;
+	font-size:14px;
+}
+.nav_Tops .basic_search{
+	height:150px;
+}
+.nav_Tops .basic_search li{
+	display:inline-block;
+	height:30px;
+	margin-bottom:19px;
+	color:#666;
+	float:left;
+}
+.nav_Tops li label{
+	display:inline-block;
+	width:98px;
+	text-align:right;
+	line-height: 30px;
+	float:left;
+}
+.nav_Tops .basic_search li span{
+	display:inline-block;
+	width:298px;
+	height:28px;
+	border:1px dashed #ccc;
+	line-height:30px;
+	text-indent:13px;
+	cursor:pointer;
+	margin-right:12px;
+}
+.nav_Tops .basic_search li input{
+	height:30px;
+	border:1px dashed #ccc;
+	text-indent:13px;
+	line-height:30px;
+	color:#000;
+}
+.nav_Tops .basic_search li dl{
+    cursor: pointer;
+    float: left;
+    position: relative;
+	width:298px;
+	height:28px;
+	font-size: 14px;
+}
+.nav_Tops .basic_search li.sell_status dl,.nav_Tops .basic_search li.sell_status dt{
+	width:198px;
+	margin-right:64px;
+}
+.nav_Tops .basic_search li.sell_status dt{
+	background:url(../imgs/down.png) no-repeat 182px 12px;
+}
+.nav_Tops .basic_search li.sell_status dd{
+	width:200px;
+}
+.nav_Tops .basic_search li dt{
+	width:298px;
+	height:28px;
+	line-height: 28px;
+	border:1px dashed #ccc;
+	background:url(../imgs/down.png) no-repeat 275px 12px;
+	text-indent:10px;
+}
+.nav_Tops .basic_search li dd{
+	width:300px;
+	position:absolute;
+	top: 30px;
+    text-indent: 10px;
+    line-height: 30px;
+    z-index:5;
+    background:#fff;
+    display:none;
+}
+.nav_Tops .basic_search li.default_time input{
+	width:200px;
+	background:url(../imgs/calendar.png) no-repeat 170px 4px;
+}
+.nav_Tops .basic_search li input.search_box{
+	width:483px;
+	float:left;
+	border-right:none;
+}
+.nav_Tops .basic_search li input.search_btn{
+	width:60px;
+	float:left;
+	height:32px;
+	border:none;
+	background:#999999 url(../imgs/search.png) no-repeat 7px 8px;
+	margin-right:12px;
+	color:#fff;
+}
+.nav_Tops .basic_search li a{
+	color:#ff3300;
+	text-decoration: underline;
+	line-height: 30px;
+}
+.nav_Tops .expert_search{
+	border-top:1px solid #ccc;
+	padding-top:40px;
+	height:285px;
+}
+.nav_Tops .expert_search li{
+	display:inline-block;
+	height:30px;
+	margin-bottom:15px;
+	position:relative;
+	color:#666;
+	float:left;
+}
+.nav_Tops .expert_search li.sub_btns{
+	width:100%;
+	height:30px;
+}
+.nav_Tops .expert_search li.sub_btns input{
+	width:120px;
+	height:34px;
+	border:none;
+	background:#ff3300;
+	color:#fff;
+	border-radius:8px;
+	position:relative;
+	margin-left:50%;
+	left:-60px;
+	margin-top:5px;
+	cursor:pointer;
+}
+.nav_Tops .expert_search li label{
+	height:30px;
+	line-height:30px;
+	float:left;
+}
+.nav_Tops .expert_search li dl{
+	width:88px;
+    cursor: pointer;
+    float: left;
+    margin-right:5px;
+    position: relative;
+}
+.nav_Tops .expert_search li dt{
+	width:88px;
+	height:28px;
+	line-height: 28px;
+	border:1px dashed #ccc;
+	background:url(../imgs/down.png) no-repeat 71px 12px;
+	text-align: center;
+    font-size: 14px;
+}
+.nav_Tops .expert_search li dd{
+	width:90px;
+	position:absolute;
+	top: 30px;
+    text-align: center;
+    line-height: 30px;
+    z-index:5;
+    background:#fff;
+    display:none;
+}
+.nav_Tops li dd p{
+	height:28px;
+	border-left:1px dashed #ccc;
+	border-right:1px dashed #ccc;
+	border-bottom:1px dashed #ccc;
+}
+.nav_Tops li dd p:hover{
+	background:#ff3300;
+	border:1px solid #ff3300;
+	color:#fff;
+	border-top:none;
+}
+.nav_Tops .expert_search li input{
+	width:200px;
+	height:28px;
+	border:1px dashed #ccc;
+	margin-right:40px;
+}
+.nav_Tops .expert_search li.creat_time input{
+	width:88px;
+	height:28px;
+	background:url(../imgs/calendar.png) no-repeat 60px 4px;
+}
+.nav_Tops .sort_list{
+	height:50px;
+	border:1px solid #ccc;
+	margin-bottom:20px;
+}
+/*自动刷新*/
+.aui-content{
+	width:170px;
+	float:left;
+}
+.aui-switch-title {
+	float: left;
+	line-height: 20px;
+	margin-left:30px;
+	color:#666;
+}
+.aui-switch {
+	width: 60px;
+	height: 27px;
+	margin: 0 10px;
+	top: -4px;
+	position: relative;
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+	box-shadow: #dfdfdf 0 0 0 0 inset;
+	border-radius: 13px;
+	background-clip: content-box;
+	display: inline-block;
+	-webkit-appearance: none;
+	user-select: none;
+	outline: none;
+	transition: border cubic-bezier(0, 0, 0, 1) 0.2s,
+	box-shadow cubic-bezier(0, 0, 0, 1) 0.2s;
+}
+.aui-switch:before {
+	width: 30px;
+	height: 24px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 13px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	content: '';
+	transition: left 0.2s;
+}
+.aui-switch.aui-switch-success:checked {
+	border-color: #4383bc;
+	box-shadow: #4383bc 0 0 0 26px inset;
+	background-color: #233645;
+}
+.aui-switch:checked:before {
+	left: 29px;
+	transition: left 0.2s;
+}
+.sort_list .set{
+	width:160px;
+	height:34px;
+	background:#233645 url(../imgs/set.png) no-repeat 14px 9px;
+	border-radius:8px;
+	float:right;
+	margin-top:6px;
+	color:#fff;
+	margin-right:20px;
+	text-align: center;
+	line-height:34px;
+	text-indent:10px;
+}
+.sort_list dl{
+	width:198px;
+    cursor: pointer;
+    float: right;
+    margin-right:23px;
+    position: relative;
+    margin-top:8px;
+}
+.sort_list dt{
+	width:198px;
+	height:28px;
+	line-height: 28px;
+	border:1px dashed #ccc;
+	background:url(../imgs/down.png) no-repeat 182px 12px;
+	text-align:left;
+    font-size: 14px;
+    text-indent:12px;
+    color:#666;
+}
+.sort_list dd{
+	width:200px;
+	position:absolute;
+	top: 30px;
+    text-align:left;
+    line-height: 30px;
+    text-indent:12px;
+    z-index:5;
+    background:#fff;
+   	display:none;
+}
+.sort_list dd p{
+	height:28px;
+	border-left:1px dashed #ccc;
+	border-right:1px dashed #ccc;
+	border-bottom:1px dashed #ccc;
+}
+.sort_list dd p:hover{
+	background:#ff3300;
+	border:1px solid #ff3300;
+	color:#fff;
+	border-top:none;
+}
+.nav_Tops .less_more{
+	width:58px;
+	height:22px;
+	border:1px solid #ccc;
+	text-align: center;
+	color:#ff3300;
+	line-height: 22px;
+	position: relative;
+	left:50%;
+	margin-left: -29px;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+.nav_Tops .less_more img{
+	margin-left:3px;
+	/*line-height: 0px;*/
+}
+.hide{
+	display:none;
 }
 .main_contents{
 	height:648px;
@@ -26,12 +345,77 @@ html,body{
 	height: 620px;
 }
 .wrapper .main_contents .person_info{
-	width: 527px;
-	height: 570px;
-	padding: 25px 10px;
-	margin-right: 20px;
-	margin-left: 10px;
+	width: 544px;
+	height: 610px;
+	padding: 13px 15px;
+	margin-right: 10px;
+	margin-left: 2px;
 	border: 1px solid #cccccc;
+}
+.wrapper .main_contents .person_info .table{
+	width:543px;
+	height:571px;
+	overflow-x: scroll;
+    overflow-y: hidden;
+}
+.person_info h4{
+	height:34px;
+	border-bottom:1px solid #ccc;
+	position: relative;
+	line-height:34px;
+	font-size:16px;
+	color:#666;
+	font-weight:normal;
+	margin-bottom:17px;
+}
+.person_info h4 b{
+	position: absolute;
+	width: 64px;
+	height:1px;
+	background:#666;
+	bottom:-1px;
+	left:0px;
+}
+.person_info table{
+	width:725px;
+}
+.person_info td{
+	width:88px;
+	height:34px;
+	border:1px solid #ccc;
+	text-align:center;
+	color:#666;
+}
+.person_info td dl{
+	width:88px;
+    cursor: pointer;
+    position: relative;
+}
+.person_info td dl dt{
+	width:88px;
+	height:34px;
+	line-height: 34px;
+	background:url(../imgs/down.png) no-repeat 71px 14px;
+   /* font-size: 14px;*/
+}
+.person_info td dl dd{
+	width:88px;
+	position:absolute;
+	top: 34px;
+    line-height: 34px;
+    z-index:5;
+    background:#fff;
+   	display:none;
+}
+.person_info td dl dd p{
+	height:34px;
+	border-top:1px solid #ccc;
+}
+.person_info td dl dd p:hover{
+	background:#ff3300;
+	border:1px solid #ff3300;
+	color:#fff;
+	border-top:none;
 }
 .wrapper .main_contents .person_details{
 	width: 770px;
