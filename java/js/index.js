@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(function(){
 	//收起，展开
 	$(".less_more").click(function(){
