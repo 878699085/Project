@@ -5,6 +5,8 @@ $(function(){
     patent.init();
     unWrite();
     validate.nameLength("#l-name1");
+    sureDel();
+    leading();
 })
 
 var patent = {
@@ -16,7 +18,6 @@ var patent = {
         this._layout();
         this._empty();
         this._phone();
-        this._sureDel();
         /*新增发明人*/
         /*国籍或者地区*/
         commom.searchSuggest($(".countrys div"),$(".citizenship"),"../js/test.json");
@@ -276,27 +277,7 @@ var patent = {
             $(".lay-out,.detection").hide();
         });
     },
-    //是否确认删除
-    _sureDel:function(){
-        $(".sure-del .p1 img").click(function(){
-            $(".lay-out").hide();
-            $(".sure-del").hide();
-        })
-        $(".sure-del .p3 .no").click(function(){
-            $(".sure-del .p1 img").click();
-        })
-        $(".delete0").click(function(){
-            var $this=$(this);
-            $(".lay-out").show();
-            $(".sure-del").show();
-            $(".sure-del .p3 .yes").click(function(){
-                $this.parent().parent().remove();
-                $(".sure-del .p1 img").click();
-            })
-        });
 
-
-    },
     // 电话如果不为空验证
     _phone:function(){
         validate.phone1(".l-phone input");
