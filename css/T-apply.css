@@ -96,6 +96,7 @@ margin-left:23px;*/
 font-size:14px;
 margin-top:40px;
 /*margin-left:74px;*/
+position:relative;
 }
 .pat-name .p2 input{
 height:30px;
@@ -126,7 +127,7 @@ top:2px;
 position:relative;
 }
 .inventor table{
-height:88px;
+
 margin-top:40px;
 /*margin-left:80px;*/
 }
@@ -135,7 +136,7 @@ margin-top:40px;
 text-align:center;
 height:28px;
 background-color:#f5f5f5;
-color:#386173;
+color:#666;
 }
 .inventor table tr{
 	border:1px #ccc dashed;	
@@ -183,7 +184,7 @@ margin-left:90px;
     padding:40px 0 30px 0;
 }
 .connector .p2 span{
-color:#386173;
+color:#666;
 /*margin-left:10px;*/
 /*display:inline-block;*/
 cursor:pointer;
@@ -198,12 +199,12 @@ border:1px dashed #ccc;
 /*margin-top:25px;
 margin-left:96px;*/
 padding: 0;
-color:#386173;
+color:#666;
 }
 .connector .p3 select{
 width:146px;
 height:30px;
-color:#386173;
+color:#666;
 padding-left:20px;
 font-size:14px;
 border:1px dashed #ccc;
@@ -229,7 +230,7 @@ margin-top:24px;
 .publish .p2{
 /*margin-left:79px;*/
 margin-top:20px;
-color:#386173;
+color:#666;
 }
 .publish .p2 .input{
 position:relative;
@@ -273,7 +274,7 @@ top:5px;
 }
 .request .p2, .request .p3{
 /*margin-left:75px;*/
-color:#386173;
+color:#666;
 }
 .request .p2{
 margin-top:26px;
@@ -294,7 +295,7 @@ margin-top:24px;
 .distribution .p2{
 margin-left:72px;
 margin-top:19px;
-color:#386173;
+color:#666;
 }
 .distribution input{
 height:30px;
@@ -317,7 +318,7 @@ font-size:16px;
 .inherit .p2{
 margin-top:26px;
 margin-left:69px;
-color:#386173;
+color:#666;
 }
 .inherit .input{
 display:inline-block;
@@ -341,7 +342,7 @@ font-size:16px;
 }
 .state .p2, .state .p3, .state .p4{
 margin-left:66px;
-color:#386173;
+color:#666;
 margin-top:13px;
 }
 .state .input{
@@ -371,7 +372,7 @@ font-size:16px;
 .same-day .p2{
 margin-top:26px;
 margin-left:66px;
-color:#386173;
+color:#666;
 }
 .same-day .input{
 width:15px;
@@ -396,7 +397,7 @@ font-size:16px;
 .prior .p2{
 margin-left:64px;
 margin-top:15px;
-color:#386173;
+color:#666;
 }
 .prior .p2 select{
 height:30px;
@@ -404,7 +405,7 @@ width:160px;
 border:1px dashed #ccc;
 margin-right:10px;
 padding-left:10px;
-color:#386173;
+color:#666;
 }
 .prior .p2 input{
 height:30px;
@@ -1059,4 +1060,92 @@ h3,i{
 	text-align: center;
 	cursor: pointer;
 	padding:0;
+}
+.pat_req{
+display:block;
+position:absolute;
+width: 462px;
+height: 58px;
+background-color:#fff;
+border:1px solid #ccc;
+padding:10px;
+font-size:14px;
+left:69px;
+top:41px;
+}
+.pat_req span{
+display:block;
+}
+.input{
+border-radius:4px;
+}
+.pat_law35{
+z-index:9;
+position:absolute;
+background-color:#fff;
+width:800px;
+height: 60px;
+border:1px solid #ccc;
+padding:10px;
+left:90px;
+top:-98px;
+}
+.pat_law35 span{
+display:block;
+line-height:25px;
+}
+.pat_law51{
+z-index:9;
+position:absolute;
+background-color:#fff;
+width:800px;
+height: 150px;
+border:1px solid #ccc;
+padding:10px;
+left:90px;
+top:33px;
+}
+.pat_law51 span{
+display:block;
+line-height:25px;
+}
+.sure-del{
+position:fixed;
+height:204px;
+width:351px;
+background-color:#fff;
+z-index:999;
+top:50%;
+left:50%;
+margin-left:-175px;
+margin-top:-102px;
+display:none;
+}
+.sure-del .p1{
+height:56px;
+line-height:56px;
+padding-left:319px;
+}
+.sure-del .p2{
+text-align:center;
+font-size:18px;
+margin-top:10px;
+}
+.sure-del .p3{
+margin-top:40px;
+}
+.sure-del .p3 span{
+position:absolute;
+width:100px;
+height:35px;
+background-color:#ff3300;
+text-align:center;
+line-height:35px;
+color:#fff;
+}
+.sure-del .p3 .yes{
+left:65px;
+}
+.sure-del .p3 .no{
+right:65px;
 }

@@ -16,27 +16,27 @@
         <ul>
             <li>
                 <span class="cpl1"></span>
-                <a href="#" class="current">发明专利请求书</a>
+                <a href="javascript:void(0);" class="current">发明专利请求书</a>
             </li>
             <li>
                 <span class="cpl2"></span>
-                <a href="#">权利要求书</a>
+                <a href="javascript:void(0);">权利要求书</a>
             </li>
             <li>
                 <span class="cpl3"></span>
-                <a href="#">说明书</a>
+                <a href="javascript:void(0);">说明书</a>
             </li>
             <li>
                 <span class="cpl4"></span>
-                <a href="#">说明书附图</a>
+                <a href="javascript:void(0);">说明书附图</a>
             </li>
             <li>
                 <span class="cpl5"></span>
-                <a href="#">说明书摘要</a>
+                <a href="javascript:void(0);">说明书摘要</a>
             </li>
             <li>
                 <span class="cpl6"></span>
-                <a href="#">附加文件</a>
+                <a href="javascript:void(0);">附加文件</a>
             </li>
         </ul>
     </div>
@@ -45,9 +45,14 @@
     <div class="left">
         <div class="pat-name">
             <p class="p1"><span class="und">专利名称</span></p>
-            <p class="p2">
+            <div class="p2">
                 专利名称：<input type="text" id="pat1" maxlength="40"/>
-            </p>
+                <span class="pat_req" style="display:none">
+                    <span style="font-weight:bold">填写要求：</span>
+                    <span>1、发明名称应当简短，一般不得超过25个字，特殊情况下最多为40个字！</span>
+                    <span>2、请求书中的发明名称与说明书中的发明名称应当一致。</span>
+                </span>
+            </div>
         </div>
         <!--发明人-->
         <div class="inventor">
@@ -71,7 +76,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href="#">删除</a><a href="#">修改</a><a href="#">查看</a></td>
+                        <td><a class="delete0" href="javascript:void(0);">删除</a><a href="javascript:void(0);">修改</a><a href="javascript:void(0);">查看</a></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -79,7 +84,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href="#">删除</a><a href="#">修改</a><a href="#">查看</a></td>
+                        <td><a class="delete0" href="javascript:void(0);">删除</a><a href="javascript:void(0);">修改</a><a href="javascript:void(0);">查看</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -106,7 +111,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href="#">删除</a><a href="#">修改</a><a href="#">查看</a></td>
+                        <td><a class="delete0" href="javascript:void(0);">删除</a><a href="javascript:void(0);">修改</a><a href="javascript:void(0);">查看</a></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -114,7 +119,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href="#">删除</a><a href="#">修改</a><a href="#">查看</a></td>
+                        <td><a class="delete0" href="javascript:void(0);">删除</a><a href="javascript:void(0);">修改</a><a href="javascript:void(0);">查看</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -126,7 +131,7 @@
                 <span class="right2"><img src="../imgs/T/T-leading-in.png" width="14" alt="">&nbsp;从申请人导入</span>
             </p>
             <div class="p2">
-                <span class="l-name">姓名：<input type="text"/></span>
+                <span class="l-name">姓名：<input id="l-name1" type="text" /></span>
                 <span class="l-phone">电话：<input type="text"/></span>
                 <span class="l-email">电子邮件：<input type="text"/></span>
                 <span class="l-post" style="margin-right: 0">邮政编码：<input type="text"/></span>
@@ -164,9 +169,26 @@
         <!--实审请求-->
         <div class="request">
             <p class="p1"><span class="und">实审请求</span></p>
-            <p class="p2"><span class="input"><img class="hide" src="../imgs/info_1.png" alt=""></span>
-                根据<a href="#">专利法第 35 条</a>的规定，请求对上述专利申请进行实质审查。</p>
-            <p class="p3"><span class="input"><img class="hide" src="../imgs/info_1.png" alt=""></span>申请人声明，放弃<a href="#">专利法实施细则第51条</a>规定的主动修改的权利。</p>
+            <p class="p2" style="position:relative"><span class="input"><img class="hide" src="../imgs/info_1.png" alt=""></span>
+                根据<a id="pat35"  href="javascript:void(0);">专利法第 35 条</a>的规定，请求对上述专利申请进行实质审查。
+                <span class="pat_law35" style="display:none">
+                    专利法第三十五条：发明专利申请自申请日起三年内，国务院专利行政部门可以根据申请人随时提出的请求，对其申请进行实质审查；申请人无正当理由逾期不请求实质审查的，该申请即被视为撤回。国务院专利行政部门认为必要的时候，可以自行对发明专利申请进行实质审查。
+                </span>
+            </p>
+            <p class="p3" style="position:relative"><span class="input"><img class="hide" src="../imgs/info_1.png" alt=""></span>申请人声明，放弃<a
+                    id="pat51" href="javascript:void(0);">专利法实施细则第51条</a>规定的主动修改的权利。
+            <span class="pat_law51" style="display:none">
+                <span>专利法实施细则第五十一条：</span>
+                <span>发明专利申请人在提出实质审查请求时以及在收到国务院专利行政部门发出的发明专利申请进入实质审查阶段通知书之日起的3个月内，可以对发明专利申请主动提出修改。</span>
+                <span>实用新型或者外观设计专利申请人自申请日起2个月内，可以对实用新型或者外观设计专利申请主动提出修改。</span>
+                <span>
+                    申请人在收到国务院专利行政部门发出的审查意见通知书后对专利申请文件进行修改的，应该针对通知书指出的缺陷进行修改。
+                </span>
+                <span>
+                    国务院专利行政部门可以自行修改专利申请文件中文字和符号的明显错误。国务院专利行政部门自行修改的，应当通知申请人。
+                </span>
+            </span>
+            </p>
         </div>
         <!--分案申请-->
         <div class="distribution hide Tog">
@@ -258,6 +280,11 @@
 
 <!--新增发明人弹窗-->
 <div class="lay-out"></div>
+<div class="sure-del">
+    <p class="p1"><img src="../imgs/close_1.png" alt=""></p>
+    <p class="p2">您是否确认删除？</p>
+    <p class="p3"><span class="yes">是</span><span class="no">否</span></p>
+</div>
 <div class="addInventor">
 	<h3>
 		<span>新增发明人</span>
@@ -487,8 +514,12 @@
 		 <input type="button" value="暂不提交"/>
 	</p>
 </div>
+
+
+</div>
 <script src="../js/jquery-1.11.3.min.js"></script>
 <script src="../js/jquery.validate.min.js"></script>
+<script src="../js/T-common.js"></script>
 <script src="../js/jspinyin.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/jedate/jquery.jedate.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
