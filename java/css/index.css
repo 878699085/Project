@@ -23,7 +23,7 @@ html,body{
 }
 .wrapper .main_contents .person_details,.wrapper .main_contents .person_info{
 	float: left;
-	height: 620px;
+	height: 621px;
 }
 .wrapper .main_contents .person_info{
 	width: 527px;
@@ -35,14 +35,25 @@ html,body{
 }
 .wrapper .main_contents .person_details{
 	width: 770px;
-	/*overflow: auto;*/
+	overflow: auto;
 }
 .wrapper .main_contents .person_details div{
 	width:720px;
-	padding: 25px 10px;
+	padding: 20px 10px;
 	border: 1px solid #cccccc;
+	margin-bottom: 20px;
 }
-.person_details .User_Info p{
+.wrapper .main_contents .person_details div table{
+	width: 100%;
+	border: 1px solid #cccccc;
+	font-size: 14px;
+	color: #888888;
+}
+.wrapper .main_contents .person_details div table tr td{
+	font-size: 12px;
+	text-align: center;
+}
+.person_details .User_Info p.step1{
 	width: 100%;
 	padding-bottom: 5px;
 	font-size: 16px;
@@ -50,11 +61,15 @@ html,body{
 	margin-bottom: 20px;
 	border-bottom: 1px solid #cccccc;
 }
-.person_details .User_Info p span{
+.person_details .User_Info p.step1 span{
 	padding-bottom: 5px;
 	border-bottom: 1px solid #666666;
 }
+.person_details .User_Info ul{
+	margin-left: 13px;
+}
 .person_details .User_Info ul li{
+	float: left;
 	font-size: 14px;
 	color: #666666;
 }
@@ -63,58 +78,361 @@ html,body{
 	height: 28px;
 	border: 1px dashed #cccccc;
 	margin-bottom: 20px;
-	margin-right: 10px;
+	margin-right: 15px;
 }
-.person_details .User_Info ul li input.Diff{
+.person_details .User_Info ul li.Diff input{
 	width: 218px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.person_details .User_Info ul li.Name_button{
+	float: right;
+	color: #ee4618;
+	margin-right: 15px;
+	font-size: 14px;
+}
+.person_details .User_Info ul li.Name_button span{
+	display: inline-block;
+	width: 200px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 5px;
+	background: #ee4618;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.person_details .add_Visited ol{
+	margin-left: 20px;
+}
+.person_details .add_Visited ol li{
+	font-size: 14px;
+	color: #666666;
+	margin-bottom: 12px;
+}
+.person_details .add_Visited ol li input{
+	margin-left: 15px;
+	vertical-align: -1px;
+}
+.person_details .add_Visited ol li .next_visited{
+	margin-left: 20px;
+}
+.person_details .add_Visited ol li .next_visited input{
+	margin-left: 8px;
+	width: 188px;
+	height: 28px;
+	border: 1px dashed #cccccc;
+}
+.person_details .add_Visited ol li.visited_reason span{
+	margin-right: 15px;
+}
+.person_details .add_Visited ol li.visited_reason i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 2px;
+	vertical-align: -3px;
+	margin-right: 10px;
+	border: 1px solid #cccccc;
+}
+.person_details .add_Visited ol li textarea{
+	resize: none;
+	float: right;
+	width: 608px;
+	height: 118px;
+	border: 1px dashed #cccccc;
+}
+.person_details .add_Visited .visited_person{
+	float: right;
+	margin-bottom: 0;
+}
+.person_details .add_Visited .visited_person input{
+	width: 130px;
+	height: 34px;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	background: #233645;
+	cursor: pointer;
+}
+.person_details .Visited_record table tr td,.person_details .Visited_record table tr th{
+	text-align: center;
+	padding: 10px 5px;
+}
+.person_details .Visited_record table tr th.visited_con{
+	width: 458px;
+}
+.person_details .Visited_record table tr td{
+	font-size: 12px;
+}
+.person_details .ordering ul.step2{
+	width: 512px;
+	height: 28px;
+	margin: 0 auto 20px;
+	border: 1px solid #cccccc;
+	border-right: none;
+}
+.person_details .ordering ul.step2 li{
+	width: 127px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-right: 1px solid #cccccc;
+	font-size: 14px;
+	color: #888888;
+}
+.person_details .ordering ul.step2 li i{
+	display: inline-block;
+	width: 17px;
+	height: 10px;
+	margin-left: 15px;
+	margin-top: 10px;
+	vertical-align: -2px;
+	background: url("../../imgs/visited_icon.png") 0 0 no-repeat;
+}
+.person_details .ordering ul.step2 li.invention{
+    position: relative;
+	cursor: pointer;
+}
+.person_details .ordering ul.step2 li.invention:hover p{
+	display: block;
+}
+.person_details .ordering ul.step2 li.invention p{
+	display: none;
+	position: absolute;
+	top: 29px;
+	left: 0;
+	width: 125px;
+	height: 89px;
+	border: 1px dashed #cccccc;
+	border-top: none;
+	background: #ffffff;
+}
+.person_details .ordering ul.step2 li.invention p span{
+	display: block;
+	width: 127px;
+	height: 30px;
+	cursor: pointer;
+	margin-left: -1px;
+}
+.person_details .ordering ul.step2 li.invention p span:hover{
+	background: #ee4618;
+	color: #fff;
+}
+.person_details .ordering table tr i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	vertical-align: middle;
+}
+.person_details .ordering table tr a{
+	color: #ff3300;
+	text-decoration:underline;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.person_details .ordering table tr a.order_detail{
+	margin-left: 200px;
+}
+.person_details .ordering table tr td span{
+	margin-left: 60px;
+}
+.order_window{
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.order_window .opacity{
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: .4;
+	filter:alpha(opacity=40);
+}
+.order_window .voucher{
+	z-index: 20;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 718px;
+	height: 820px;
+	padding: 20px 0;
+	margin-left: -359px;
+	margin-top: -430px;
+	border: 1px solid #cccccc;
+	background: #ffffff;
+}
+.order_window .voucher .voucher_tit{
+	width: 100%;
+	padding-bottom: 5px;
+	font-size: 16px;
+	color: #666666;
+	border-bottom: 1px solid #cccccc;
+}
+.order_window .voucher .voucher_tit span{
+	padding:0 5px 5px;
+	border-bottom: 1px solid #666666;
+	margin-left: 15px;
+}
+.order_window .voucher .voucher_tit i{
+	float: right;
+	width: 16px;
+	height: 17px;
+	margin-right: 30px;
+	cursor: pointer;
+	background: url("../../imgs/close_1.png") 0 0 no-repeat;
+}
+.order_window .voucher .order_number{
+	font-size: 16px;
+	color: #666666;
+	margin: 30px 0 40px 65px;
+}
+.order_window .voucher .order_List{
+	width: 612px;
+	padding: 0 55px;
+}
+.order_window .voucher .order_List ul{
+	float: left;
+	width: 293px;
+	height: 280px;
+	margin-bottom: 15px;
+}
+.order_window .voucher .order_List ul li{
+	float: right;
+	font-size: 14px;
+	margin-bottom: 18px;
+	position: relative;
+}
+.order_window .voucher .order_List ul li i{
+	color: #ff4010;
+	font-style: normal;
+	margin-right: 2px;
+	vertical-align: middle;
+}
+.order_window .voucher .order_List ul li b{
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	width: 10px;
+	height: 7px;
+	cursor: pointer;
+	background: url("../../imgs/visited_icon.png") 0 0 no-repeat;
+}
+.order_window .voucher .order_List ul li input{
+	width: 188px;
+	height: 28px;
+	padding-left: 10px;
+	color: #666666;
+	border: 1px dashed #cccccc;
+}
+.order_window .voucher .order_List .file_UP{
+	float: left;
+	height: 100px;
+	margin-left: 51px;
+}
+.order_window .voucher .order_List .file_UP span{
+	float: left;
+	font-size: 14px;
+}
+.order_window .voucher .order_List .file_UP span.file_Last{
+	margin-top: 30px;
+	width: 160px;
+	margin-left: 15px;
+}
+.order_window .voucher .order_List .file_UP span.file_start{
+	margin-top: 30px;
+}
+.order_window .voucher .order_List .file_UP span i{
+	position: absolute;
+	top: 42px;
+	left: 42px;
+	width: 13px;
+	height: 13px;
+	background: url("../../imgs/plus_flie.png") 0 0 no-repeat;
+}
+.order_window .voucher .order_List .up_File{
+	position: relative;
+	border: 1px dashed #cccccc;
+	width: 98px;
+	height: 98px;
+}
+.order_window .voucher .order_List .up_File input{
+	position: absolute;
+	width: 98px;
+	height: 98px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	cursor: pointer;
+}
+.order_window .voucher .order_List .up_File em{
+	display: none;
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	width: 16px;
+	height: 17px;
+	background: url("../../imgs/close_1.png") 0 0 no-repeat;
+}
+.order_window .voucher .Voucher_details{
+	width:588px;
+	padding: 13px 11px;
+	border: 1px solid #cccccc;
+	margin-left: 55px;
+	margin-top: 20px;
+}
+.order_window .voucher .Voucher_details p{
+	width: 100%;
+	padding-bottom: 5px;
+	border-bottom:1px solid #cccccc;
+	margin-bottom: 20px;
+}
+.order_window .voucher .Voucher_details p span{
+	padding:0 5px 5px;
+	border-bottom:1px solid #666;
+}
+.order_window .voucher .Voucher_details table{
+	border: 1px solid #cccccc;
+	text-align: center;
+}
+.order_window .voucher .check-out{
+	width: 612px;
+	margin: 15px auto;
+	font-size: 14px;
+	color: #666666;
+}
+.order_window .voucher .check-out p{
+	float: left;
+	margin-left: 20px;
+}
+.order_window .voucher .check-out p input{
+	vertical-align: -1px;
+}
+.order_window .voucher .check-out ul{
+	float: right;
+}
+.order_window .voucher .check-out ul li{
+	margin-bottom: 15px;
+}
+.order_window .voucher .check-out ul li b{
+	padding: 2px 10px;
+	border: 1px solid #cccccc;
+	margin: 0 5px;
+}
+.order_window .voucher .check-out ul li input{
+	width: 120px;
+	height: 34px;
+	color: #ffffff;
+	background: #ff3300;
+	border-radius: 5px;
+	border: none;
+	margin-left: 20px;
+	margin-top: 5px;
+	cursor: pointer;
+}
 
