@@ -165,7 +165,7 @@
                         <li><i></i>第10类 医疗器械</li>
                         <li><i></i>第11类 灯具空调</li>
                         <li><i></i>第12类 运输工具</li>
-                        <li class="added"><i class="add"></i>第13类 军火烟火</li>
+                        <li class=""><i class=""></i>第13类 军火烟火</li>
                         <li><i></i>第14类 珠宝钟表</li>
                         <li><i></i>第15类 乐器</li>
                         <li class="disabled"><i class="disable"></i>第16类 办公用品</li>
@@ -238,6 +238,33 @@
 </div>
 <script>
     $(function(){
+
+        $(".leibiao li").mouseenter(function(){
+            if($(this).hasClass("disabled")){
+                $(".leibiao li").click(function(){
+                    $(this).removeClass("disabled");
+                    $(this).find("i").removeClass("disable")
+                })
+            }else{
+                $(this).addClass("added");
+                $(this).find("i").addClass("add");
+                $(".added").click(function(){
+                    $(this).addClass("disabled");
+                    $(this).find("i").addClass("disable");
+                    $(this).removeClass("added");
+                    $(this).find("i").removeClass("add");
+                })
+            }
+        })
+        $(".leibiao li").mouseleave(function(){
+            if($(this).hasClass("disabled")){
+
+            }else{
+                $(this).removeClass("added");
+                $(this).find("i").removeClass("add");
+            }
+        })
+
     $(".jxj").click(function(){
         $(".leibiao").slideToggle();
        if($(".leibiao").height()==1){

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(function(){
 	//收起，展开
 	$(".less_more").click(function(){
@@ -22,6 +23,8 @@ $(function(){
 	//显示下拉列表；
 	showSelect($(".nav_Tops dl"),$(".nav_Tops dl p"),$(".nav_Tops dl dd"));
 	showSelect($(".table dl"),$(".table dl p"),$(".table dl dd"));
+	//订单详情弹窗
+	order();
 })
 
 //显示下拉列表
@@ -36,4 +39,12 @@ function showSelect(name1,name2,name3){
 		name3.stop().slideUp();
 	})
 }
-
+//订单详情弹窗
+function order(){
+    $(".order_detail").click(function(){
+        $(".order_window").show();
+    });
+    $(".voucher_tit  i").click(function(){
+        $(".order_window").hide();
+    })
+}

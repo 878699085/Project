@@ -476,6 +476,7 @@ width:90px;
 /*background-color:red;*/
 line-height:52px;
 position:relative;
+cursor:pointer;
 }
 .leibiao .disable{
 background:url(../imgs/T-confirm/disable.jpg) 0 0 no-repeat;
