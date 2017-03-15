@@ -98,18 +98,28 @@
                     <div class="lyt">
                         选择所在领域  ：
                     </div>
-                    <select class="ly1">
-                        <option value ="volvo">文教娱文化传媒娱乐教育</option>
-                        <option value ="saab"></option>
-                        <option value="opel"></option>
-                        <option value="audi"></option>
-                    </select>
-                    <select class="ly2">
-                        <option value ="volvo">请选择细分行业</option>
-                        <option value ="saab"></option>
-                        <option value="opel"></option>
-                        <option value="audi"></option>
-                    </select>
+                    <div class="ly1">
+                       <ul>
+                           <li>文教娱文化传媒娱乐教育</li>
+                           <li>服务业、餐饮、维修等</li>
+                           <li>农业领域、农、林、牧、渔等</li>
+                           <li>机械制造 机械、车辆等</li>
+                           <li>商业服务 广告、法律、金融等</li>
+                           <li>房产建材 房产、建筑、物管等</li>
+                           <li>交通运输 运输、物流、仓储等</li>
+                           <li>医保化工 医药、化工、能源等</li>
+                           <li>食品饮料 生鲜、保健、烟酒茶等</li>
+                           <li>服饰 服装、珠宝、化妆品等</li>
+                           <li>IT 通信、电子、互联网等</li>
+                       </ul>
+                    </div>
+                    <div class="ly2">
+                        <ul>
+                            <li>请选择细分行业</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="sleibie">
                     <div class="s">
@@ -239,6 +249,9 @@
 <script>
     $(function(){
 
+         $(".sleibie .s .s33").click(function(){
+             $(this).parent().remove();
+         })
         $(".leibiao li").mouseenter(function(){
             if($(this).hasClass("disabled")){
                 $(".leibiao li").click(function(){
