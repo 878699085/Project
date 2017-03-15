@@ -76,7 +76,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a class="delete0" href="javascript:void(0);">删除</a><a href="javascript:void(0);">修改</a><a href="javascript:void(0);">查看</a></td>
+                        <td><a class="delete0" href="javascript:void(0);">删除</a><a href="javascript:void(0);" class="revampInventor-btn">修改</a><a href="javascript:void(0);" class="lookInventor-btn">查看</a></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -111,7 +111,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a class="delete0" href="javascript:void(0);">删除</a><a href="javascript:void(0);">修改</a><a href="javascript:void(0);">查看</a></td>
+                        <td><a class="delete0" href="javascript:void(0);">删除</a><a href="javascript:void(0);" class="revampproposer-btn">修改</a><a href="javascript:void(0);" class="lookproposer-btn">查看</a></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -285,13 +285,13 @@
     <p class="p2">您是否确认删除？</p>
     <p class="p3"><span class="yes">是</span><span class="no">否</span></p>
 </div>
-<div class="addInventor">
+<div class="addInventor Inventor-public">
 	<h3>
 		<span>新增发明人</span>
     	<i></i>
     	<b></b>
 	</h3>
-	<form action="" method="post" id="addInventor">
+	<form action="" method="post" >
 		<ul>
 			<li>
 				<span>姓名：</span>
@@ -346,8 +346,132 @@
 		</ul>
 	</form>
 </div>
+<!--修改发明人-->
+<div class="revampInventor Inventor-public">
+    <h3>
+        <span>修改发明人</span>
+        <i></i>
+        <b></b>
+    </h3>
+    <form action="" method="post" >
+        <ul>
+            <li>
+                <span>姓名：</span>
+                <input type="text" name="inventNameCn"  value="" class="empty name inventNameCn" maxlength="40" autocomplete="off" />
+                <i><b></b>不公布姓名</i>
+                <i><b class="FirstInventor" > </b>标记为第一发明人</i>
+            </li>
+            <li>
+                <span>姓名（英文）：</span>
+                <input type="text" name="inventNameEn" value="" autocomplete="off" class="name inventNameEn"/>
+            </li>
+            <li class="countrys">
+                <span>国籍或者地区：</span>
+                <input name="citizenship" type="text" class="citizenship name1" autocomplete="off" readonly  placeholder="中国大陆"/>
+                <div>
+
+                </div>
+            </li>
+            <li class="certificates">
+                <span>证件类型：</span>
+                <input  name="credType" type="text" class="certificate name1" maxlength="80" autocomplete="off" readonly  placeholder="中国大陆"/>
+                <div>
+
+                </div>
+            </li>
+            <li class="credNos">
+                <span>证件号码：</span>
+                <input type="text" name="credNo" value="" autocomplete="off" class="credNo name1 name2"/>
+            </li>
+            <li class="clearfix">
+                <span>上传证件：</span>
+                <div class="upload-wrap">
+                    <div>
+
+                    </div>
+                    <p class="clearfix">身份证正面</p>
+                </div>
+                <div class="upload-wrap card-fan">
+                    <div>
+
+                    </div>
+                    <p class="clearfix">身份证反面</p>
+                </div>
+                <h4 class="clearfix upload-title">上传完成后，点击图片可更新</h4>
+            </li>
+            <li class="clearfix">
+                <p class="submit">
+                    <input type="submit" value="添加" class="Inventor-submit"/>
+                    <input type="button" value="取消添加"/>
+                </p>
+            </li>
+        </ul>
+    </form>
+</div>
+<!--查看发明人-->
+<div class="lookInventor Inventor-public">
+    <h3>
+        <span>查看发明人</span>
+        <i></i>
+        <b></b>
+    </h3>
+    <form action="" method="post" >
+        <ul>
+            <li>
+                <span>姓名：</span>
+                <input type="text" name="inventNameCn"  value="" class="empty name inventNameCn" maxlength="40" autocomplete="off" />
+                <i><b></b>不公布姓名</i>
+                <i><b class="FirstInventor" > </b>标记为第一发明人</i>
+            </li>
+            <li>
+                <span>姓名（英文）：</span>
+                <input type="text" name="inventNameEn" value="" autocomplete="off" class="name inventNameEn"/>
+            </li>
+            <li class="countrys">
+                <span>国籍或者地区：</span>
+                <input name="citizenship" type="text" class="citizenship name1" autocomplete="off" readonly  placeholder="中国大陆"/>
+                <div>
+
+                </div>
+            </li>
+            <li class="certificates">
+                <span>证件类型：</span>
+                <input  name="credType" type="text" class="certificate name1" maxlength="80" autocomplete="off" readonly  placeholder="中国大陆"/>
+                <div>
+
+                </div>
+            </li>
+            <li class="credNos">
+                <span>证件号码：</span>
+                <input type="text" name="credNo" value="" autocomplete="off" class="credNo name1 name2"/>
+            </li>
+            <li class="clearfix">
+                <span>上传证件：</span>
+                <div class="upload-wrap">
+                    <div>
+
+                    </div>
+                    <p class="clearfix">身份证正面</p>
+                </div>
+                <div class="upload-wrap card-fan">
+                    <div>
+
+                    </div>
+                    <p class="clearfix">身份证反面</p>
+                </div>
+                <h4 class="clearfix upload-title">上传完成后，点击图片可更新</h4>
+            </li>
+            <li class="clearfix">
+                <p class="submit">
+                    <input type="submit" value="添加" class="Inventor-submit"/>
+                    <input type="button" value="取消添加"/>
+                </p>
+            </li>
+        </ul>
+    </form>
+</div>
 <!--新增申请人-->
-<div class="addproposer">
+<div class="addproposer proposer-public">
 	<h3>
 		<span>新增申请人</span>
     	<i></i>
@@ -474,7 +598,262 @@
 		</ul>
 	</form>
 </div>
+<!--修改申请人-->
+<div class="revampproposer proposer-public">
+    <h3>
+        <span>修改申请人</span>
+        <i></i>
+        <b></b>
+    </h3>
+    <form action="" method="post" >
+        <ul>
+            <li class="Importinventors">
+                <span>从发明人导入：</span>
+                <input type="text" name="inventNameCn"  value=""  class="Importinventor" autocomplete="off"  />
+                <div>
 
+                </div>
+            </li>
+            <li>
+                <span>姓名或名称：</span>
+                <input type="text" name=""  value="" class="name2 empty proposer-name" maxlength="40"/>
+                <i ><b class="toggle"></b>第一申请人</i>
+            </li>
+            <li>
+                <span>姓名（英文）：</span>
+                <input name="" type="text" class="name2 proposer-nameEn"  autocomplete="off"  placeholder=""/>
+            </li>
+            <li class="add-types">
+                <span>申请人类型：</span>
+                <input  name="" type="text" class="add-type" autocomplete="off" readonly  placeholder="大专院校"/>
+                <div>
+
+                </div>
+            </li>
+            <li class="card-types">
+                <span>证件类型：</span>
+                <input  name="" type="text" class="card-type" autocomplete="off" readonly  placeholder="组织机构代码／统一社会信用代码"/>
+                <div>
+
+                </div>
+            </li>
+            <li>
+                <span>证件号码：</span>
+                <input  name="" type="text" autocomplete="off" class="name2 empty"/>
+            </li>
+            <li>
+                <span>减缓申请：</span>
+                <i style="margin-left:0;"><b class="toggle-if"></b>请求费减且已完成费减资格备案</i>
+            </li>
+            <li class="toggle-show slow-down">
+                <input type="radio" name="down"  value="" />个人减缓
+                <input type="radio" name="down"  value="" />单位减缓
+            </li>
+            <li class="toggle-show">
+                <span>名称：</span>
+                <input  name="" type="text" autocomplete="off" class="name2 empty"/>
+            </li>
+            <li class="clearfix toggle-show">
+                <span>证明文件：</span>
+                <div class="upload-wrap">
+                    <div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix reg-nations">
+                <span>＊国籍或者注册国家（地区）：</span>
+                <input type="text" name="" class="reg-nation" value="" autocomplete="off" readonly placeholder="中国"/>
+                <div>
+
+                </div>
+            </li>
+            <li class="abode-places clearfix">
+                <span>＊经常居住地或营业所所在地：</span>
+                <div class="placeOne">
+                    <input type="text" name=""  value="" autocomplete="off" readonly placeholder="中国"/>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="placeTwo">
+                    <input type="text" name=""  value="" autocomplete="off" readonly placeholder="北京市"/>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="placeThree">
+                    <input type="text" name=""  value="" autocomplete="off" readonly  placeholder="房山区"/>
+                    <div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span>＊城区（乡）、街道、门牌号：</span>
+                <input type="text" name=""  value="" class="name2 empty"  />
+            </li>
+            <li class="addressEn">
+                <span>英文地址：</span>
+                <input type="text" name=""  value="" class="name2"  />
+            </li>
+            <li>
+                <span>＊联系电话：</span>
+                <input type="text" name=""  value="" class="name2 empty"/>
+            </li>
+            <li>
+                <span>邮箱：</span>
+                <input type="text" name=""  value="" class=" name2"/>
+            </li>
+            <li class="clearfix">
+                <span>上传证件：</span>
+                <div class="upload-wrap">
+                    <div>
+
+                    </div>
+                    <p class="clearfix">身份证正面</p>
+                </div>
+                <h4 class="clearfix upload-title">选填,根据所选择证件类型上传所需文件。
+                    如身份证，则上传身份证正反面。
+                    点击图片重新上传</h4>
+            </li>
+            <li class="clearfix">
+                <p class="submit">
+                    <input type="submit" value="添加" class="proposer-submit"/>
+                    <input type="button" value="取消添加" />
+                </p>
+            </li>
+        </ul>
+    </form>
+</div>
+<!--查看申请人-->
+<div class="lookproposer proposer-public">
+    <h3>
+        <span>查看申请人</span>
+        <i></i>
+        <b></b>
+    </h3>
+    <form action="" method="post" >
+        <ul>
+            <li class="Importinventors">
+                <span>从发明人导入：</span>
+                <input type="text" name="inventNameCn"  value=""  class="Importinventor" autocomplete="off"  />
+                <div>
+
+                </div>
+            </li>
+            <li>
+                <span>姓名或名称：</span>
+                <input type="text" name=""  value="" class="name2 empty proposer-name" maxlength="40"/>
+                <i ><b class="toggle"></b>第一申请人</i>
+            </li>
+            <li>
+                <span>姓名（英文）：</span>
+                <input name="" type="text" class="name2 proposer-nameEn"  autocomplete="off"  placeholder=""/>
+            </li>
+            <li class="add-types">
+                <span>申请人类型：</span>
+                <input  name="" type="text" class="add-type" autocomplete="off" readonly  placeholder="大专院校"/>
+                <div>
+
+                </div>
+            </li>
+            <li class="card-types">
+                <span>证件类型：</span>
+                <input  name="" type="text" class="card-type" autocomplete="off" readonly  placeholder="组织机构代码／统一社会信用代码"/>
+                <div>
+
+                </div>
+            </li>
+            <li>
+                <span>证件号码：</span>
+                <input  name="" type="text" autocomplete="off" class="name2 empty"/>
+            </li>
+            <li>
+                <span>减缓申请：</span>
+                <i style="margin-left:0;"><b class="toggle-if"></b>请求费减且已完成费减资格备案</i>
+            </li>
+            <li class="toggle-show slow-down">
+                <input type="radio" name="down"  value="" />个人减缓
+                <input type="radio" name="down"  value="" />单位减缓
+            </li>
+            <li class="toggle-show">
+                <span>名称：</span>
+                <input  name="" type="text" autocomplete="off" class="name2 empty"/>
+            </li>
+            <li class="clearfix toggle-show">
+                <span>证明文件：</span>
+                <div class="upload-wrap">
+                    <div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="clearfix reg-nations">
+                <span>＊国籍或者注册国家（地区）：</span>
+                <input type="text" name="" class="reg-nation" value="" autocomplete="off" readonly placeholder="中国"/>
+                <div>
+
+                </div>
+            </li>
+            <li class="abode-places clearfix">
+                <span>＊经常居住地或营业所所在地：</span>
+                <div class="placeOne">
+                    <input type="text" name=""  value="" autocomplete="off" readonly placeholder="中国"/>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="placeTwo">
+                    <input type="text" name=""  value="" autocomplete="off" readonly placeholder="北京市"/>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="placeThree">
+                    <input type="text" name=""  value="" autocomplete="off" readonly  placeholder="房山区"/>
+                    <div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span>＊城区（乡）、街道、门牌号：</span>
+                <input type="text" name=""  value="" class="name2 empty"  />
+            </li>
+            <li class="addressEn">
+                <span>英文地址：</span>
+                <input type="text" name=""  value="" class="name2"  />
+            </li>
+            <li>
+                <span>＊联系电话：</span>
+                <input type="text" name=""  value="" class="name2 empty"/>
+            </li>
+            <li>
+                <span>邮箱：</span>
+                <input type="text" name=""  value="" class=" name2"/>
+            </li>
+            <li class="clearfix">
+                <span>上传证件：</span>
+                <div class="upload-wrap">
+                    <div>
+
+                    </div>
+                    <p class="clearfix">身份证正面</p>
+                </div>
+                <h4 class="clearfix upload-title">选填,根据所选择证件类型上传所需文件。
+                    如身份证，则上传身份证正反面。
+                    点击图片重新上传</h4>
+            </li>
+            <li class="clearfix">
+                <p class="submit">
+                    <input type="submit" value="添加" class="proposer-submit"/>
+                    <input type="button" value="取消添加" />
+                </p>
+            </li>
+        </ul>
+    </form>
+</div>
 <!--完整性检测  -->
 <div class="detection">
 	<h3>

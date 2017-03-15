@@ -231,8 +231,28 @@ var patent = {
         $(".addInventor ul li b").click(function(){
             $(this).toggleClass("hover");
         });
-
-
+        /*  修改发明人 */
+        $(".revampInventor-btn").click(function(){
+            $(".lay-out,.revampInventor").show();
+        });
+        $(".revampInventor h3 b,.revampInventor .submit input:nth-child(2)").click(function(){
+            $(".lay-out,.revampInventor").hide();
+            $(".revampInventor input").not(".submit input").val("");
+        });
+        $(".revampInventor ul li b").click(function(){
+            $(this).toggleClass("hover");
+        });
+        /*  查看发明人 */
+        $(".lookInventor-btn").click(function(){
+            $(".lay-out,.lookInventor").show();
+        });
+        $(".lookInventor h3 b,.lookInventor .submit input:nth-child(2)").click(function(){
+            $(".lay-out,.lookInventor").hide();
+            $(".lookInventor input").not(".submit input").val("");
+        });
+        $(".lookInventor ul li b").click(function(){
+            $(this).toggleClass("hover");
+        });
         /*姓名转换为大写*/
         $(".inventNameCn").blur(function(){
             var str=pinyin.getFullChars(this.value).toLocaleUpperCase();
@@ -242,7 +262,6 @@ var patent = {
             var str=pinyin.getFullChars(this.value).toLocaleUpperCase();
             $(".proposer-nameEn").val(str);
         });
-
         /*申请人*/
         $(".proposer-btn").click(function(){
             $(".lay-out,.addproposer").show();
@@ -263,7 +282,22 @@ var patent = {
                 $(".toggle-show label").remove();
             };
         });
-
+        /*修改申请人*/
+        $(".revampproposer-btn").click(function(){
+            $(".lay-out,.revampproposer").show();
+        });
+        $(".revampproposer h3 b,.revampproposer .submit input:nth-child(2)").click(function(){
+            $(".lay-out,.revampproposer").hide();
+            $(".revampproposer input").not(".submit input").val("");
+        });
+        /*查看申请人*/
+        $(".lookproposer-btn").click(function(){
+            $(".lay-out,.lookproposer").show();
+        });
+        $(".lookproposer h3 b,.lookproposer .submit input:nth-child(2)").click(function(){
+            $(".lay-out,.lookproposer").hide();
+            $(".lookproposer input").not(".submit input").val("");
+        });
         /*正式提交*/
         $(".official-submit").click(function(){
             $(".lay-out,.detection").show();
@@ -275,6 +309,11 @@ var patent = {
             alert("提交成功");
             $(".lay-out,.detection").hide();
         });
+
+
+        $("#yyyy").click(function(){
+            $("body").append( $(".addInventor").clone(true));
+        })
     },
     //是否确认删除
     _sureDel:function(){
@@ -294,8 +333,6 @@ var patent = {
                 $(".sure-del .p1 img").click();
             })
         });
-
-
     },
     // 电话如果不为空验证
     _phone:function(){
@@ -342,7 +379,6 @@ function unWrite(){
             $("input").not("#pat1").attr("readonly","true");
         }else{
             $("input").not("#pat1").removeAttr("readonly");
-
         }
     })
 }
