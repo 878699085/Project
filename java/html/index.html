@@ -1,296 +1,701 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="../css/reset.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/page.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
-    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="../js/page.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/page.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/page.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<p class="bread_nav">当前位置 > <a href="#">客户管理</a> > <a href="#">业务信息</a></p>
+			<div class="nav_Tops">
+				<form action="">
+					<ul class="basic_search">
+						<li><label for="">所属人：</label><span class="person_blongs">已选择6位所属人，点击查看</span></li>
+						<li class="business_type">
+							<label for="">业务类型：</label>
+							<dl>
+								<dt>不限</dt>
+								<dd>
+									<p></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<label for="">所属分类：</label><span class="classify">23分类、24分类</span>
+							<a href="javascript:void(0)">重置</a>
+						</li>
+						<li class="default_time">
+							<label for="">预设回访时间：</label>
+							<input type="text" />
+							<b></b>
+						</li>
+						<li class="sell_status">
+							<label for="">销售状态：</label>
+							<dl>
+								<dt>不限</dt>
+								<dd>
+									<p></p>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<input type="text" class="search_box" placeholder="支持联系人、联系电话、QQ、注册号、业务ID、业务名称搜索"/>
+							<input type="button" class="search_btn" value="查询"/>
+							<a href="javascript:void(0)" class="experts">高级查询</a>
+						</li>
+					</ul>
+					<ul class="expert_search hide">
+						<li>
+							<label for="">客户名称：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">客户来源：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text"/>
+						</li>
+						<li>
+							<label for="">客户联系人：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text"/>
+						</li>
+						<li>
+							<label for="">所属人：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">客户等级：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">是否图形：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+								</dd>
+							</dl>
+						</li>
+						<li class="creat_time">
+							<label for="">创建时间：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" style="margin-right:5px;"/>至<input type="text" style="margin-left:5px;margin-right:38px;"/>
+						</li>
+						<li class="creat_time">
+							<label for="">最后跟进时间：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" style="margin-right:5px;"/>至<input type="text" style="margin-left:5px;margin-right:70px;"/>
+						</li>
+						<li>
+							<label for="">手机：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">电话：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">QQ：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">注册号：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li>
+							<label for="">注册名称：</label>
+							<dl>
+								<dt>等于</dt>
+								<dd>
+									<p>不等于</p>
+									<p>包含</p>
+									<p>不包含</p>
+								</dd>
+							</dl>
+							<input type="text" />
+						</li>
+						<li class="sub_btns">
+							<input type="button" value="查询"/>
+						</li>
+					</ul>
+				</form>
+				<div class="sort_list">
+					<div class="aui-content aui-card">
+						<ul class="aui-list-view" style=" width: inherit;top: 17px;position: relative;">
+							<li class="aui-list-view-cell aui-switch-body">
+								<div class="aui-switch-title">自动刷新</div>
+								<input type="checkbox" class="aui-switch aui-switch-success aui-pull-right" >
+							</li>
+						</ul>
+					</div>
+					<dl>
+						<dt>默认排序</dt>
+						<dd>
+							<p>按照创建时间倒序</p>
+							<p>按照创建时间正序</p>
+							<p>按照客户等级升序</p>
+							<p>按照客户等级降序</p>
+							<p>按照未领取状态倒序</p>
+							<p>按照待回访时间倒序</p>
+						</dd>
+					</dl>
+					<div class="set">自定义显示字段</div>
+				</div>
+				<div class="less_more"><i>收起</i><img src="../imgs/less.png" alt="" /></div>
+			</div>
+			<div class="main_contents clear">
+				<div class="person_info">
+					<h4>客户信息<b></b></h4>
+					<div class="table">
+						<table border="" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<td>客户名称</td>
+									<td>业务名称</td>
+									<td>
+										<dl>
+											<dt>业务类型</dt>
+											<dd>
+												<p></p>
+											</dd>
+										</dl>
+									</td>
+									<td>
+										<dl>
+											<dt>信息等级</dt>
+											<dd>
+												<p></p>
+											</dd>
+										</dl>
+									</td>
+									<td>
+										<dl>
+											<dt>客户性质</dt>
+											<dd>
+												<p></p>
+											</dd>
+										</dl>
+									</td>
+									<td>操作时间</td>
+									<td>数据来源</td>
+									<td>下次回访时间</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>向上专利名称</td>
+									<td>发明专利</td>
+									<td>正在填写</td>
+									<td>自助申请</td>
+									<td>8-20 16:18:12</td>
+									<td></td>
+									<td></td>
+								</tr>
+						</tbody>
+						</table>
+						<div class="pageNumber"></div>
+					</div>
+				</div>
+				<div class="person_details">
+		            <div class="User_Info">
+		                <p class="step1"><span>客户信息</span></p>
+		                <ul class="clear">
+		                    <li class="Diff">
+		                        <lable for="name">公司名称 :</lable>
+		                        <input type="text" id="name" placeholder="公司名称"/><br/>
 
-<div class="wrapper">
-    <p class="bread_nav"></p>
-    <div class="nav_Tops"></div>
-    <div class="main_contents clear">
-        <div class="person_info"></div>
-        <div class="person_details">
-            <div class="User_Info">
-                <p class="step1"><span>客户信息</span></p>
-                <ul class="clear">
-                    <li class="Diff">
-                        <lable for="name">公司名称 :</lable>
-                        <input type="text" id="name" placeholder="公司名称"/><br/>
-
-                        <lable style="margin-left: 14px" for="connect">联系人 :</lable>
-                        <input type="text" id="connect" placeholder="联系人姓名"/><br/>
+		                        <lable style="margin-left: 14px" for="connect">联系人 :</lable>
+		                        <input type="text" id="connect" placeholder="联系人姓名"/><br/>
 
 
-                        <lable for="User_resource">客户资源 :</lable>
-                        <input type="text" id="User_resource" placeholder="客户资源"/>
+		                        <lable for="User_resource">客户资源 :</lable>
+		                        <input type="text" id="User_resource" placeholder="客户资源"/>
 
 
-                    </li>
-                    <li>
-                        <lable for="tel">手机 :</lable>
-                        <input type="text" id="tel" placeholder="电话号码"/><br/>
-                        <lable style="margin-left: 5px" for="QQ">QQ :</lable>
-                        <input type="text" id="QQ" placeholder="QQ号码"/><br/>
-                        <lable for="phone">电话 :</lable>
-                        <input type="text" id="phone" placeholder="电话"/>
-                    </li>
-                    <li>
-                        <lable for="new_tel">新手机 :</lable>
-                        <input type="text" id="new_tel" placeholder="新手机号码"/><br/>
-                        <lable style="margin-left: 5px" for="new_QQ">新QQ :</lable>
-                        <input type="text" id="new_QQ" placeholder="新QQ号码"/><br/>
-                        <lable for="new_phone">新电话 :</lable>
-                        <input type="text" id="new_phone" placeholder="新电话"/>
-                    </li>
-                    <li class="Name_button">
-                        客户所属人：于兴亮<span>以客户身份进入平台</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="add_Visited User_Info">
-                <p class="step1"><span>添加回访记录 </span></p>
-                <ol class="clear">
-                    <li>
-                        <span>回访方式：</span>
-                        <lable><input name="visited" type="radio"/>电话回访</lable>
-                        <lable><input name="visited" type="radio"/>QQ回访</lable>
-                        <lable><input name="visited" type="radio"/>电子邮件</lable>
-                        <lable><input name="visited" type="radio"/>其他</lable>
-                        <span class="next_visited">下次回访时间:<input type="text"/></span>
-                    </li>
-                    <li class="visited_reason">
-                        <span>回访理由：</span>
-                        <span><i></i>了解客户主题</span>
-                        <span><i></i>确定决策人</span>
-                        <span><i></i>确定客户商标名称</span>
-                    </li>
-                    <li class="clear">
-                        <span>回访理由：</span>
-                        <textarea name="" id="li" cols="30" rows="10"></textarea>
-                    </li>
-                    <li class="visited_person">
-                        <input type="button" value="回访"/>
-                        <input type="button" value="回访下一个"/>
-                    </li>
-                </ol>
-            </div>
-            <div class="Visited_record User_Info">
-                <p class="step1"><span>回访记录 </span></p>
-                <table border="1" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <th>发送形式</th>
-                        <th class="visited_con">回访内容</th>
-                        <th>回访时间</th>
-                    </tr>
-                    <tr>
-                        <td>手机短信、邮箱、站内信</td>
-                        <td>用户添加了2个申请人并都申请了费用减缓，经与客户沟通只需做一个申请的XXX的费用减缓，已经帮助客户在系统更改，请客户张先生及时递交费用减缓证明材料</td>
-                        <td>8-20  16:18:26</td>
-                    </tr>
-                    <tr>
-                        <td>手机短信、站内信</td>
-                        <td>请用户及时提交发明专利：一种XXXXX的费用减缓请求书证明材料</td>
-                        <td>8-20  16:18:26</td>
-                    </tr>
-                    <tr>
-                        <td>站内信</td>
-                        <td>用户添加了2个申请人并都申请了费用减缓，经与客户沟通只需做一个申请的XXX的费用减缓，已经帮助客户在系统更改，请客户张先生及时递交费用减缓证明材料</td>
-                        <td>8-20  16:18:26</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="ordering User_Info">
-                <p class="step1"><span>进行中订单</span></p>
-                <ul class="step2">
-                    <li class="invention">发明专利材料<i></i>
-                        <p>
-                            <span>打包下载</span>
-                            <span>委托书</span>
-                            <span>合同</span>
-                        </p>
-                    </li>
-                    <li>外观专利材料</li>
-                    <li>实用新型材料</li>
-                    <li>商标申请材料</li>
-                </ul>
-                <table width="100%" border="1" cellpadding="0" cellspacing="0">
-                    <tr style="height:34px">
-                        <th width="39"><i></i></th>
-                        <th width="198">订单名称</th>
-                        <th width="118">单价（元）</th>
-                        <th width="118">总价（元）</th>
-                        <th width="118">状态</th>
-                        <th width="118">操作</th>
-                    </tr>
-                    <tr style="height: 22px;background: #f5f9ff">
-                        <td colspan="6"><span>创建时间：2014年1月1日</span><span>合同编号:20140704333333333</span><a class="order_detail">订单详情</a></td>
+		                    </li>
+		                    <li>
+		                        <lable for="tel">手机 :</lable>
+		                        <input type="text" id="tel" placeholder="电话号码"/><br/>
+		                        <lable style="margin-left: 5px" for="QQ">QQ :</lable>
+		                        <input type="text" id="QQ" placeholder="QQ号码"/><br/>
+		                        <lable for="phone">电话 :</lable>
+		                        <input type="text" id="phone" placeholder="电话"/>
+		                    </li>
+		                    <li>
+		                        <lable for="new_tel">新手机 :</lable>
+		                        <input type="text" id="new_tel" placeholder="新手机号码"/><br/>
+		                        <lable style="margin-left: 5px" for="new_QQ">新QQ :</lable>
+		                        <input type="text" id="new_QQ" placeholder="新QQ号码"/><br/>
+		                        <lable for="new_phone">新电话 :</lable>
+		                        <input type="text" id="new_phone" placeholder="新电话"/>
+		                    </li>
+		                    <li class="Name_button">
+		                        客户所属人：于兴亮<span>以客户身份进入平台</span>
+		                    </li>
+		                </ul>
+		            </div>
+		            <div class="add_Visited User_Info">
+		                <p class="step1"><span>添加回访记录 </span></p>
+		                <ol class="clear">
+		                    <li>
+		                        <span>回访方式：</span>
+		                        <lable><input name="visited" type="radio"/>电话回访</lable>
+		                        <lable><input name="visited" type="radio"/>QQ回访</lable>
+		                        <lable><input name="visited" type="radio"/>电子邮件</lable>
+		                        <lable><input name="visited" type="radio"/>其他</lable>
+		                        <span class="next_visited">下次回访时间:<input type="text"/></span>
+		                    </li>
+		                    <li class="visited_reason">
+		                        <span>回访理由：</span>
+		                        <span><i></i>了解客户主题</span>
+		                        <span><i></i>确定决策人</span>
+		                        <span><i></i>确定客户商标名称</span>
+		                    </li>
+		                    <li class="clear">
+		                        <span>回访理由：</span>
+		                        <textarea name="" id="li" cols="30" rows="10"></textarea>
+		                    </li>
+		                    <li class="visited_person">
+		                        <input type="button" value="回访"/>
+		                        <input type="button" value="回访下一个"/>
+		                    </li>
+		                </ol>
+		            </div>
+		            <div class="Visited_record User_Info">
+		                <p class="step1"><span>回访记录 </span></p>
+		                <table border="1" cellpadding="0" cellspacing="0">
+		                    <tr>
+		                        <th>发送形式</th>
+		                        <th class="visited_con">回访内容</th>
+		                        <th>回访时间</th>
+		                    </tr>
+		                    <tr>
+		                        <td>手机短信、邮箱、站内信</td>
+		                        <td>用户添加了2个申请人并都申请了费用减缓，经与客户沟通只需做一个申请的XXX的费用减缓，已经帮助客户在系统更改，请客户张先生及时递交费用减缓证明材料</td>
+		                        <td>8-20  16:18:26</td>
+		                    </tr>
+		                    <tr>
+		                        <td>手机短信、站内信</td>
+		                        <td>请用户及时提交发明专利：一种XXXXX的费用减缓请求书证明材料</td>
+		                        <td>8-20  16:18:26</td>
+		                    </tr>
+		                    <tr>
+		                        <td>站内信</td>
+		                        <td>用户添加了2个申请人并都申请了费用减缓，经与客户沟通只需做一个申请的XXX的费用减缓，已经帮助客户在系统更改，请客户张先生及时递交费用减缓证明材料</td>
+		                        <td>8-20  16:18:26</td>
+		                    </tr>
+		                </table>
+		            </div>
+		            <div class="ordering User_Info">
+		                <p class="step1"><span>进行中订单</span></p>
+		                <ul class="step2">
+		                    <li class="invention">发明专利材料<i></i>
+		                        <p>
+		                            <span>打包下载</span>
+		                            <span>委托书</span>
+		                            <span>合同</span>
+		                        </p>
+		                    </li>
+		                    <li>外观专利材料</li>
+		                    <li>实用新型材料</li>
+		                    <li>商标申请材料</li>
+		                </ul>
+		                <table width="100%" border="1" cellpadding="0" cellspacing="0">
+		                    <tr style="height:34px">
+		                        <th width="39"><i></i></th>
+		                        <th width="198">订单名称</th>
+		                        <th width="118">单价（元）</th>
+		                        <th width="118">总价（元）</th>
+		                        <th width="118">状态</th>
+		                        <th width="118">操作</th>
+		                    </tr>
+		                    <tr style="height: 22px;background: #f5f9ff">
+		                        <td colspan="6"><span>创建时间：2014年1月1日</span><span>合同编号:20140704333333333</span><a class="order_detail">订单详情</a></td>
 
-                    </tr>
-                    <tr style="height: 58px">
-                        <td><i></i></td>
-                        <td>【专利发明】锅炉管板热防护装置</td>
-                        <td>20000.00</td>
-                        <td>20000.00</td>
-                        <td>待支付</td>
-                        <td><a>添加付款</a><a>编辑</a></td>
-                    </tr>
-                    <tr style="height: 22px;background: #f5f9ff">
-                        <td colspan="6"><span>创建时间：2014年1月1日</span><span>合同编号:20140704333333333</span><a class="order_detail">订单详情</a></td>
+		                    </tr>
+		                    <tr style="height: 58px">
+		                        <td><i></i></td>
+		                        <td>【专利发明】锅炉管板热防护装置</td>
+		                        <td>20000.00</td>
+		                        <td>20000.00</td>
+		                        <td>待支付</td>
+		                        <td><a>添加付款</a><a>编辑</a></td>
+		                    </tr>
+		                    <tr style="height: 22px;background: #f5f9ff">
+		                        <td colspan="6"><span>创建时间：2014年1月1日</span><span>合同编号:20140704333333333</span><a class="order_detail">订单详情</a></td>
 
-                    </tr>
-                    <tr style="height: 58px">
-                        <td><i></i></td>
-                        <td>【专利发明】锅炉管板热防护装置</td>
-                        <td>20000.00</td>
-                        <td rowspan="2">20000.00</td>
-                        <td>等待受理通知书</td>
-                        <td><a>添加付款</a><a>编辑</a></td>
-                    </tr>
-                    <tr style="height: 58px">
-                        <td><i></i></td>
-                        <td>【专利发明】锅炉管板热防护装置</td>
-                        <td>20000.00</td>
-                        <td>材料审核</td>
-                        <td><a>添加付款</a><a>编辑</a></td>
-                    </tr>
-                    <tr style="height: 22px">
-                        <td colspan="6"><b>未完成订单额：2000.00      成交总额：33000.00  实付总额：13000.00 未付总额：20000.00</b></td>
+		                    </tr>
+		                    <tr style="height: 58px">
+		                        <td><i></i></td>
+		                        <td>【专利发明】锅炉管板热防护装置</td>
+		                        <td>20000.00</td>
+		                        <td rowspan="2">20000.00</td>
+		                        <td>等待受理通知书</td>
+		                        <td><a>添加付款</a><a>编辑</a></td>
+		                    </tr>
+		                    <tr style="height: 58px">
+		                        <td><i></i></td>
+		                        <td>【专利发明】锅炉管板热防护装置</td>
+		                        <td>20000.00</td>
+		                        <td>材料审核</td>
+		                        <td><a>添加付款</a><a>编辑</a></td>
+		                    </tr>
+		                    <tr style="height: 22px">
+		                        <td colspan="6"><b>未完成订单额：2000.00      成交总额：33000.00  实付总额：13000.00 未付总额：20000.00</b></td>
 
-                    </tr>
-                </table>
-            </div>
-            <div class="User_Info">
-                <p class="step1"><span>付款信息</span></p>
-                <table border="1" cellpadding="0" cellspacing="0">
-                    <tr style="height: 34px">
-                        <th width="158">报价金额</th>
-                        <th width="223">对应产品</th>
-                        <th width="158">付款时间</th>
-                        <th width="178">付款方式</th>
-                    </tr>
-                    <tr style="height:58px">
-                        <td>1500（RMB）</td>
-                        <td>商标名称：xxxxxxxxxx</td>
-                        <td>2014-8-20  16:18:26</td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="User_Info ordering">
-                <p class="step1"><span>邮寄记录</span></p>
-                <table border="1" cellpadding="0" cellspacing="0">
-                    <tr style="height: 34px">
-                        <th width="34"><i></i></th>
-                        <th width="83">订单名称</th>
-                        <th width="58">收件人</th>
-                        <th width="138">联系地址</th>
-                        <th width="98">联系电话</th>
-                        <th width="38">到付</th>
-                        <th width="118">创建信息</th>
-                        <th width="143">快递公司-运单号</th>
-                    </tr>
-                    <tr style="height:58px">
-                        <td><i></i></td>
-                        <td>商标注册证</td>
-                        <td>王三</td>
-                        <td>北京市房山区长阳一村</td>
-                        <td>152036894220</td>
-                        <td>是</td>
-                        <td>张三2014年1月1日</td>
-                        <td>申通快递-15565656565</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="User_Info">
-                <p class="step1"><span>操作记录</span></p>
-                <table border="1" cellpadding="0" cellspacing="0">
-                    <tr style="height: 34px">
-                        <th width="39">序号</th>
-                        <th width="138">操作类型</th>
-                        <th width="138">操作人</th>
-                        <th width="138">操作时间</th>
-                        <th width="263">备注</th>
-                    </tr>
-                    <tr style="height:58px">
-                        <td>1</td>
-                        <td>新建</td>
-                        <td>张丽君</td>
-                        <td>2014年1月1日</td>
-                        <td>客户被第1次放弃</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--订单详情弹窗-->
-<div class="order_window">
-    <div class="voucher">
-        <p class="voucher_tit clear"><span>收款单</span><i></i></p>
-        <p class="order_number"><b>订单：T201408210001</b></p>
-        <div class="order_List clear">
-            <ul style="margin-right: 25px" class="clear">
-                <li><i>*</i>支付日期：<input type="text" value="支付时间"/></li>
-                <li><i>*</i>付款账号：<input type="text" value="付款账号"/></li>
-                <li>抬头：<input type="text" /></li>
-                <li>开票公司：<input type="text" value="请选择"/><b></b></li>
-                <li>联系人：<input type="text"/></li>
-                <li>联系地址：<input type="text"/></li>
-            </ul>
-            <ul class="clear">
-                <li><i>*</i>付款人名称：<input type="text"/></li>
-                <li><i>*</i>收款账号：<input type="text" value="请选择"/><b></b></li>
-                <li>发票类型：<input type="text" value="请选择"/><b></b></li>
-                <li>税费：<input type="text" value="请选择"/><b></b></li>
-                <li>联系电话：<input type="text"/></li>
-                <li>备注：<input type="text"/></li>
-            </ul>
-            <p class="clear file_UP">
-                <span class="file_start">附件：</span>
-                <span class="up_File"><i></i><input type="file"/><em></em></span>
-                <span class="file_Last">选填，如申请图形商标进点击图片重新上传</span>
-            </p>
-        </div>
-        <div class="Voucher_details">
-            <p><span>收款单明细</span></p>
-            <table border="1" cellpadding="0" cellspacing="0">
-                <tr style="height: 22px">
-                    <th width="148">业务类型</th>
-                    <th width="268">单价（元）</th>
-                    <th width="83">数量</th>
-                    <th width="83">发票</th>
-                </tr>
-                <tr style="height: 38px">
-                    <td>商标变更</td>
-                    <td><span>1500</span></td>
-                    <td>1</td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-        <div class="check-out clear">
-            <p>付款方式：
-                <lable><input name="pay_Method" type="radio"/> 一次付清</lable>
-                <lable><input name="pay_Method" type="radio"/> 分期付款</lable>
-            </p>
-            <ul>
-                <li>产品总额：¥ <span>1500</span>元</li>
-                <li>优惠总额：¥<b>1500</b>元</li>
-                <li>应付总额：¥ <span>1500</span>元</li>
-                <li><input type="button" value="保存"/></li>
-            </ul>
-        </div>
-    </div>
-    <p class="opacity"></p>
-</div>
-</body>
+		                    </tr>
+		                </table>
+		            </div>
+		            <div class="User_Info">
+		                <p class="step1"><span>付款信息</span></p>
+		                <table border="1" cellpadding="0" cellspacing="0">
+		                    <tr style="height: 34px">
+		                        <th width="158">报价金额</th>
+		                        <th width="223">对应产品</th>
+		                        <th width="158">付款时间</th>
+		                        <th width="178">付款方式</th>
+		                    </tr>
+		                    <tr style="height:58px">
+		                        <td>1500（RMB）</td>
+		                        <td>商标名称：xxxxxxxxxx</td>
+		                        <td>2014-8-20  16:18:26</td>
+		                        <td></td>
+		                    </tr>
+		                </table>
+		            </div>
+		            <div class="User_Info ordering">
+		                <p class="step1"><span>邮寄记录</span></p>
+		                <table border="1" cellpadding="0" cellspacing="0">
+		                    <tr style="height: 34px">
+		                        <th width="34"><i></i></th>
+		                        <th width="83">订单名称</th>
+		                        <th width="58">收件人</th>
+		                        <th width="138">联系地址</th>
+		                        <th width="98">联系电话</th>
+		                        <th width="38">到付</th>
+		                        <th width="118">创建信息</th>
+		                        <th width="143">快递公司-运单号</th>
+		                    </tr>
+		                    <tr style="height:58px">
+		                        <td><i></i></td>
+		                        <td>商标注册证</td>
+		                        <td>王三</td>
+		                        <td>北京市房山区长阳一村</td>
+		                        <td>152036894220</td>
+		                        <td>是</td>
+		                        <td>张三2014年1月1日</td>
+		                        <td>申通快递-15565656565</td>
+		                    </tr>
+		                </table>
+		            </div>
+		            <div class="User_Info">
+		                <p class="step1"><span>操作记录</span></p>
+		                <table border="1" cellpadding="0" cellspacing="0">
+		                    <tr style="height: 34px">
+		                        <th width="39">序号</th>
+		                        <th width="138">操作类型</th>
+		                        <th width="138">操作人</th>
+		                        <th width="138">操作时间</th>
+		                        <th width="263">备注</th>
+		                    </tr>
+		                    <tr style="height:58px">
+		                        <td>1</td>
+		                        <td>新建</td>
+		                        <td>张丽君</td>
+		                        <td>2014年1月1日</td>
+		                        <td>客户被第1次放弃</td>
+		                    </tr>
+		                </table>
+		            </div>
+       			</div>
+			</div>
+		</div>
+		<!--订单详情弹窗-->
+		<div class="order_window">
+		    <div class="voucher">
+		        <p class="voucher_tit clear"><span>收款单</span><i></i></p>
+		        <p class="order_number"><b>订单：T201408210001</b></p>
+		        <div class="order_List clear">
+		            <ul style="margin-right: 25px" class="clear">
+		                <li><i>*</i>支付日期：<input type="text" value="支付时间"/></li>
+		                <li><i>*</i>付款账号：<input type="text" value="付款账号"/></li>
+		                <li>抬头：<input type="text" /></li>
+		                <li>开票公司：<input type="text" value="请选择"/><b></b></li>
+		                <li>联系人：<input type="text"/></li>
+		                <li>联系地址：<input type="text"/></li>
+		            </ul>
+		            <ul class="clear">
+		                <li><i>*</i>付款人名称：<input type="text"/></li>
+		                <li><i>*</i>收款账号：<input type="text" value="请选择"/><b></b></li>
+		                <li>发票类型：<input type="text" value="请选择"/><b></b></li>
+		                <li>税费：<input type="text" value="请选择"/><b></b></li>
+		                <li>联系电话：<input type="text"/></li>
+		                <li>备注：<input type="text"/></li>
+		            </ul>
+		            <p class="clear file_UP">
+		                <span class="file_start">附件：</span>
+		                <span class="up_File"><i></i><input type="file"/><em></em></span>
+		                <span class="file_Last">选填，如申请图形商标进点击图片重新上传</span>
+		            </p>
+		        </div>
+		        <div class="Voucher_details">
+		            <p><span>收款单明细</span></p>
+		            <table border="1" cellpadding="0" cellspacing="0">
+		                <tr style="height: 22px">
+		                    <th width="148">业务类型</th>
+		                    <th width="268">单价（元）</th>
+		                    <th width="83">数量</th>
+		                    <th width="83">发票</th>
+		                </tr>
+		                <tr style="height: 38px">
+		                    <td>商标变更</td>
+		                    <td><span>1500</span></td>
+		                    <td>1</td>
+		                    <td></td>
+		                </tr>
+		            </table>
+		        </div>
+		        <div class="check-out clear">
+		            <p>付款方式：
+		                <lable><input name="pay_Method" type="radio"/> 一次付清</lable>
+		                <lable><input name="pay_Method" type="radio"/> 分期付款</lable>
+		            </p>
+		            <ul>
+		                <li>产品总额：¥ <span>1500</span>元</li>
+		                <li>优惠总额：¥<b>1500</b>元</li>
+		                <li>应付总额：¥ <span>1500</span>元</li>
+		                <li><input type="button" value="保存"/></li>
+		            </ul>
+		        </div>
+		    </div>
+		    <p class="opacity"></p>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var pageCount = "${pageInfo.pages}";
+				if(Number(pageCount)>100){
+					pageCount=100;
+				}
+				var current = "${pageInfo.pageNum}";
+				$(".pageNumber").createPage({
+			        pageCount:Number(pageCount),//总页数
+			        current:Number(current),		//当前页
+			        backFn:function(p){
+			            //p是跳转后的页码  （回调函数）
+			            $("#pageNum").val(p);
+			            var frm = document.getElementById("query-from");
+			        	frm.action="${src}/tech/techInfoList.html";
+			        	frm.submit();
+			       }
+  				});
+			})
+		</script>
+	</body>
 </html>
