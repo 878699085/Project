@@ -20,14 +20,14 @@ $(function(){
 		}
 	})
 	//显示下拉列表；
-	showSelect($(".nav_Tops dl"),$(".nav_Tops dl p"),$(".nav_Tops dl dd"));
-	showSelect($(".table dl"),$(".table dl p"),$(".table dl dd"));
+	showSelect($(".nav_Tops dl"),$(".nav_Tops dl p"));
+	showSelect($(".table dl"),$(".table dl p"));
 	//订单详情弹窗
 	order();
 })
 
 //显示下拉列表
-function showSelect(name1,name2,name3){
+function showSelect(name1,name2){
 	name1.click(function(){
 		$(this).find("dd").slideToggle();
 	})
@@ -35,7 +35,6 @@ function showSelect(name1,name2,name3){
 		var find_xu=$(this).parent().siblings("dt").text(); 
 		$(this).parent().siblings("dt").text($(this).text());
 		$(this).text(find_xu);
-		name3.stop().slideUp();
 	})
 }
 //订单详情弹窗
