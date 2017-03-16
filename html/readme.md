@@ -14,12 +14,17 @@
       办理中业务 transact.html
       未提交的业务 uncommitted.html
       办理历史 transact_history.html
+      确认服务信息第一步 confirm1.html
+      确认服务信息第二步 confirm2.html
 
 
 待付款页面     obligation.html
 
+###外观专利
+design_patent.html 外观专利请求书
 
-
+###实用新型
+new_application.html 实用新型请求书
 
 
 
