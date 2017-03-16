@@ -6,13 +6,10 @@
 }
 .pageNumber a {
 	display: inline-block;
-	padding:7px 10px;
-	/* width:28px;
-	height:28px; */
+	padding:7px 20px;
 	margin-left:3px;
 	border: 1px solid #e5e5e5;
 	text-align: center;
-	/* line-height: 28px; */
 }
 .pageNumber a:hover {
 	text-decoration: none;
