@@ -8,6 +8,7 @@
 ###外观专利
 			aspect_explain 外观设计简要说明
 			aspect_img  外观设计图片或照片
+			design_patent.html 外观专利请求书
 >
 ###个人中心（PersonlCenter）
 
@@ -20,12 +21,11 @@
       我的商标办理中的业务 brand.html
       我的商标办理中的业务详情  brandDetails.html
       我的商标未提交的业务  brand_uncommit.html
-
-
+      确认服务信息第一步 confirm1.html
+      确认服务信息第二步 confirm2.html
 	待付款页面     obligation.html
-
-
-
+###实用新型
+new_application.html 实用新型请求书
 
 
 

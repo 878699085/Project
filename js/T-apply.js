@@ -57,12 +57,12 @@ var patent = {
         $(".input").click(function(){
             $(this).find("img").toggleClass("hide");
         })
-        $(".more .p1").click(function(){
+        $(".more .p11").click(function(){
             $(".Tog").toggleClass("hide");
             if($(".Tog").hasClass("hide")){
-                $(".more .p1 img").prop("src","../imgs/T/T-more.png")
+                $(".more .p11 img").prop("src","../imgs/T/T-more.png")
             }else{
-                $(".more .p1 img").prop("src","../imgs/T/T-less.png")
+                $(".more .p11 img").prop("src","../imgs/T/T-less.png")
             }
         })
     },

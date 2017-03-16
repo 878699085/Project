@@ -248,11 +248,14 @@
 </div>
 <script>
     $(function(){
-
+       // category();
          $(".sleibie .s .s33").click(function(){
              $(this).parent().remove();
+             var $idx=$(this).parent().attr("index");
+             $(".leibiao li").eq($idx).removeClass("disabled");
+             $(".leibiao li").eq($idx).find("i").removeClass("disable");
          })
-        $(".leibiao li").mouseenter(function(){
+        /*$(".leibiao li").mouseover(function(){
             if($(this).hasClass("disabled")){
                 $(".leibiao li").click(function(){
                     $(this).removeClass("disabled");
@@ -268,15 +271,40 @@
                     $(this).find("i").removeClass("add");
                 })
             }
+        })*/
+
+        $(".leibiao li").click(function(){
+            if($(this).hasClass("disabled")){
+                $(this).removeClass("disabled");
+                $(this).find("i").removeClass("disable");
+                $(this).addClass("added");
+                $(this).find("i").addClass("add");
+            }else{
+                $(this).addClass("disabled");
+                $(this).find("i").addClass("disable");
+                $(this).removeClass("added");
+                $(this).find("i").removeClass("add");
+            }
         })
-        $(".leibiao li").mouseleave(function(){
+
+        $(".leibiao li").hover(function (){
+            if(!$(this).hasClass("disabled")){
+                $(this).addClass("added");
+                $(this).find("i").addClass("add");
+            }
+        },function(){
+            $(this).removeClass("added");
+            $(this).find("i").removeClass("add");
+        })
+
+        /*$(".leibiao li").mouseleave(function(){
             if($(this).hasClass("disabled")){
 
             }else{
                 $(this).removeClass("added");
                 $(this).find("i").removeClass("add");
             }
-        })
+        })*/
 
     $(".jxj").click(function(){
         $(".leibiao").slideToggle();
@@ -292,7 +320,22 @@
         $(this).html("•").siblings().html("");
     })*/
 })
+    //自动添加类别
+function category(){
+$(".leibiao li").each(function(){
+    var $idx=$(this).index();
+    $(this).click(function(){
+        if($(this).hasClass("disabled")){
 
+        }else{
+            var $cln=$(".sleibie .s:eq(0)").clone(true);
+            $cln.find(".s22").html($(this).text());
+            $cln.attr("index",$idx);
+            $(".sleibie").append($cln);
+        }
+    })
+})
+}
 </script>
 </body>
 </html>
