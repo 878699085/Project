@@ -344,17 +344,17 @@ var patent = {
         validate.post1(".l-post input");
         $(".l-phone input").blur(function(){
             if($(".l-phone input").val()==""){
-                $(".tip").remove();
+                $(".l-phone label").remove();
             }
         })
         $(".l-email input").blur(function(){
             if($(".l-email input").val()==""){
-                $(".tip").remove();
+                $(".l-email label").remove();
             }
         })
         $(".l-post input").blur(function(){
             if($(".l-post input").val()==""){
-                $(".tip").remove();
+                $(".l-post label").remove();
             }
         })
     }
