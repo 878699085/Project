@@ -3,7 +3,7 @@
  */
 $(function(){
     patent.init();
-    unWrite();
+    //unWrite();
     validate.nameLength("#l-name1");
     sureDel();
     leading();
@@ -114,14 +114,16 @@ var patent = {
         });
 
         $(".Inventor-submit").click(function(e){
+          //  e.preventDefault();
             $(".empty").blur();
             $(".countrys").click();
             $(".certificates").click();
             $(".credNo").blur();
-            if($(".addInventor label").length!=0){
+            patent.Inventor.add(1,1,1,1,1)
+            /*if($(".addInventor label").length!=0){
                 //阻止默认事件
                 e.preventDefault();
-            }
+            }*/
         });
 
         /*             新增申请人                      */
@@ -200,7 +202,7 @@ var patent = {
                     obj.find("label").remove();
                 }
             }
-        }
+        };
     },
     /*
      * 验证必填项
@@ -278,7 +280,9 @@ var patent = {
             $(this).toggleClass("hover");
             if($(this).hasClass("hover")){
                 $(".toggle-show").show();
+                $(".slow-down input:nth-child(1)").prop("checked","checked");
             }else{
+                $(".slow-down input:nth-child(1)").prop("checked","");
                 $(".toggle-show").hide();
                 $(".toggle-show label").remove();
             };
@@ -316,6 +320,32 @@ var patent = {
             $("body").append( $(".addInventor").clone(true));
         })
     },
+    Inventor : {
+        /*
+         * @param
+         *   listNo 序号
+         *   inventNameCn 姓名
+         *   citizenship 国籍
+         *   credNo 身份证
+         *   publish 是否
+         *
+         */
+        add : function(listNo,inventNameCn,citizenship,credNo,publish){
+            var listStr = '<tr><td>'+ listNo+'</td><td>'+inventNameCn+'</td><td>'+citizenship+'</td><td>'+credNo+'</td> <td>'+publish+'</td>'+
+                '<td><a class="delete0" href="javascript:void(0);">删除</a>'+
+                '<a href="javascript:void(0);" class="revampInventor-btn">修改</a>' +
+                '<a href="javascript:void(0);" class="lookInventor-btn">查看</a></td></tr>';
+            $(".inventor-list").append(listStr);
+            patent._sureDel();
+            patent._layout();
+        },
+        reset : function(){
+            var listStr = '<tr><td>'+listNo+'</td><td>'+inventNameCn+'</td><td>'+citizenship+'</td><td>'+credNo+'</td> <td>'+publish+'</td>'+
+                '<td><a class="delete0" href="javascript:void(0);">删除</a>'+
+                '<a href="javascript:void(0);" class="revampInventor-btn">修改</a>' +
+                '<a href="javascript:void(0);" class="lookInventor-btn">查看</a></td></tr>';
+        }
+    },
     //是否确认删除
     _sureDel:function(){
         $(".sure-del .p1 img").click(function(){
@@ -334,8 +364,6 @@ var patent = {
                 $(".sure-del .p1 img").click();
             })
         });
-
-
     },
     // 电话如果不为空验证
     _phone:function(){
