@@ -281,15 +281,18 @@ font-size:14px;
 line-height:32px;
 float:left;
 }
-.lingyu .ly1,.ly2{
+.lingyu .ly1,.lingyu .ly2{
 width:190px;
 height:30px;
 font-size:12px;
 padding-left:20px;
 line-height:30px;
 margin-right:15px;
-color: #959595;
+
 /*text-align:center;*/
+display:inline-block;
+border:1px dashed #ccc;
+overflow:hidden;
 }
 .lingyu .ly2{
 padding-left:46px;
@@ -476,6 +479,7 @@ width:90px;
 /*background-color:red;*/
 line-height:52px;
 position:relative;
+cursor:pointer;
 }
 .leibiao .disable{
 background:url(../imgs/T-confirm/disable.jpg) 0 0 no-repeat;
