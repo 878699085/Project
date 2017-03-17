@@ -131,25 +131,25 @@ var commom = {
 				hideSuggest();
 				suggestWrap.empty(); 
 			}
-		}
+		};
 		//input聚焦事件;
 		input.bind("click",function(){
 			suggestWrap.empty();
 			renderFn();
-		})
+		});
 		//隐藏下拉框
 		var hideSuggest=function(){
 			suggestWrap.hide();
-		}
+		};
 		//改变高亮显示;
 		var changeToWhite=function(){
 			if(highLightIndex != -1){ 
 	            suggestWrap.children().eq(highLightIndex).removeClass('hover'); 
 	        } 
-		}
+		};
 		init();
 	}
-}
+};
 /**
  * @description 验证字符串v是否为空（null 或者 空字符串——""）
  * @param {string}
