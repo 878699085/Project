@@ -11,6 +11,11 @@
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
+.pay_detail i{
+    display: inline-block;
+    width: 633px;
+    float: left;
+}
 .pay_brand .pay_tittle span,.pay_brand .pay_tittle b,.pay_brand .pay_tittle em{
     float: left;
     font-style: normal;
@@ -49,18 +54,21 @@
 .pay_brand .pay_detail li img{
     width: 48px;
     margin: 12px 45px;
+    max-height: 54px;
 }
 .pay_brand .pay_detail li span{
     margin-right: 80px;
 }
 .pay_brand .pay_detail li b{
-    margin-right: 90px;
 }
 .pay_brand .pay_detail li em{
-    margin-right: 105px;
+    width: 140px;
+    text-align: center;
 }
 .pay_brand .pay_detail li a{
     color: #ff3300;
+    width: 140px;
+    text-align: center;
 }
 .pay_brand .pay_money{
     float: right;
@@ -74,7 +82,7 @@
     font-size: 24px;
     color: #ff3300;
 }
-.pay_brand .pay_money a{
+.pay_brand .pay_money input{
     float: right;
     width: 120px;
     height: 35px;
@@ -83,8 +91,9 @@
     background: #ff3300;
     color: #ffffff;
     border-radius: 5px;
+    cursor:pointer;
+    border:none;
 }
-
 
 
 
