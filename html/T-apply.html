@@ -69,7 +69,7 @@
                         <th width="260">操作</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="inventor-list">
                     <tr>
                         <td></td>
                         <td></td>
@@ -104,7 +104,7 @@
                         <th width="260">操作</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="proposer-list">
                     <tr>
                         <td></td>
                         <td></td>
@@ -302,17 +302,16 @@
     	<i></i>
     	<b></b>
 	</h3>
-	<form action="" method="post" >
 		<ul>
 			<li>
 				<span>姓名：</span>
 				<input type="text" name="inventNameCn"  value="" class="empty name inventNameCn" maxlength="40" autocomplete="off" />
-				<i><b></b>不公布姓名</i>
-				<i><b class="FirstInventor" > </b>标记为第一发明人</i>
+				<i><b class="publishName toggle"></b>不公布姓名</i>
+				<i><b class="FirstInventor toggle" > </b>标记为第一发明人</i>
 			</li>
 			<li>
 				<span>姓名（英文）：</span>
-				<input type="text" name="inventNameEn" value="" autocomplete="off" class="name inventNameEn"/>
+				<input type="text" name="inventNameEn" value="" autocomplete="off" class="name inventNameEn "/>
 			</li>
 			<li class="countrys">
 				<span>国籍或者地区：</span>
@@ -336,13 +335,13 @@
 				<span>上传证件：</span>
 				<div class="upload-wrap">
 					<div>
-						
+                        <img src="111.png" />
 					</div>
 					<p class="clearfix">身份证正面</p>
 				</div>
 				<div class="upload-wrap card-fan">
 					<div>
-						
+                        <img src="222.png" />
 					</div>
 					<p class="clearfix">身份证反面</p>
 				</div>
@@ -355,7 +354,6 @@
 				</p>
 			</li>
 		</ul>
-	</form>
 </div>
 <!--修改发明人-->
 <div class="revampInventor Inventor-public">
@@ -369,8 +367,8 @@
             <li>
                 <span>姓名：</span>
                 <input type="text" name="inventNameCn"  value="" class="empty name inventNameCn" maxlength="40" autocomplete="off" />
-                <i><b></b>不公布姓名</i>
-                <i><b class="FirstInventor" > </b>标记为第一发明人</i>
+                <i><b  class="publishName toggle"> </b>不公布姓名</i>
+                <i><b class="FirstInventor toggle"> </b>标记为第一发明人</i>
             </li>
             <li>
                 <span>姓名（英文）：</span>
@@ -380,14 +378,14 @@
                 <span>国籍或者地区：</span>
                 <input name="citizenship" type="text" class="citizenship name1" autocomplete="off" readonly  placeholder="中国大陆"/>
                 <div>
-
+                    <img src="" />
                 </div>
             </li>
             <li class="certificates">
                 <span>证件类型：</span>
                 <input  name="credType" type="text" class="certificate name1" maxlength="80" autocomplete="off" readonly  placeholder="中国大陆"/>
                 <div>
-
+                    <img src="" />
                 </div>
             </li>
             <li class="credNos">
@@ -398,13 +396,13 @@
                 <span>上传证件：</span>
                 <div class="upload-wrap">
                     <div>
-
+                        <img src="" />
                     </div>
                     <p class="clearfix">身份证正面</p>
                 </div>
                 <div class="upload-wrap card-fan">
                     <div>
-
+                        <img src="" />
                     </div>
                     <p class="clearfix">身份证反面</p>
                 </div>
@@ -431,8 +429,8 @@
             <li>
                 <span>姓名：</span>
                 <input type="text" name="inventNameCn"  value="" class="empty name inventNameCn" maxlength="40" autocomplete="off" />
-                <i><b></b>不公布姓名</i>
-                <i><b class="FirstInventor" > </b>标记为第一发明人</i>
+                <i><b class="publishName toggle"></b>不公布姓名</i>
+                <i><b class="FirstInventor toggle" > </b>标记为第一发明人</i>
             </li>
             <li>
                 <span>姓名（英文）：</span>
@@ -460,13 +458,13 @@
                 <span>上传证件：</span>
                 <div class="upload-wrap">
                     <div>
-
+                        <img src="" />
                     </div>
                     <p class="clearfix">身份证正面</p>
                 </div>
                 <div class="upload-wrap card-fan">
                     <div>
-
+                        <img src="" />
                     </div>
                     <p class="clearfix">身份证反面</p>
                 </div>
@@ -488,7 +486,6 @@
     	<i></i>
     	<b></b>
 	</h3>
-	<form action="" method="post" id="addproposer">
 		<ul>
 			<li class="Importinventors">
 				<span>从发明人导入：</span>
@@ -607,7 +604,6 @@
 				</p>
 			</li>
 		</ul>
-	</form>
 </div>
 <!--修改申请人-->
 <div class="revampproposer proposer-public">
@@ -616,7 +612,6 @@
         <i></i>
         <b></b>
     </h3>
-    <form action="" method="post" >
         <ul>
             <li class="Importinventors">
                 <span>从发明人导入：</span>
@@ -735,7 +730,6 @@
                 </p>
             </li>
         </ul>
-    </form>
 </div>
 <!--查看申请人-->
 <div class="lookproposer proposer-public">
@@ -744,7 +738,6 @@
         <i></i>
         <b></b>
     </h3>
-    <form action="" method="post" >
         <ul>
             <li class="Importinventors">
                 <span>从发明人导入：</span>
@@ -756,7 +749,7 @@
             <li>
                 <span>姓名或名称：</span>
                 <input type="text" name=""  value="" class="name2 empty proposer-name" maxlength="40"/>
-                <i ><b class="toggle"></b>第一申请人</i>
+                <i ><b class="toggle FirstProposer"></b>第一申请人</i>
             </li>
             <li>
                 <span>姓名（英文）：</span>
@@ -778,7 +771,7 @@
             </li>
             <li>
                 <span>证件号码：</span>
-                <input  name="" type="text" autocomplete="off" class="name2 empty"/>
+                <input  name="" type="text" autocomplete="off" class="name2 empty card-no"/>
             </li>
             <li>
                 <span>减缓申请：</span>
@@ -863,7 +856,6 @@
                 </p>
             </li>
         </ul>
-    </form>
 </div>
 <!--完整性检测  -->
 <div class="detection">

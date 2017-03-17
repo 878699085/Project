@@ -105,7 +105,7 @@ border:1px dashed #ccc;
 }
 .inventor{
 margin-top:21px;
-height:160px;
+    min-height: 130px;
 border:1px solid #ccc;
 background-color:#fff;
 }
