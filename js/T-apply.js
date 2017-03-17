@@ -119,11 +119,37 @@ var patent = {
             $(".countrys").click();
             $(".certificates").click();
             $(".credNo").blur();
-            patent.Inventor.add(1,1,1,1,1)
-            /*if($(".addInventor label").length!=0){
+
+            var List=$(".inventor-list tr").length+1;
+            var NameVal=$(".inventNameCn").val();
+            var publishName;
+            var FirstInventor;
+            var NameEnVal=$(".inventNameEn").val();
+            var certificate=$(".certificate").val();
+            var CounVal=$(".citizenship").val();
+            var credNo=$(".credNo ").val();
+            var Imgsrc1=$(".upload-wrap").eq(0).find("img").attr("src");
+            var Imgsrc2=$(".upload-wrap").eq(1).find("img").attr("src");
+            if($(".publishName").hasClass("hover")){
+                publishName="否";
+            }else{
+                publishName="是";
+            };
+            if(!$(".FirstInventor").hasClass("hover")){
+                FirstInventor="0";
+            }else{
+                FirstInventor="1";
+            };
+
+            /*判断是否通过验证*/
+            if($(".addInventor label").length!=0){
                 //阻止默认事件
                 e.preventDefault();
-            }*/
+            }else{
+                patent.Inventor.add(List,NameVal,publishName,FirstInventor,NameEnVal,certificate,CounVal,credNo,Imgsrc1,Imgsrc2,66);
+                $(".lay-out,.addInventor").hide();
+               patent.clearCont($(".Inventor-public input"),$(".Inventor-public b"));
+            }
         });
 
         /*             新增申请人                      */
@@ -135,9 +161,26 @@ var patent = {
             $(".placeOne").click();
             $(".placeTwo").click();
             $(".placeThree").click();
+            
+            var List=$(".proposer-list tr").length+1;
+            var NameVal=$(".proposer-name").val();
+            var FirstProposer;
+            var regnation=$(".reg-nation").val();
+            var credNo=$(".card-no").val();
+            if(!$(".FirstProposer").hasClass("hover")){
+                FirstProposer="0";
+            }else{
+                FirstProposer="1";
+            };
+            
+            /*判断是否通过验证*/
             if($(".addproposer label").length!=0){
                 //阻止默认事件
                 e.preventDefault();
+            }else{
+            	$(".lay-out,.addproposer").hide();
+            	patent.proposer.add(List,NameVal,FirstProposer,regnation,credNo,66);
+                patent.clearCont($(".proposer-public input"),$(".proposer-public b"));
             }
         });
         /*申请人类型*/
@@ -222,6 +265,15 @@ var patent = {
             }
         })
     },
+    /* 清空弹窗内容
+     *@param input
+     *       b
+     */
+    clearCont : function(input,b){
+        input.not(".submit input").val("");
+        b.removeClass("hover");
+        $(".Inventor-public label").remove();
+    },
     _layout : function(){
         /*发明人*/
         $(".inventor-btn").click(function(){
@@ -229,49 +281,34 @@ var patent = {
         });
         $(".addInventor h3 b,.addInventor .submit input:nth-child(2)").click(function(){
             $(".lay-out,.addInventor").hide();
-            $(".addInventor input").not(".submit input").val("");
-        });
-        $(".addInventor ul li b").click(function(){
-            $(this).toggleClass("hover");
+            patent.clearCont($(".Inventor-public input"),$(".Inventor-public b"));
         });
         /*  修改发明人 */
-        $(".revampInventor-btn").click(function(){
-            $(".lay-out,.revampInventor").show();
-        });
         $(".revampInventor h3 b,.revampInventor .submit input:nth-child(2)").click(function(){
             $(".lay-out,.revampInventor").hide();
-            $(".revampInventor input").not(".submit input").val("");
-        });
-        $(".revampInventor ul li b").click(function(){
-            $(this).toggleClass("hover");
+            patent.clearCont($(".Inventor-public input"),$(".Inventor-public b"));
         });
         /*  查看发明人 */
-        $(".lookInventor-btn").click(function(){
-            $(".lay-out,.lookInventor").show();
-        });
         $(".lookInventor h3 b,.lookInventor .submit input:nth-child(2)").click(function(){
             $(".lay-out,.lookInventor").hide();
-            $(".lookInventor input").not(".submit input").val("");
+            patent.clearCont($(".Inventor-public input"),$(".Inventor-public b"));
         });
-        $(".lookInventor ul li b").click(function(){
-            $(this).toggleClass("hover");
-        });
-        /*姓名转换为大写*/
-        $(".inventNameCn").blur(function(){
-            var str=pinyin.getFullChars(this.value).toLocaleUpperCase();
-            $(".inventNameEn").val(str);
-        });
-        $(".proposer-name").blur(function(){
-            var str=pinyin.getFullChars(this.value).toLocaleUpperCase();
-            $(".proposer-nameEn").val(str);
-        });
+        /*姓名转换为大写（只有在内容改变时转换）*/
+       $(".inventNameCn").on("propertychange input",function(){
+       		var str=pinyin.getFullChars(this.value).toLocaleUpperCase();
+   			$(".inventNameEn").val(str);
+       });
+        $(".proposer-name").on("propertychange input",function(){
+       		var str=pinyin.getFullChars(this.value).toLocaleUpperCase();
+   			$(".proposer-nameEn").val(str);
+       });
         /*申请人*/
         $(".proposer-btn").click(function(){
             $(".lay-out,.addproposer").show();
         });
         $(".addproposer h3 b,.addproposer .submit input:nth-child(2)").click(function(){
             $(".lay-out,.addproposer").hide();
-            $(".addproposer input").not(".submit input").val("");
+            patent.clearCont($(".proposer-public input"),$(".proposer-public b"));
         });
         $(".toggle").click(function(){
             $(this).toggleClass("hover");
@@ -293,7 +330,7 @@ var patent = {
         });
         $(".revampproposer h3 b,.revampproposer .submit input:nth-child(2)").click(function(){
             $(".lay-out,.revampproposer").hide();
-            $(".revampproposer input").not(".submit input").val("");
+            patent.clearCont($(".proposer-public input"),$(".proposer-public b"));
         });
         /*查看申请人*/
         $(".lookproposer-btn").click(function(){
@@ -301,7 +338,7 @@ var patent = {
         });
         $(".lookproposer h3 b,.lookproposer .submit input:nth-child(2)").click(function(){
             $(".lay-out,.lookproposer").hide();
-            $(".lookproposer input").not(".submit input").val("");
+            patent.clearCont($(".proposer-public input"),$(".proposer-public b"));
         });
         /*正式提交*/
         $(".official-submit").click(function(){
@@ -314,36 +351,101 @@ var patent = {
             alert("提交成功");
             $(".lay-out,.detection").hide();
         });
-
-
-        $("#yyyy").click(function(){
-            $("body").append( $(".addInventor").clone(true));
-        })
+    },
+    resetInventor : function($this){
+        var $this = $($this);
+        if($($this).text()=="修改"){
+            $(".lay-out,.revampInventor").show();
+        }else{
+            $(".lay-out,.lookInventor").show();
+        }
+        var valFind=$this.parents("tr").find("td");
+        var valFind1=$this.parents("tr").find("input");
+        var inventNameCn=valFind.eq(1).text();
+        var publish=valFind.eq(4).text();
+        var First=valFind1.eq(2).val();
+        var inventNameEn=valFind1.eq(0).val();
+        var citizenship=valFind.eq(2).text();
+        var credType=valFind1.eq(1).val();
+        var credNo=valFind.eq(3).text();
+        var Imgsrc1=valFind1.eq(3).val();
+        var Imgsrc2=valFind1.eq(4).val();
+        patent.Inventor.reset(inventNameCn,publish,First,inventNameEn,citizenship,credType,credNo,Imgsrc1,Imgsrc2,66);
     },
     Inventor : {
-        /*
+        /* 添加发明人 添加
          * @param
          *   listNo 序号
          *   inventNameCn 姓名
-         *   citizenship 国籍
-         *   credNo 身份证
          *   publish 是否
-         *
+         *   First 标记为第一发明人
+         *   inventNameEn 姓名（英文）
+         *   citizenship 国籍
+         *   credType  证件类型
+         *   credNo 证件号码
+         *   Imgsrc1 证件图片路径
+         *   Imgsrc2 证件图片路径
+         *   inventId  当前信息Id
          */
-        add : function(listNo,inventNameCn,citizenship,credNo,publish){
+        add : function(listNo,inventNameCn,publish,First,inventNameEn,citizenship,credType,credNo,Imgsrc1,Imgsrc2,inventId){
             var listStr = '<tr><td>'+ listNo+'</td><td>'+inventNameCn+'</td><td>'+citizenship+'</td><td>'+credNo+'</td> <td>'+publish+'</td>'+
-                '<td><a class="delete0" href="javascript:void(0);">删除</a>'+
-                '<a href="javascript:void(0);" class="revampInventor-btn">修改</a>' +
-                '<a href="javascript:void(0);" class="lookInventor-btn">查看</a></td></tr>';
+                    '<input type="hidden" value='+inventNameEn+' /><input type="hidden" value='+credType+' /> <input type="hidden" value='+First+' />'+
+                    '<input type="hidden" value='+Imgsrc1+' /> <input type="hidden" value='+Imgsrc2+' /> '+
+                    '<td><a class="delete0" href="javascript:void('+inventId+');" >删除</a>'+
+                    '<a href="javascript:void('+inventId+');" class="revampInventor-btn" onClick="patent.resetInventor(this)">修改</a>' +
+                    '<a href="javascript:void('+inventId+');" class="lookInventor-btn" onClick="patent.resetInventor(this)">查看</a></td></tr>';
             $(".inventor-list").append(listStr);
             patent._sureDel();
-            patent._layout();
         },
-        reset : function(){
-            var listStr = '<tr><td>'+listNo+'</td><td>'+inventNameCn+'</td><td>'+citizenship+'</td><td>'+credNo+'</td> <td>'+publish+'</td>'+
-                '<td><a class="delete0" href="javascript:void(0);">删除</a>'+
-                '<a href="javascript:void(0);" class="revampInventor-btn">修改</a>' +
-                '<a href="javascript:void(0);" class="lookInventor-btn">查看</a></td></tr>';
+        reset : function(inventNameCn,publish,First,inventNameEn,citizenship,credType,credNo,Imgsrc1,Imgsrc2,inventId){
+            $(".Inventor-public .inventNameCn").val(inventNameCn);
+            $(".Inventor-public .inventNameEn").val(inventNameEn);
+            $(".Inventor-public .citizenship").val(citizenship);
+            $(".Inventor-public .certificate").val(credType);
+            $(".Inventor-public .credNo").val(credNo);
+            $(".upload-wrap").eq(0).find("img").attr("src",Imgsrc1);
+            $(".upload-wrap").eq(1).find("img").attr("src",Imgsrc2);
+            if(publish=="否"){
+                $(".Inventor-public .publishName").addClass("hover");
+            }
+            if(First=="1"){
+                $(".Inventor-public .FirstInventor").addClass("hover");
+            }
+        }
+    },
+    proposer : {
+        /* 添加申请人 添加
+         * @param
+         *   listNo 序号
+         *   proposerNameCn 姓名
+         *   First 第一申请人
+         *   citizenship 国籍
+         *   credNo 证件号码
+         *  inventId  当前信息Id
+         */
+        add : function(listNo,proposerNameCn,First,citizenship,credNo,inventId){
+            var listStr = '<tr><td>'+ listNo+'</td><td>'+proposerNameCn+'</td><td>'+citizenship+'</td><td>'+credNo+'</td> <td>是</td>'+
+                    '<input type="hidden" value='+First+' /> '+
+                    '<td><a class="delete0" href="javascript:void('+inventId+');" >删除</a>'+
+                    '<a href="javascript:void('+inventId+');" class="revampInventor-btn" onClick="patent.resetInventor(this)">修改</a>' +
+                    '<a href="javascript:void('+inventId+');" class="lookInventor-btn" onClick="patent.resetInventor(this)">查看</a></td></tr>';
+            $(".proposer-list").append(listStr);
+            patent._sureDel();
+        },
+        reset : function(listNo,proposerNameCn,First,citizenship,credNo,inventId){
+            $(".Inventor-public .inventNameCn").val(proposerNameCn);
+            $(".Inventor-public .inventNameEn").val(inventNameEn);
+            $(".Inventor-public .citizenship").val(citizenship);
+            $(".Inventor-public .certificate").val(credType);
+            $(".Inventor-public .credNo").val(credNo);
+            $(".upload-wrap").eq(0).find("img").attr("src",Imgsrc1);
+            $(".upload-wrap").eq(1).find("img").attr("src",Imgsrc2);
+            if(publish=="否"){
+                $(".Inventor-public .publishName").addClass("hover");
+            }
+            if(First=="1"){
+                $(".Inventor-public .FirstInventor").addClass("hover");
+            }
         }
     },
     //是否确认删除
