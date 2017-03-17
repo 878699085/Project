@@ -11,6 +11,13 @@
     <script>
         $(function(){
             validate.phone("#tel1");
+            $("#tel1").blur(function(){
+                if($("#tel1").val()==""){
+                    $("#tel1").parent().find("label").remove();
+                }
+            })
+
+
             validate.notNull(".apply2 input","申请人名称");
         })
     </script>
