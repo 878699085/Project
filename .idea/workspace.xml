@@ -2,14 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303dbbb-6e66-408c-af23-bcebe5edc0a7" name="Default" comment="ww">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/parent_imgs/QR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/parent_imgs/right_corner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/parent_imgs/sg_media2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/parent_imgs/tel-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/application_parent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/application_parent.css" afterPath="$PROJECT_DIR$/css/application_parent.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/application_parent.html" afterPath="$PROJECT_DIR$/html/application_parent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/aspect_explain.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/aspect_explain.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/aspect_img.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/aspect_img.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/aspect_img.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/PersonlCenter/brand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/PersonlCenter/brandDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/PersonlCenter/brand_uncommit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/confirm1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/design_patent.html" />
+      <change type="DELETED" beforePath="C:\Users\a\Desktop\project\Project\html\readme.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgs/T-confirm/add2.png" afterPath="$PROJECT_DIR$/imgs/T-confirm/add2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/T-apply.css" afterPath="$PROJECT_DIR$/css/T-apply.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/T-apply.html" afterPath="$PROJECT_DIR$/html/T-apply.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/T-apply.js" afterPath="$PROJECT_DIR$/js/T-apply.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/T-common.js" afterPath="$PROJECT_DIR$/js/T-common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/PersonlCenter/businessDetails.html" afterPath="$PROJECT_DIR$/html/PersonlCenter/businessDetails.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/confirm1.css" afterPath="$PROJECT_DIR$/css/confirm1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/PersonlCenter/confirm1.html" afterPath="$PROJECT_DIR$/html/PersonlCenter/confirm1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/PersonlCenter/confirm2.html" afterPath="$PROJECT_DIR$/html/PersonlCenter/confirm2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/js/index.js" afterPath="$PROJECT_DIR$/java/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/new_application.html" afterPath="$PROJECT_DIR$/html/new_application.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/page.css" afterPath="$PROJECT_DIR$/css/page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/transact.css" afterPath="$PROJECT_DIR$/css/transact.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/PersonlCenter/transact.html" afterPath="$PROJECT_DIR$/html/PersonlCenter/transact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="3d925d84-af7a-4b8c-b414-bf570ead4eff" name="Rejected commit: Default" comment="Merge branch 'master' of https://github.com/878699085/Project&#10;&#10;# Conflicts:&#10;#&#9;css/obligation.css&#10;#&#9;html/obligation.html&#10;" />
@@ -32,78 +51,68 @@
     <favorites_list name="Project" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48103267">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="application_parent.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/application_parent.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.954023">
-                  <caret line="191" column="23" selection-start-line="191" selection-start-column="23" selection-end-line="191" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="application_parent.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/html/application_parent.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37005988">
-                  <caret line="50" column="52" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#h2#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#style#0;n#span#1;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#ol#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p#3;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p#4;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#p#5;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="application_parent.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/application_parent.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#0#37#0" expanded="false" />
-                    <marker date="1489744824336" expanded="true" signature="1728:1772" placeholder="{...}" />
-                    <marker date="1489744824336" expanded="true" signature="1809:1854" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="application_parent.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/application_parent.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.515625">
-                  <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#0#37#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="application_parent.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/application_parent.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.954023">
+              <caret line="191" column="23" selection-start-line="191" selection-start-column="23" selection-end-line="191" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_parent.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application_parent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.0983605">
+              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#h2#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ol#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#3;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#4;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#p#5;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aspect_img.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/aspect_img.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34598213">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_parent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/application_parent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#37#0" expanded="false" />
+                <marker date="1489744824336" expanded="true" signature="1728:1772" placeholder="{...}" />
+                <marker date="1489744824336" expanded="true" signature="1809:1854" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -164,7 +173,6 @@
         <option value="$PROJECT_DIR$/java/js/index.js" />
         <option value="$PROJECT_DIR$/java/css/index.css" />
         <option value="$PROJECT_DIR$/html/PersonlCenter/confirm1.html" />
-        <option value="$PROJECT_DIR$/html/readme.md" />
         <option value="$PROJECT_DIR$/js/cut.js" />
         <option value="$PROJECT_DIR$/js/patent_apply.js" />
         <option value="$PROJECT_DIR$/js/phone-popup.js" />
@@ -174,6 +182,7 @@
         <option value="$PROJECT_DIR$/css/application_parent.css" />
         <option value="$PROJECT_DIR$/html/application_parent.html" />
         <option value="$PROJECT_DIR$/js/application_parent.js" />
+        <option value="$PROJECT_DIR$/html/readme.md" />
       </list>
     </option>
   </component>
@@ -652,11 +661,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14541623" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14541623" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2227027" sideWeight="0.49051633" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28" sideWeight="0.50842994" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -667,7 +677,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2227027" sideWeight="0.49051633" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1035,22 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/readme.md">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69196427">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state>
-          <first_editor vertical-scroll-proportion="0.2767857">
-            <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/application_parent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1065,8 +1058,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application_parent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37005988">
-          <caret line="50" column="52" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+        <state vertical-scroll-proportion="-7.0983605">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1084,6 +1077,14 @@
             <element signature="n#p#5;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/aspect_img.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34598213">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -190,6 +190,12 @@ height:66px;
 .tr-mid .p2 .li2{
 width:290px;
 }
+.tr-mid .p2 .li2 p{
+height:30px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
 .tr-mid .p2 .li3{
 width:170px;
 }
