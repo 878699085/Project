@@ -11,6 +11,7 @@
     <script>
         $(function(){
             validate.phone("#tel1");
+            validate.notNull(".apply2 input","申请人名称");
         })
     </script>
 
@@ -64,7 +65,7 @@
         </span>
                 </div>
                 <div class="apply1 apply">
-                    <span>申请人类型：</span> <input type="radio" value="radio" name="radio"/> 企事业单位、社会团体
+                    <span>申请人类型：</span> <input type="radio" checked value="radio" name="radio"/> 企事业单位、社会团体
                     <input type="radio" value="radio" name=  "radio"/> 国内自然人/个体单位
                 </div>
                 <div class="apply2 apply">

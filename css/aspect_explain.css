@@ -1,0 +1,15 @@
+html,body{
+	background:#eff3f5;
+}
+.design_wrap{
+	width:1360px;
+	min-width:1360px;
+	margin:0 auto;
+}
+.design_content{
+	width:1168px;
+	height:918px;
+	border:1px solid #ccc;
+	float:left;
+	background:#fff;
+}

@@ -57,12 +57,12 @@ var patent = {
         $(".input").click(function(){
             $(this).find("img").toggleClass("hide");
         })
-        $(".more .p1").click(function(){
+        $(".more .p11").click(function(){
             $(".Tog").toggleClass("hide");
             if($(".Tog").hasClass("hide")){
-                $(".more .p1 img").prop("src","../imgs/T/T-more.png")
+                $(".more .p11 img").prop("src","../imgs/T/T-more.png")
             }else{
-                $(".more .p1 img").prop("src","../imgs/T/T-less.png")
+                $(".more .p11 img").prop("src","../imgs/T/T-less.png")
             }
         })
     },
@@ -474,17 +474,17 @@ var patent = {
         validate.post1(".l-post input");
         $(".l-phone input").blur(function(){
             if($(".l-phone input").val()==""){
-                $(".tip").remove();
+                $(".l-phone label").remove();
             }
         })
         $(".l-email input").blur(function(){
             if($(".l-email input").val()==""){
-                $(".tip").remove();
+                $(".l-email label").remove();
             }
         })
         $(".l-post input").blur(function(){
             if($(".l-post input").val()==""){
-                $(".tip").remove();
+                $(".l-post label").remove();
             }
         })
     }

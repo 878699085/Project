@@ -287,7 +287,7 @@ margin-top:17px;
 }
 .distribution .p1{
 font-size:16px;
-margin-top:24px;
+/*margin-top:24px;*/
 }
 .distribution .p2{
 margin-left:72px;
@@ -308,7 +308,7 @@ margin-top:20px;
 background-color:#fff;
 }
 .inherit .p1{
-margin-top:24px;
+/*margin-top:24px;*/
 padding-left:23px;
 font-size:16px;
 }
@@ -333,7 +333,7 @@ margin-top:16px;
 border:1px solid #ccc;
 }
 .state .p1{
-margin-top:24px;
+/*margin-top:24px;*/
 padding-left:23px;
 font-size:16px;
 }
@@ -362,7 +362,7 @@ background-color:#fff;
 border:1px solid #ccc;
 }
 .same-day .p1{
-margin-top:24px;
+/*margin-top:24px;*/
 padding-left:23px;
 font-size:16px;
 }
@@ -387,7 +387,7 @@ border:1px solid #ccc;
 margin-top:21px;
 }
 .prior .p1{
-margin-top:24px;
+/*margin-top:24px;*/
 padding-left:23px;
 font-size:16px;
 }
@@ -411,17 +411,23 @@ border:1px dashed #ccc;
 margin-right:10px;
 padding-left:10px;
 }
-.more{
+.apl-content .left .more{
 height:48px;
 margin-top:21px;
+padding:0;
+border-top:1px solid #ccc;
+width:1148px;
 }
-.more .p1 img{
+.apl-content .left .more .p11 img{
 position:relative;
 top:3px;
 margin-right:4px;
 }
-.more .p1{
+.apl-content .left .more .p11{
+position:relative;
+top:-1px;
 line-height:48px;
+border-top:1px solid #eff3f5;
 width:417px;
 text-align:center;
 color:#ff3300;
@@ -429,14 +435,19 @@ font-size:16px;
 margin-left:340px;
 /*background-color:#fff;*/
 border:1px solid #ccc;
-border-top:none;
+border-top:2px solid #eff3f5;
 border-radius:5px;
 cursor:pointer;
+border-top-left-radius:0px;
+border-top-right-radius:0px;
+
 }
+
 .btm .btn{
 padding-left:338px;
 margin-top:22px;
 margin-bottom:300px;
+padding-top:22px;
 }
 .btm .btn span{
 display:inline-block;
@@ -512,10 +523,7 @@ line-height:33px;
 margin-top:30px;
 margin-bottom:10px;
 }
-.btm{
-height:200px;
-background-color:#fff;
-}
+
 .apl-content .left .p1{
 /*margin-left:50px;*/
 width:1048px;
@@ -1171,4 +1179,13 @@ width:90px;
 .sel-T span:hover{
 background-color:#ff3300;
 color:#fff;
+}
+/*外观专利*/
+
+.inherit input{
+
+border:1px dashed #ccc;
+width:60px;
+height:30px;
+
 }
