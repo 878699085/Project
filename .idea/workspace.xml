@@ -2,33 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1303dbbb-6e66-408c-af23-bcebe5edc0a7" name="Default" comment="ww">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/aspect_explain.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/aspect_explain.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/aspect_img.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/aspect_img.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/aspect_img.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/PersonlCenter/brand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/PersonlCenter/brandDetails.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/PersonlCenter/brand_uncommit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/confirm1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/design_patent.html" />
-      <change type="DELETED" beforePath="C:\Users\a\Desktop\project\Project\html\readme.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imgs/T-confirm/add2.png" afterPath="$PROJECT_DIR$/imgs/T-confirm/add2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/T-apply.css" afterPath="$PROJECT_DIR$/css/T-apply.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/T-apply.html" afterPath="$PROJECT_DIR$/html/T-apply.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/T-apply.js" afterPath="$PROJECT_DIR$/js/T-apply.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/T-common.js" afterPath="$PROJECT_DIR$/js/T-common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/PersonlCenter/businessDetails.html" afterPath="$PROJECT_DIR$/html/PersonlCenter/businessDetails.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/confirm1.css" afterPath="$PROJECT_DIR$/css/confirm1.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/PersonlCenter/confirm1.html" afterPath="$PROJECT_DIR$/html/PersonlCenter/confirm1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/PersonlCenter/confirm2.html" afterPath="$PROJECT_DIR$/html/PersonlCenter/confirm2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/js/index.js" afterPath="$PROJECT_DIR$/java/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/new_application.html" afterPath="$PROJECT_DIR$/html/new_application.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/page.css" afterPath="$PROJECT_DIR$/css/page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/transact.css" afterPath="$PROJECT_DIR$/css/transact.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/PersonlCenter/transact.html" afterPath="$PROJECT_DIR$/html/PersonlCenter/transact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="3d925d84-af7a-4b8c-b414-bf570ead4eff" name="Rejected commit: Default" comment="Merge branch 'master' of https://github.com/878699085/Project&#10;&#10;# Conflicts:&#10;#&#9;css/obligation.css&#10;#&#9;html/obligation.html&#10;" />
@@ -657,7 +630,13 @@
       <option name="project" value="LOCAL" />
       <updated>1489570921015</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="ww">
+      <created>1489745442012</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1489745442012</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -979,6 +958,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14368482">
           <caret line="153" column="50" selection-start-line="153" selection-start-column="50" selection-end-line="153" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -986,6 +966,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
