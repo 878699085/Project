@@ -1,0 +1,101 @@
+.content div.right h2 p {
+    font-weight: normal;
+    font-size: 14px;
+    color: #666666;
+}
+
+.content div.right .money {
+    width: 631px;
+    height: 187px;
+}
+.money div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    width: 569px;
+    height: 145px;
+    border: 1px solid #cccccc;
+}
+
+.money p {
+    font-size: 16px;
+}
+
+.money .p1 {
+    color: #666666;
+    margin-bottom: 0px;
+}
+.money .p1 span{
+    float: left;
+    font-size: 14px;
+    margin-right: 0px;
+}
+.money .p1 span a{
+    display: block;
+    line-height:30px;
+}
+.money .p1 span a em{
+    font-style: normal;
+    color: #ee4618;
+}
+.money .p2 b {
+    color: #fa1010;
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 300px;
+}
+
+.money .p2 span {
+    float: right;
+    margin-right: 10px;
+    color: #333333;
+}
+.content .right .p5{
+    height:32px;
+    margin-left: 0px;
+}
+.money .p5 i{
+    float: left;
+    width:29px;
+    height: 30px;
+    background:url("../imgs/parent_imgs/icon1.png") no-repeat;
+}
+.money .p5 i.icon2{
+    background:url("../imgs/parent_imgs/icon2.png") no-repeat;
+}
+.money .p5 i.icon3{
+    width:32px;
+    height: 32px;
+    background:url("../imgs/parent_imgs/icon3.png") no-repeat;
+}
+.money .p5 em{
+    float:left;
+    line-height: 32px;
+    margin-right: 30px;
+    margin-left: 5px;
+}
+.content .right .p3{
+    margin:0 0 8px 37px;
+}
+.content .right .p3 i{
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    margin:0 13px 10px 10px;
+}
+
+.content .right .p3 i.bg{
+    border:1px dashed #ff3300;
+    color:#ff3300;
+}
+.content .right .p4{
+    margin-top:10px;
+    margin-left: 82px;
+}
+.content .right .p4 input{
+    margin-right:27px;
+}
+.content .right .p4 input.PHONE{
+    background:#ff3300;
+}
