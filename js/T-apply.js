@@ -7,7 +7,7 @@ $(function(){
     validate.nameLength("#l-name1");
     sureDel();
     leading();
-})
+});
 
 var patent = {
     init :function(){
@@ -50,7 +50,7 @@ var patent = {
             minDate: '1970-07-31 23:59:59',
             maxDate: $.nowDate(0),
             format:"YYYY-MM-DD hh:mm",
-            zIndex:3000,
+            zIndex:3000
         })
     },
     _array : function(){
