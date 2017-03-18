@@ -43,7 +43,7 @@
       application_patent.html  （段飒爽）（李强）    
 
 ###商标首页
-      ----未完成
+    ordiany_brand.html   (安梦娜、段飒爽) （李强）
 
 ###服务商后台
       index.html  服务商后台  （安梦娜、段飒爽）（李强）
