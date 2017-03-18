@@ -64,14 +64,14 @@
 
 
 <!--点击按键出弹窗4-->
-<div class="window wind8" id="window8">
+<div class="window wind8" id="window8" style="display: block">
 	<div class="phoneP">
 		<div class="centerC">
 			<p class="tittleT clear"><span>专利查询</span><img class="closeC" src="../imgs/close_1.png" alt=""/></p>
 			<ul class="downD">
 				<li class="clear"><span><i>*</i>专利名称</span><input type="text" id="name_good" placeholder="输入专利名称" class="empty"></li>
 				<li class="clear"><span>称呼</span><input type="text" id="custName" placeholder="请输入姓名"></li>
-				<li class="clear"><span><i>*</i>手机号码</span><input type="text" id="phone1" placeholder="请输入手机号码"></li>
+				<li class="clear"><span><i>*</i>手机号码</span><input class="empty" type="text" id="phone1" placeholder="请输入手机号码"></li>
 				<li class="clear"><span>专利分类</span>
 					<select id="brandCate">
 						<option value="10">发明专利</option>
@@ -79,7 +79,7 @@
 						<option value="33">外观专利</option>
 					</select>
 				</li>
-				<li class="clear"><span>专利业务</span><input type="text" id="qq" placeholder="请输入QQ号码"></li>
+				<li class="clear"><span>专利业务</span><input type="text" id="qq" placeholder="专利业务"></li>
 				<li><span class="submit hand" id="submit">提交</span></li>
 			</ul>
 		</div>
@@ -180,17 +180,5 @@
 <script src="../js/common.js"></script>
 <script src="../js/application_parent.js"></script>
 <script>
-	$(".empty").blur(function(){
-		if($.isEmpty($(this).val())){
-			if($(this).parent().find("label").length==0){
-				if($(this).parent().is(":visible")){
-					$(this).parent().append("<label>不能为空</label>");
-				}else{
-					$(this).parent().find("label").remove();
-				}
-			}
-		}else{
-			$(this).parent().find("label").remove();
-		}
-	})
+
 </script>
