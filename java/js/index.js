@@ -24,6 +24,8 @@ $(function(){
 	showSelect($(".table dl"),$(".table dl p"));
 	//订单详情弹窗
 	order();
+	//添加邮寄弹窗
+	posts();
 })
 
 //显示下拉列表
@@ -45,4 +47,13 @@ function order(){
     $(".voucher_tit  i").click(function(){
         $(".order_window").hide();
     })
+}
+//添加邮寄弹窗
+function posts(){
+	$(".User_Info .add").click(function(){
+		$(".post_window").show();
+	});
+	$(".add_post .close").click(function(){
+		$(".post_window").hide();
+	})
 }
