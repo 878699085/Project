@@ -509,7 +509,7 @@
 		                </ul>
 		                <table width="100%" border="1" cellpadding="0" cellspacing="0">
 		                    <tr style="height:34px">
-		                        <th width="39"><i></i></th>
+		                       <!-- <th width="39"><i></i></th>-->
 		                        <th width="198">订单名称</th>
 		                        <th width="118">单价（元）</th>
 		                        <th width="118">总价（元）</th>
@@ -521,7 +521,7 @@
 
 		                    </tr>
 		                    <tr style="height: 58px">
-		                        <td><i></i></td>
+		                        <!--<td><i></i></td>-->
 		                        <td>【专利发明】锅炉管板热防护装置</td>
 		                        <td>20000.00</td>
 		                        <td>20000.00</td>
@@ -533,7 +533,7 @@
 
 		                    </tr>
 		                    <tr style="height: 58px">
-		                        <td><i></i></td>
+		                        <!--<td><i></i></td>-->
 		                        <td>【专利发明】锅炉管板热防护装置</td>
 		                        <td>20000.00</td>
 		                        <td rowspan="2">20000.00</td>
@@ -541,7 +541,7 @@
 		                        <td><a>添加付款</a><a>编辑</a></td>
 		                    </tr>
 		                    <tr style="height: 58px">
-		                        <td><i></i></td>
+		                       <!-- <td><i></i></td>-->
 		                        <td>【专利发明】锅炉管板热防护装置</td>
 		                        <td>20000.00</td>
 		                        <td>材料审核</td>
@@ -571,10 +571,9 @@
 		                </table>
 		            </div>
 		            <div class="User_Info ordering">
-		                <p class="step1"><span>邮寄记录</span></p>
+		                <p class="step1"><span>邮寄记录</span><b class="add">添加</b></p>
 		                <table border="1" cellpadding="0" cellspacing="0">
 		                    <tr style="height: 34px">
-		                        <th width="34"><i></i></th>
 		                        <th width="83">订单名称</th>
 		                        <th width="58">收件人</th>
 		                        <th width="138">联系地址</th>
@@ -584,7 +583,6 @@
 		                        <th width="143">快递公司-运单号</th>
 		                    </tr>
 		                    <tr style="height:58px">
-		                        <td><i></i></td>
 		                        <td>商标注册证</td>
 		                        <td>王三</td>
 		                        <td>北京市房山区长阳一村</td>
@@ -621,61 +619,96 @@
 		<div class="order_window">
 		    <div class="voucher">
 		        <p class="voucher_tit clear"><span>收款单</span><i></i></p>
-		        <p class="order_number"><b>订单：T201408210001</b></p>
-		        <div class="order_List clear">
-		            <ul style="margin-right: 25px" class="clear">
-		                <li><i>*</i>支付日期：<input type="text" value="支付时间"/></li>
-		                <li><i>*</i>付款账号：<input type="text" value="付款账号"/></li>
-		                <li>抬头：<input type="text" /></li>
-		                <li>开票公司：<input type="text" value="请选择"/><b></b></li>
-		                <li>联系人：<input type="text"/></li>
-		                <li>联系地址：<input type="text"/></li>
-		            </ul>
-		            <ul class="clear">
-		                <li><i>*</i>付款人名称：<input type="text"/></li>
-		                <li><i>*</i>收款账号：<input type="text" value="请选择"/><b></b></li>
-		                <li>发票类型：<input type="text" value="请选择"/><b></b></li>
-		                <li>税费：<input type="text" value="请选择"/><b></b></li>
-		                <li>联系电话：<input type="text"/></li>
-		                <li>备注：<input type="text"/></li>
-		            </ul>
-		            <p class="clear file_UP">
-		                <span class="file_start">附件：</span>
-		                <span class="up_File"><i></i><input type="file"/><em></em></span>
-		                <span class="file_Last">选填，如申请图形商标进点击图片重新上传</span>
-		            </p>
-		        </div>
-		        <div class="Voucher_details">
-		            <p><span>收款单明细</span></p>
-		            <table border="1" cellpadding="0" cellspacing="0">
-		                <tr style="height: 22px">
-		                    <th width="148">业务类型</th>
-		                    <th width="268">单价（元）</th>
-		                    <th width="83">数量</th>
-		                    <th width="83">发票</th>
-		                </tr>
-		                <tr style="height: 38px">
-		                    <td>商标变更</td>
-		                    <td><span>1500</span></td>
-		                    <td>1</td>
-		                    <td></td>
-		                </tr>
-		            </table>
-		        </div>
-		        <div class="check-out clear">
-		            <p>付款方式：
-		                <lable><input name="pay_Method" type="radio"/> 一次付清</lable>
-		                <lable><input name="pay_Method" type="radio"/> 分期付款</lable>
-		            </p>
-		            <ul>
-		                <li>产品总额：¥ <span>1500</span>元</li>
-		                <li>优惠总额：¥<b>1500</b>元</li>
-		                <li>应付总额：¥ <span>1500</span>元</li>
-		                <li><input type="button" value="保存"/></li>
-		            </ul>
-		        </div>
+		        <div>
+			        <p class="order_number"><b>订单：T201408210001</b></p>
+			        <div class="order_List clear">
+			            <ul style="margin-right: 25px" class="clear">
+			                <li><i>*</i>支付日期：<input type="text" value="支付时间"/></li>
+			                <li><i>*</i>付款账号：<input type="text" value="付款账号"/></li>
+			                <li>抬头：<input type="text" /></li>
+			                <li>开票公司：<input type="text" value="请选择"/><b></b></li>
+			                <li>联系人：<input type="text"/></li>
+			                <li>联系地址：<input type="text"/></li>
+			            </ul>
+			            <ul class="clear">
+			                <li><i>*</i>付款人名称：<input type="text"/></li>
+			                <li><i>*</i>收款账号：<input type="text" value="请选择"/><b></b></li>
+			                <li>发票类型：<input type="text" value="请选择"/><b></b></li>
+			                <li>税费：<input type="text" value="请选择"/><b></b></li>
+			                <li>联系电话：<input type="text"/></li>
+			                <li>备注：<input type="text"/></li>
+			            </ul>
+			            <p class="clear file_UP">
+			                <span class="file_start">附件：</span>
+			                <span class="up_File"><i></i><input type="file"/><em></em></span>
+			                <span class="file_Last">选填，如申请图形商标进点击图片重新上传</span>
+			            </p>
+			        </div>
+			        <div class="Voucher_details">
+			            <p><span>收款单明细</span></p>
+			            <table border="1" cellpadding="0" cellspacing="0">
+			                <tr style="height: 22px">
+			                    <th width="148">业务类型</th>
+			                    <th width="268">单价（元）</th>
+			                    <th width="83">数量</th>
+			                    <th width="83">发票</th>
+			                </tr>
+			                <tr style="height: 38px">
+			                    <td>商标变更</td>
+			                    <td><span>1500</span></td>
+			                    <td>1</td>
+			                    <td></td>
+			                </tr>
+			            </table>
+			        </div>
+			        <div class="check-out clear">
+			            <p>付款方式：
+			                <lable><input name="pay_Method" type="radio"/> 一次付清</lable>
+			                <lable><input name="pay_Method" type="radio"/> 分期付款</lable>
+			            </p>
+			            <ul>
+			                <li>产品总额：¥ <span>1500</span>元</li>
+			                <li>优惠总额：¥<b>1500</b>元</li>
+			                <li>应付总额：¥ <span>1500</span>元</li>
+			                <li><input type="button" value="保存"/></li>
+			            </ul>
+			        </div>
+			     </div>
 		    </div>
 		    <p class="opacity"></p>
+		</div>
+		<!--添加邮寄弹窗-->
+		<div class="post_window">
+			<div class="add_post">
+				<p class="adds clear"><span>添加邮寄</span><i></i><b class="close"></b></p>
+				<ul class="post_main clear">
+					<li class="input_content">
+						<label for="">收件人：</label><input type="text" />
+					</li>
+					<li class="payable">
+						<label for="">是否到付：</label><input type="radio" name="1" checked/><i style="margin-right:23px;">是</i><input type="radio" name="1"/><i>否</i>
+					</li>
+					<li class="input_content">
+						<label for="">邮寄内容：</label><input type="text" />
+					</li>
+					<li class="input_content">
+						<label for="">快递单号：</label><input type="text" />
+					</li>
+					<li class="address">
+						<label for="">收货地址：</label><input type="text" />
+					</li>
+					<li class="input_content">
+						<label for="">联系电话：</label><input type="text" />
+					</li>
+					<li class="input_content" style="margin-left:-4px;margin-right:12px;">
+						<b>*</b><label for="">邮寄时间：</label><input type="text" />
+					</li>
+					<li class="btn">
+						<input type="button" value="完成" />
+					</li>
+				</ul>
+			</div>
+			<p class="layout"></p>
 		</div>
 		<script type="text/javascript">
 			$(function(){
