@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>服务商招募</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/person-left.css">
+    <link rel="stylesheet" type="text/css" href="../css/rescruit.css">
+</head>
+<body>
+<div class="bannerT">
+    <div class="area posit">
+        <div class="text">
+            <img src="../imgs/a0.png" alt="">
+        </div>
+    </div>
+
+</div>
+<div class="contentT area">
+    <!--特点-->
+    <div class="feature clearfix">
+        <ul>
+            <li class="li1">
+                <div>
+                    <p class="p1"><img src="../imgs/zhuan.png" alt=""></p>
+                    <p class="p2">精选认证</p>
+                    <p class="p3">专业评级</p>
+                </div>
+                <p>一站式申明周期</p>
+            </li>
+            <li class="li2">
+                <div>
+                    <p class="p1"><img src="../imgs/jing.png" alt=""></p>
+                    <p class="p2">专业系统</p>
+                    <p class="p3">精准匹配</p>
+                </div>
+                <p>多年行业服务经验</p>
+            </li>
+
+            <li class="li3">
+                <div>
+                    <p class="p1"><img src="../imgs/cheng.png" alt=""></p>
+                    <p class="p2">申报流程</p>
+                    <p class="p3">全程透明</p>
+                </div>
+                <p>国知局大咖入住坐镇</p>
+            </li>
+            <li class="li4">
+                <div>
+                    <p class="p1"><img src="../imgs/kuai.png" alt=""></p>
+                    <p class="p2">专速申报</p>
+                    <p class="p3">快速入住</p>
+                </div>
+                <p>千万用户市场支持</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="enter">
+    火热招商，限量入住
+    <div class="line"></div>
+</div>
+<div class="button area">
+    <span class="leftn">我要入住</span> <span class="rightn">详情咨询</span>
+</div>
+<div class="settled area clearfix">
+    <ul>
+        <li class="sli1">
+            <div class="sname">
+                <span>专利代理人</span>
+            </div>
+        </li>
+        <li class="sli2">
+            <div class="sname">
+                <span>商标代理人</span>
+            </div>
+        </li>
+        <li class="sli3">
+            <div class="sname">
+                 <span>专利质检员</span>
+            </div>
+        </li>
+        <li class="sli4">
+            <div class="sname">
+                 <span>专利撰写</span>
+            </div>
+        </li>
+        <li class="sli5">
+            <div class="sname">
+                 <span>专利OA答复</span>
+            </div>
+        </li>
+        <li class="sli6">
+            <img src="../imgs/Now.png" alt="">
+        </li>
+    </ul>
+</div>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+    $(window).ready(function(){
+        var num=0;
+        setInterval(function(){
+            if(num==3){
+                num=-1;
+            }
+            num++;
+            $(".posit img").prop("src","../imgs/a"+num+".png")
+        },500);
+
+    })
+
+</script>
+</body>
+</html>
