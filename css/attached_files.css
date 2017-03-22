@@ -32,14 +32,30 @@
 }
 .attach_files .files ul li {
   float: left;
-  width: 278px;
+  width: 275px;
   height: 168px;
   border: 1px dashed #ccc;
   text-align: center;
   margin-right: 13px;
+  margin-bottom:20px;
+  position:relative;
 }
 .attach_files .files ul li img {
   margin: 20px 0 15px;
+  width: 44px;
+  height: 54px;
+}
+.attach_files #idCardImg{
+  position:absolute;
+  top: 20px;
+  left: 115px;
+  width:44px;
+  height:54px;
+  cursor:pointer;
+  filter:alpha(opacity=0);
+  -moz-opacity:0;
+  -khtml-opacity: 0;
+  opacity: 0;
 }
 .attach_files .files ul li p {
   width: 100%;

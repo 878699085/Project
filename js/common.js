@@ -50,14 +50,14 @@ var commom = {
 				hideSuggest();
 				suggestWrap.empty();
 			})
-		}
+		};
 		//渲染下拉列表;
 		var renderFn=function(){
 			var applyName=$(".applyName").val();
 			var investName=$(".investName").val();
 			var param={
 				applyname:applyName,
-				investname:investName,
+				investname:investName
 			};
 			$.ajax({
 				type:'get',
@@ -69,7 +69,7 @@ var commom = {
 					var str="";
 					$.each(result,function(index,value){
 						str+='<p id='+index+'>'+result[index].name+'</p>';
-					})
+					});
 					suggestWrap.append(str);
 					suggestWrap.show();
 					changeLight();
@@ -79,7 +79,7 @@ var commom = {
 					hideSuggest();
 				}
 			})
-		}
+		};
 		//发送请求,根据关键字在后台查询;
 		var sendKeyWord=function(event){
 			//键盘选择下拉项;
@@ -96,7 +96,7 @@ var commom = {
 	         }else if(keyCode == 13){
 	              processEnter();
 	         }
-		}
+		};
 		var processKeyUpAndDown=function(keyCode){
 			var words = suggestWrap.children(); 
 	        var num = words.length; 
@@ -105,9 +105,9 @@ var commom = {
 	        highLightIndex = ((keyCode != 38 ? num + 1:num - 1)+highLightIndex) % num; 
 	        words.eq(highLightIndex).addClass("hover");
 	        ids=words.eq(highLightIndex).attr("id");
-	        txt=words.eq(highLightIndex).text()
+	        txt=words.eq(highLightIndex).text();
 	        input.val(txt); 
-		}
+		};
 		//鼠标滑过每一项高亮显示;
 		var changeLight=function(){
 			suggestWrap.find("p").hover(function(){
@@ -116,7 +116,7 @@ var commom = {
 			},function(){
 				$(this).removeClass("hover");
 			})
-		}
+		};
 		//鼠标点击每一项时,显示剩余的内容;
 		var changeText=function(){
 			suggestWrap.find("p").click(function(){
@@ -124,32 +124,32 @@ var commom = {
 				hideSuggest();
 				suggestWrap.empty();
 			})
-		}
+		};
 		
 		var processEnter=function(){
 			if(highLightIndex != -1){
 				hideSuggest();
 				suggestWrap.empty(); 
 			}
-		}
+		};
 		//input聚焦事件;
 		input.bind("click",function(){
 			suggestWrap.empty();
 			renderFn();
-		})
+		});
 		//隐藏下拉框
 		var hideSuggest=function(){
 			suggestWrap.hide();
-		}
+		};
 		//改变高亮显示;
 		var changeToWhite=function(){
 			if(highLightIndex != -1){ 
 	            suggestWrap.children().eq(highLightIndex).removeClass('hover'); 
 	        } 
-		}
+		};
 		init();
 	}
-}
+};
 /**
  * @description 验证字符串v是否为空（null 或者 空字符串——""）
  * @param {string}
