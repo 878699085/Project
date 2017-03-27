@@ -1,0 +1,201 @@
+/*提交申请弹窗*/
+.apply_window {
+	width:1200px;
+	min-width:1200px;
+	margin:0 auto;
+}
+.apply_window .sub_apply{
+	width:1000px;
+	height:398px;
+	border:1px solid #ccc;
+	background:#fff;
+	padding:20px 99px;
+}
+.apply_window .sub_apply .adds{
+	height:28px;
+	border-bottom:1px solid #ccc;
+	line-height:28px;
+	font-size:14px;
+	color:#666;
+	position:relative;
+}
+.apply_window .sub_apply .adds i{
+	position:absolute;
+	width:97px;
+	height:1px;
+	background:#666;
+	bottom:-1px;
+	left:0px;
+}
+.apply_window .sub_apply .apply_main{
+	margin-top:40px;
+	font-size:14px;
+	color:#666;
+}
+.apply_window .sub_apply .apply_main b{
+	color:#ff3300;
+	float:left;
+	line-height:28px;
+}
+.apply_window .sub_apply .apply_main li{
+	float:left;
+	margin-bottom:30px;
+	/*font-size:14px;
+	color:#666;*/
+}
+.apply_window .sub_apply .apply_main li span{
+	float:left;
+	width:70px;
+	text-align:right;
+	height:30px;
+	line-height:30px;
+}
+.apply_window .sub_apply .apply_main li input{
+	height:28px;
+	border:1px dashed #ccc;
+	margin-left:5px;
+	text-indent:10px;
+	line-height:28px;
+	float:left;
+}
+.apply_window .sub_apply .apply_main li.name input,.apply_window .sub_apply .apply_main li.phone input{
+	width:923px;
+}
+.apply_window .sub_apply .apply_main li.join_trade dl{
+	width: 820px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.apply_window .sub_apply .apply_main li.join_trade dl dd{
+	width: 152px;
+	float: left;
+	margin-bottom: 20px;
+}
+.apply_window .sub_apply .apply_main li.join_trade dl dd input{
+	width:12px;
+	height:12px;
+	cursor: pointer;
+	display: none;
+}
+.apply_window .sub_apply .apply_main li.join_trade dl dd label{
+	margin-left: 0px;
+}
+.apply_window .sub_apply .apply_main li.join_trade b{
+	display: inline-block;
+	width:14px;
+	height:14px;
+	border: 1px solid #b8b8b8;
+	border-radius: 2px;
+	margin-right: 10px;
+	position: relative;
+	top: 2px;
+	cursor: pointer;
+}
+.apply_window .sub_apply .apply_main li.join_trade b.hover{
+	background: url(../imgs/info_1.png) no-repeat center;
+	border: 1px solid #ff3b30;
+}
+.apply_window .sub_apply .apply_main li.phone{
+	margin-bottom:25px;
+}
+.apply_window .sub_apply .apply_main li.title{
+	margin-left:94px;
+	margin-bottom:20px;
+}
+.apply_window .sub_apply .apply_main li.btn{
+	float:right;
+	margin-top:15px;
+}
+.apply_window .sub_apply .apply_main li.btn input{
+	width:120px;
+	height:34px;
+	background:#ff3300;
+	color:#fff;
+	line-height:34px;
+	text-align:center;
+	border-radius:8px;
+	border:none;
+	text-indent: 0px;
+}
+.apply_window .sub_apply .apply_main li.on_citys input{
+    border: 1px dashed #ccc;
+    width: 96px;
+    height: 28px;
+    text-indent: 6px;
+    color: #666;
+    background: url(../imgs/down.png) no-repeat 92%;
+    cursor: pointer;
+}
+.placeOne,
+.placeTwo,
+.placeThree{
+    position: relative;
+}
+.placeOne div,
+.placeTwo div,
+.placeThree div{
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    width: 339px;
+    left: 197px;
+    border: 1px solid #ccc;
+    display: none;
+    top: 45px;
+    max-height: 200px;
+    overflow: auto;
+}
+.placeOne div,
+.placeTwo div,
+.placeThree div{
+     width: 340px;
+    left: 5px;
+    top: 30px;
+}
+.placeTwo div{
+	 width: 107px;
+}
+.placeThree div{
+	    width: 107px;
+}
+.placeOne div p,
+.placeTwo div p,
+.placeThree div p{
+    line-height: 25px;
+    cursor: pointer;
+    text-indent: 15px;
+}
+.placeOne div p:hover,
+.placeOne div p.hover,
+.placeTwo div p:hover,
+.placeTwo div p.hover,
+.placeThree div p:hover,
+.placeThree div p.hover{
+    background: #ccc;
+}
+.apply_window .sub_apply .apply_main li.on_citys div{
+    float: left;
+    margin-right: 8px;
+}
+.apply_window .sub_apply .apply_main li.on_citys label{
+        position: absolute;
+    top: 50px;
+    left: 200px;
+    color: red;
+    height: 20px;
+    line-height: 20px;
+}
+.addressEn{
+    display: none;
+}
+.placeTwo,
+.placeThree{
+    display: none;
+}
+.apply_window .sub_apply .apply_main li div.placeOne label,
+.apply_window .sub_apply .apply_main li div.placeTwo label,
+.apply_window .sub_apply .apply_main li div.placeThree label{
+    left: 0;
+}
+
